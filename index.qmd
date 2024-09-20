@@ -2,7 +2,7 @@
 about:
   template: jolla
   id: about-block
-  image: "img/IMG_6838.heic"
+  image: "img/jiachenai.jpg"
   links:
     - icon: linkedin
       text: LinkedIn
@@ -12,8 +12,10 @@ about:
       href: "mailto:jiachenai@g.ucla.edu"
 ---
 
+
 ::: {#about-block}
 :::
+
 
 ## About Me
 
@@ -42,3 +44,4 @@ Feel free to explore my [CV](cv.qmd) or reach out via:
 -   **Email:** [jiachenai\@g.ucla.edu](mailto:jiachenai@g.ucla.edu)\
 -   **Phone:** +1 424-293-9716
 -   **LinkedIn:** [Jiachen Ai](https://www.linkedin.com/in/jiachen-ai-966132264/)
+
