@@ -2,7 +2,7 @@
 
 ## Summer 2024
 
-[**MCD BIO 187AL**](https://drive.google.com/file/d/1SoT-kGRz8zpF7aStTfHCBYkLO8LyUfUx/view?usp=sharing): Research Immersion Laboratory in Genomic Biology | UCLA | June 2024 – July 2024
+**MCD BIO 187AL**[\[syllabus\]](assets/MCDB187AL-Summer2024-Syllabus-V2.pdf): Research Immersion Laboratory in Genomic Biology | UCLA | June 2024 – July 2024
  
 - Worked as **Graduate Teaching Assistant**. Led the [lab sessions](https://drive.google.com/drive/folders/17FTYc4qdWfscybALoi85EP3VocD3giV6?usp=drive_link) and taught bioinformatics tools (NCBI Blast, InterProScan, PSIPRED, SignalP, [ChimeraX](https://drive.google.com/file/d/1g6SUgFxOo0I3-QbX5CxZ0P0ivMQi9Idj/view?usp=sharing), etc.) and supervised student lab projects.
 

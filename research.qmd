@@ -34,7 +34,7 @@ Undergraduate Research Assistant
 
 ## 2019 – 2020
 
-<span style="font-size: 26px; font-weight: 500;">Lymphocyte Regeneration after Thymocyte Damage in Zebrafish</span>[\[slides\]](assets/LYMPHOCYTE_REGENERATION_AFTER_THYMOCYTE_DAMAGE_IN ZEBRAFISH.pdf)
+<span style="font-size: 26px; font-weight: 500;">Lymphocyte Regeneration after Thymocyte Damage in Zebrafish[\[presentation slides\]](assets/LYMPHOCYTE_REGENERATION_AFTER_THYMOCYTE_DAMAGE_IN ZEBRAFISH.pdf)</span>
 
 Volunteer | supervised by [Dr. Li Li](https://people.ucas.ac.cn/~0064236?language=en)
 

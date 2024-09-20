@@ -19,6 +19,12 @@
 
 **Biostatistics 203B** [\[course link\]](https://ucla-biostat-203b.github.io/2024winter/schedule/schedule-lec1.html) | Winter 2024
 
+-   [Linux Basic, Unix Shell Commands, and HPC](https://jacenai.github.io/Biostatistics/linux_basic_show.html)
+-   [Ingesting Big Data Files](https://jacenai.github.io/biostat-203b-2024-winter/hw2/hw2sol.html), and [Inquiry and Analysis on Database](https://jacenai.github.io/biostat-203b-2024-winter/hw4/hw4sol.html)
+-   [Big Data Visualization](https://jacenai.github.io/biostat-203b-2024-winter/hw3/hw3sol.html), and developing [Shiny App](https://jacenai.shinyapps.io/203b_hw3/) for interactive graphics
+-   [Statistical Learning in R](https://jacenai.github.io/biostat-203b-2024-winter/hw5/hw5sol.html)
+
+
 **Biostatistics 200B** | Winter 2024
 
 -   [\[ Poster \]](assets/200B_poster.pdf) Assessing Key Factors Associated with Depression before Adjuvant Therapy in Women with Breast Cancer

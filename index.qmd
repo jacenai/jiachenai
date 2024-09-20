@@ -10,6 +10,11 @@ about:
     - icon: envelope
       text: Email
       href: "mailto:jiachenai@g.ucla.edu"
+    - icon: file
+      text: CV
+      href: "cv.qmd"
+  
+  
 ---
 
 
@@ -19,7 +24,7 @@ about:
 
 ## About Me
 
-I'm a graduate student at UCLA, diving into the exciting world of biostatistics, computational biology, and epigenetics, currently pursuing a Master's in Biostatistics at the Fielding School of Public Health. My research explores gene expression patterns across epigenomic, transcriptomic, and cytokine levels, using cutting-edge models to uncover biomarkers and build predictive models related to aging, vaccines, and diseases.
+I'm a graduate student at UCLA, diving into the exciting world of biostatistics, computational biology, and epigenetics, currently pursuing a Master's in Biostatistics at the [Fielding School of Public Health](https://ph.ucla.edu/). My [research](research.qmd) explores gene expression patterns across epigenomic, transcriptomic, and cytokine levels, using cutting-edge models to uncover biomarkers and build predictive models related to aging, vaccines, and diseases.
 
 I'm passionate about mastering mathematical and statistical methods for genetic analysis to push the boundaries of epigenetic research and contribute to the future of precision medicine and personalized healthcare!
 
@@ -44,4 +49,5 @@ Feel free to explore my [CV](cv.qmd) or reach out via:
 -   **Email:** [jiachenai\@g.ucla.edu](mailto:jiachenai@g.ucla.edu)\
 -   **Phone:** +1 424-293-9716
 -   **LinkedIn:** [Jiachen Ai](https://www.linkedin.com/in/jiachen-ai-966132264/)
+
 
