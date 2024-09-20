@@ -1,0 +1,44 @@
+---
+about:
+  template: jolla
+  id: about-block
+  image: "img/IMG_6838.heic"
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jiachen-ai-966132264/
+    - icon: envelope
+      text: Email
+      href: "mailto:jiachenai@g.ucla.edu"
+---
+
+::: {#about-block}
+:::
+
+## About Me
+
+I'm a graduate student at UCLA, diving into the exciting world of biostatistics, computational biology, and epigenetics, currently pursuing a Master's in Biostatistics at the Fielding School of Public Health. My research explores gene expression patterns across epigenomic, transcriptomic, and cytokine levels, using cutting-edge models to uncover biomarkers and build predictive models related to aging, vaccines, and diseases.
+
+I'm passionate about mastering mathematical and statistical methods for genetic analysis to push the boundaries of epigenetic research and contribute to the future of precision medicine and personalized healthcare!
+
+## Research Interests
+
+1)  **Epigenetics**: Investigating dynamics of quintessential epigenomic biomarkers during lifespan.
+2)  **Statistical Genetics**: Modeling gene expression patterns across epigenomic, transcriptomic, and cytokine levels using linear, nonlinear, or statistical learning models to identify biomarkers and build predictive models related to age, vaccines, and chronic diseases.
+3)  **Bioinformatics**: Developing computational tools to map CpG sites to methylation patterns and optimizing algorithms for analyzing high-throughput sequencing data.
+
+### Featured Projects
+
+-  **Clustering on Mice DNA Methylation Aging Pattern**: Applied K-means clustering to study methylation profiles across different aging stages in mice (young, midlife, late-life).
+-  **Longitudinal Study on Flu Vaccination Impact**: Established prediction models for associations between DNA methylation CpG sites and cellular signaling pathways with sero-protection after influenza injection at day0 and day28, considering epigenetic confounders
+-  **Computational Genomics Summer Institute ([CGSI](http://computationalgenomics.bioinformatics.ucla.edu/))**: Collaborated with faculty on epigenetics data analysis using machine learning and attended workshops on biobanks and AI in biomedical research.
+
+
+
+## Let's Connect
+
+Feel free to explore my [CV](cv.qmd) or reach out via:
+
+-   **Email:** [jiachenai\@g.ucla.edu](mailto:jiachenai@g.ucla.edu)\
+-   **Phone:** +1 424-293-9716
+-   **LinkedIn:** [Jiachen Ai](https://www.linkedin.com/in/jiachen-ai-966132264/)

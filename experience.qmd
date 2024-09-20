@@ -1,0 +1,45 @@
+# Teaching
+
+## Summer 2024
+
+[**MCD BIO 187AL**](https://drive.google.com/file/d/1SoT-kGRz8zpF7aStTfHCBYkLO8LyUfUx/view?usp=sharing): Research Immersion Laboratory in Genomic Biology | UCLA | June 2024 – July 2024
+ 
+- Worked as **Graduate Teaching Assistant**. Led the [lab sessions](https://drive.google.com/drive/folders/17FTYc4qdWfscybALoi85EP3VocD3giV6?usp=drive_link) and taught bioinformatics tools (NCBI Blast, InterProScan, PSIPRED, SignalP, [ChimeraX](https://drive.google.com/file/d/1g6SUgFxOo0I3-QbX5CxZ0P0ivMQi9Idj/view?usp=sharing), etc.) and supervised student lab projects.
+
+---
+
+# Professional Experience
+
+
+**Higher Education in Public Health** | UCLA | Apr. 2024
+
+- As one of panel members, presented on UCLA’s biostatistics program for prospective students and answered inquiries.
+
+
+**Life Science Administrative Office Assistant** | Southwest University | Oct. 2018 – Jun. 2021
+
+- Provided guidance to approximately 40 freshmen regarding their academic performance, elective courses, clubs, research mentors, etc.
+- Held 5 meetings per semester. Liaised between administrative teachers and the whole class (65 schoolmates), including giving feedback to inquiries from students.
+
+---
+
+# Volunteer
+
+**Central Library** | Southwest University | Oct. 2019 – Jan. 2020
+
+- Assisted in organizing the library, including book classification, book borrowing, and book return.
+- Organized a charity evening for over 200 people sponsored by the SWU Library Volunteer Association, including being responsible for venue reservation and decoration.
+
+---
+
+# Internship
+
+**Western Biomedical Technology Inc.** | Immunization Team | IT Department | Mar. 2021 – Jun. 2021
+
+- Applied Python and convolution method, developed a light-band recognition program, and improved the precision in western-blot by 20%.
+- Devised a program of calculating standard concentration curves in ELISA utilizing R, increasing the calculation speed by 60%.
+- Presentation every two weeks. Responsible for experiments and reports in Immunology, Histopathology, and Molecular Biology.
+- Promoted the work efficiency of the whole team by virtue of liaising with customers and colleagues in different departments.
+ 
+
+---

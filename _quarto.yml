@@ -1,0 +1,54 @@
+website:
+  title: "Jiachen Ai | Computational Biology & Human Genetics"
+  description: "Discover Jiachen Ai's research, projects, and professional journey in biostatistics, computational biology, and genetics."
+
+  # Navigation bar settings
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "CV"
+        href: cv.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "Projects"
+        href: projects.qmd
+      - text: "Experience"
+        href: experience.qmd
+    
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jiachen-ai-966132264/
+      - icon: github
+        href: https://github.com/jacenai
+      - icon: envelope
+        href: mailto:jiachenai@ucla.edu
+
+    search: true  # Enable search functionality for easy navigation
+
+project:
+  type: website
+  output-dir: docs
+
+  preview: 
+    port: 22222
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+execute:
+  freeze: auto  # Enable re-execution if needed
+  
+format:
+  html:
+    fontsize: 1.15em
+    theme: jekyll-theme-minimal
+    toc: true  # Table of contents for better navigation
+    toc-depth: 2
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true  # Show footnotes on hover for a cleaner look
+
+editor: visual

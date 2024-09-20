@@ -1,0 +1,30 @@
+# Research Projects
+
+------------------------------------------------------------------------
+
+# Course Projects
+
+**Statistics M254** | Spring 2024
+
+-   [Cell Type Annotation in Single-Cell DNA-seq Data](https://jacenai.github.io/Biostatistics/Final_Project.html)
+
+    -   In this project, I analyze two datasets: BoneMarrow and Pancreas and apply the [Seurat](https://satijalab.org/seurat/) package to identify cell types in single-cell DNA-seq data. I tune the parameters to optimize the clustering results and visualize the cell types using umap plots.
+
+
+**Biostatistics 200C** [\[course link\]](https://ucla-biostat-200c.github.io/2023spring/schedule/schedule.html) \| Spring 2024
+
+-   [Model Comparison with Microbiome High-Throughput Sequencing Data](https://jacenai.github.io/Biostatistics/Microbio_seq.html)
+-   [Statistical Problems in GLM](https://jacenai.github.io/Biostatistics/Stat_Prob_GLM.html)
+-   [Linear Models Practice](https://jacenai.github.io/Biostatistics/200C_hw1_show.html)
+
+**Biostatistics 203B** [\[course link\]](https://ucla-biostat-203b.github.io/2024winter/schedule/schedule-lec1.html) | Winter 2024
+
+**Biostatistics 200B** | Winter 2024
+
+-   [\[ Poster \]](assets/200B_poster.pdf) Assessing Key Factors Associated with Depression before Adjuvant Therapy in Women with Breast Cancer
+
+**Biostatistics 203A** | Fall 2023
+
+-   [\[ Report \]](assets/Biostat203_Midtern_project.pdf) Development of Model for Depression Risk among Noninstitutionalized US Citizens: a Retrospective Study by SAS
+
+
