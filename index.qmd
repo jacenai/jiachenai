@@ -12,7 +12,7 @@ about:
       href: "mailto:jiachenai@g.ucla.edu"
     - icon: file
       text: CV
-      href: "cv.qmd"
+      href: https://jacenai.github.io/jiachenai/cv.html
     
   
   

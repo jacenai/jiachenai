@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Education",
+    "section": "",
+    "text": "CV in PDF\n\nEducation\nUniversity of California, Los Angeles | Sept. 2023 – Current\nMaster’s in Biostatistics 📊 | GPA: 4.00/4.00 (Four Quarters) | Transcript\nHonors:\n\nSteve Wallace Policy Fellowship, Jun. 2024\nAPEx Funding at Department of Human Genetics, May 2024\nTwice Fielding School of Public Health Dean’s Leadership Grant, Apr. 2024 & May 2023\n\n\nSouthwest University | Sept. 2018 – June 2022\nBachelor of Science in Biological Sciences 🧬 | GPA: 3.84/4.00 (Rank: 2nd/65) | Transcript\nHonors:\n\nOutstanding Graduate, Intern & Thesis, June 2022\n\nInternational or Overseas Research Award, Dec. 2021\n\nThird-Class Scholarships for Academic Excellence, Dec. 2021 & 2020\n\nSecond-Class Scholarship & Merit Award, Dec. 2019\n\n\n\n\nPublication\n\nAi, J. (2021). Lifestyle does affect semen quality: factor determination in a statistical way. Lecture Notes in Medicine and Life Sciences, 4, 163–171. Read Article\n\n\n\n\nSkills\n\nComputational & Statistical Skills:\n\nR, Python (NumPy, Pandas, Matplotlib), SAS, STATA, SQL, LaTeX\nLinux scripting (Git/GitHub)\nContainer technology (Docker)\nData wrangling (Tidyverse), Data visualization (ggplot2)\nDatabases: OLAP (DuckDB), Google BigQuery\nFrontend development (Rshiny, web app)\nCloud computing (GCP, AWS, Azure, OCI)\nHigh-performance computing (HPC) on cluster (Hoffman2)\nMachine/deep learning (scikit-learn, TensorFlow, Keras)\n\nBioinformatics Tools:\n\nNCBI BLAST, InterProScan, JPRED4, PSIPRED, SignalP, DeepTMHMM, WoLF PSORT, SignalP, AlphaFold3 server, ChimeraX\nEnsembl, UCSC Genome Browser, Galaxy, Bioconductor, BEDTools, STAR, DESeq2, edgeR, Seurat\n\nLaboratory Techniques:\n\nPCR, qPCR, DNA/RNA extraction and quantification, CRISPR/Cas9, cloning, electrophoresis, next-generation sequencing library preparation\nRNA-seq, ChIP-seq, single-cell RNA-seq, Bisulfite sequencing, GWAS (Genome-Wide Association Studies)\nWestern blotting, ELISA, mass spectrometry, protein-DNA interaction assays, chromatin immunoprecipitation (ChIP)\nCell culture, transfection, microscopy (confocal, fluorescence), immunofluorescence, flow cytometry\n\n\n\n\n\nCoursework\n\n\n\nCourse\nDescription\nInstructor\n\n\n\n\nBIOSTAT 200A, B, C\nMethods in Biostatistics\nDr. A. Klomhaus,  Dr. C. M. Crespi,  Dr. Jin Zhou\n\n\nBIOSTAT 203A, B\nIntro to Data Management, Statistical Computing  Intro to Data Science by R\nDr. Grace Kim,  Dr. Hua Zhou\n\n\nSTAT M254\nStatistical Methods in Computational Biology\nDr. Jessica Li\n\n\nMATH 33A, 115A\nLinear Algebra\nDr. Pablo S. Ocal\n\n\nMATH 131A\nAnalysis (in progress)\n\n\n\nMATH 164\nOptimization (in progress)\n\n\n\nMATH 170E, S\nProbability Theory and Statistics\n\n\n\nSTAT 100C\nLinear Models\nDr. Nicolas Christou\n\n\n\nInfinite Theory, Calculus, and Partial Differential Equations\n\n\n\n\nDiscrete Mathematics\n\n\n\n\nPython and Computational Thinking\n\n\n\nDS BMED 208\nRecent Research in Machine Learning in Medicine (in progress)\nDr. Jason Ernst\n\n\n\nBioinformatics\n\n\n\n\nBiochemistry, Organic Chemistry, General Chemistry\n\n\n\n\nGenetics, Human Genetics, Genetic Engineering\n\n\n\n\nMolecular Biology, Cell Biology\n\n\n\n\nImmunology, Microbiology\n\n\n\n\nEcology, Evolutionary Biology\n\n\n\n\nAnatomy and Physiology, Neurobiology\n\n\n\n\nDevelopmental Biology, Plant Biology\n\n\n\nPUB HLTA, B\nEpidemiology, Public Health Policy, Community & Environmental Health Sciences"
+  },
+  {
+    "objectID": "experience.html",
+    "href": "experience.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "MCD BIO 187AL[syllabus]: Research Immersion Laboratory in Genomic Biology | UCLA | June 2024 – July 2024\n\nWorked as Graduate Teaching Assistant. Led the lab sessions and taught bioinformatics tools (NCBI Blast, InterProScan, PSIPRED, SignalP, ChimeraX, etc.) and supervised student lab projects."
+  },
+  {
+    "objectID": "experience.html#summer-2024",
+    "href": "experience.html#summer-2024",
+    "title": "Teaching",
+    "section": "",
+    "text": "MCD BIO 187AL[syllabus]: Research Immersion Laboratory in Genomic Biology | UCLA | June 2024 – July 2024\n\nWorked as Graduate Teaching Assistant. Led the lab sessions and taught bioinformatics tools (NCBI Blast, InterProScan, PSIPRED, SignalP, ChimeraX, etc.) and supervised student lab projects."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Research Projects",
+    "section": "",
+    "text": "Research Projects\n\n\n\nCourse Projects\nStatistics M254 | Spring 2024\n\nCell Type Annotation in scDNA-seq Data\n\nIn this project, I analyze two datasets: BoneMarrow and Pancreas and apply the Seurat package to identify cell types in single-cell DNA-seq data. I tune the parameters to optimize the clustering results and visualize the cell types using umap plots.\n\nscRNA-seq Data Normalization Methods Comparison[real data][simulated data] and Derivative on General scRNA-seq Model\nDimension Reduction Methods: PCA, GLM-PCA, MDS, NMF, ICA, PNMF, t-SNE, and UMAP\nClustering Algorithms: k-means, k-means++, hierarchical clustering, Seurat clustering, and Evaluation: ARI, Silhouette Score\n\nBiostatistics 200C [course link] | Spring 2024\n\nModel Comparison with Microbiome High-Throughput Seq Data\nStatistical Problems in GLM\nLinear Models, GLM, Survival Analysis, and Longitudinal Data Analysis\n\nBiostatistics 203B [course link] | Winter 2024\n\nLinux Shell Commands, and HPC\nIngesting Big Data Files, and Inquiry and Analysis on Database\nBig Data Visualization, and developing Shiny App for interactive graphics\nStatistical Learning in R\n\nBiostatistics 200B | Winter 2024\n\n[ Poster ] Assessing Key Factors Associated with Depression before Adjuvant Therapy in Women with Breast Cancer\n\nBiostatistics 203A | Fall 2023\n\n[ Report ] Modeling Depression Risk among Noninstitutionalized US Citizens: a Retrospective Study by SAS"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Jiachen Ai | Computational Biology & Human Genetics",
+    "section": "",
+    "text": "Clustering on Mice DNA Methylation Aging Pattern\nGraduate Student Researcher | supervised by Dr. Feng Gao\n\nApplied K-means clustering to study methylation profiles across different aging stages in mice (young, midlife, late-life).\n\nLongitudinal Study on Flu Vaccination Impact: DNA Methylation Influence the Regulation of RIG‐I Signaling Within UGA6 Cohort\nGraduate Student Researcher | supervised by Dr. Matteo Pellegrini in his Lab\n\nMultivariate linear regression with LOOCV to establish prediction models for associations between DNA methylation CpG sites and cellular signaling pathway with sero-protection after influenza injection at day0 and day28, with considering epigenetic confounders, including age, gender, BMI, and cell types.\n\n(Workshop) Computational Genomics Summer Institute (CGSI)\nWarren Alpert Computational Biology and AI Network Fellow\n\nCollaborated with faculty on epigenetics data analysis using machine learning and attended workshops on biobanks and AI in biomedical research."
+  },
+  {
+    "objectID": "research.html#current",
+    "href": "research.html#current",
+    "title": "Jiachen Ai | Computational Biology & Human Genetics",
+    "section": "",
+    "text": "Clustering on Mice DNA Methylation Aging Pattern\nGraduate Student Researcher | supervised by Dr. Feng Gao\n\nApplied K-means clustering to study methylation profiles across different aging stages in mice (young, midlife, late-life).\n\nLongitudinal Study on Flu Vaccination Impact: DNA Methylation Influence the Regulation of RIG‐I Signaling Within UGA6 Cohort\nGraduate Student Researcher | supervised by Dr. Matteo Pellegrini in his Lab\n\nMultivariate linear regression with LOOCV to establish prediction models for associations between DNA methylation CpG sites and cellular signaling pathway with sero-protection after influenza injection at day0 and day28, with considering epigenetic confounders, including age, gender, BMI, and cell types.\n\n(Workshop) Computational Genomics Summer Institute (CGSI)\nWarren Alpert Computational Biology and AI Network Fellow\n\nCollaborated with faculty on epigenetics data analysis using machine learning and attended workshops on biobanks and AI in biomedical research."
+  },
+  {
+    "objectID": "research.html#section",
+    "href": "research.html#section",
+    "title": "Jiachen Ai | Computational Biology & Human Genetics",
+    "section": "2021 – 2023",
+    "text": "2021 – 2023\nStatistical Data Analysis for Biology and Biomedicine Research\nUndergraduate Research Assistant\n\nBy multivariate regression in R and found significant correlation between rice yield and irrigation amount in 5 growing stages.\nVia R, performed logistic regression with backward selection and found 3 categorical variables that correlated with semen quality.\nThrough deduction and proofs with Markov chains, multivariable calculus and matrices, discussed the recurrence and transience of random walks in three dimensions."
+  },
+  {
+    "objectID": "research.html#section-1",
+    "href": "research.html#section-1",
+    "title": "Jiachen Ai | Computational Biology & Human Genetics",
+    "section": "2019 – 2020",
+    "text": "2019 – 2020\nLymphocyte Regeneration after Thymocyte Damage in Zebrafish[presentation slides]\nVolunteer | supervised by Dr. Li Li\n\nDiscovered that the Cxcl12b/Cxcr4b chemokine signaling pathway plays a key role in the repair of zebrafish T-lymphocytes by real-time PCR (RT-qPCR) and then demonstrated the finding using a receptor antagonist, WZ811.\nDetected apoptosis and a significant reduction of thymus lymphocytes through whole mount in situ hybridization (WISH) and confocal microscopy, in zebrafish treated with 2 mM Metronidazole for 12 hours in vivo."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jiachen Ai | Computational Biology & Human Genetics",
+    "section": "",
+    "text": "LinkedIn\n  \n  \n    \n     Email\n  \n  \n    \n     CV"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Jiachen Ai | Computational Biology & Human Genetics",
+    "section": "About Me",
+    "text": "About Me\nI’m a graduate student at UCLA, diving into the exciting world of biostatistics, computational biology, and epigenetics, currently pursuing a Master’s in Biostatistics at the Fielding School of Public Health. My research explores gene expression patterns across epigenomic, transcriptomic, and cytokine levels, using cutting-edge models to uncover biomarkers and build predictive models related to aging, vaccines, and diseases.\nI’m passionate about mastering mathematical and statistical methods for genetic analysis to push the boundaries of epigenetic research and contribute to the future of precision medicine and personalized healthcare!"
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Jiachen Ai | Computational Biology & Human Genetics",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nEpigenetics: Investigating dynamics of quintessential epigenomic biomarkers during lifespan.\nStatistical Genetics: Modeling gene expression patterns across epigenomic, transcriptomic, and cytokine levels using linear, nonlinear, or statistical learning models to identify biomarkers and build predictive models related to age, vaccines, and chronic diseases.\nBioinformatics: Developing computational tools to map CpG sites to methylation patterns and optimizing algorithms for analyzing high-throughput sequencing data.\n\n\nFeatured Projects\n\nClustering on Mice DNA Methylation Aging Pattern: Applied K-means clustering to study methylation profiles across different aging stages in mice (young, midlife, late-life).\nLongitudinal Study on Flu Vaccination Impact: Established prediction models for associations between DNA methylation CpG sites and cellular signaling pathways with sero-protection after influenza injection at day0 and day28, considering epigenetic confounders\nLymphocyte Regeneration after Thymocyte Damage in Zebrafish: Discovered the Cxcl12b/Cxcr4b chemokine signaling pathway plays a key role in zebrafish T-lymphocyte after-damage repairment."
+  },
+  {
+    "objectID": "index.html#lets-connect",
+    "href": "index.html#lets-connect",
+    "title": "Jiachen Ai | Computational Biology & Human Genetics",
+    "section": "Let’s Connect",
+    "text": "Let’s Connect\nFeel free to explore my CV or reach out via:\n\nEmail: jiachenai@g.ucla.edu\n\nPhone: +1 424-293-9716\nLinkedIn: Jiachen Ai"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]
