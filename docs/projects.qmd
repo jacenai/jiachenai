@@ -1,0 +1,39 @@
+# Research Projects
+
+------------------------------------------------------------------------
+
+# Course Projects
+
+**Statistics M254** | Spring 2024
+
+-   [Cell Type Annotation in scDNA-seq Data](https://jacenai.github.io/Biostatistics/Final_Project.html)
+
+    -   In this project, I analyze two datasets: BoneMarrow and Pancreas and apply the [Seurat](https://satijalab.org/seurat/) package to identify cell types in single-cell DNA-seq data. I tune the parameters to optimize the clustering results and visualize the cell types using umap plots.
+
+-   scRNA-seq Data Normalization Methods Comparison[\[real data\]](https://jacenai.github.io/Biostatistics/Normalizaion_comparision&Derivative_general_scRNA_model.html#q3.)[\[simulated data\]](https://jacenai.github.io/Biostatistics/Normalizaion_comparision&Derivative_general_scRNA_model.html#section-2) and [Derivative on General scRNA-seq Model](https://jacenai.github.io/Biostatistics/Normalizaion_comparision&Derivative_general_scRNA_model.html#part-2-simulated-data)
+-  Dimension Reduction Methods: [PCA](https://jacenai.github.io/Biostatistics/254_dimen_reduc.html#question-1), [GLM-PCA, MDS](https://jacenai.github.io/Biostatistics/254_dimen_reduc.html#question-5), NMF, ICA, PNMF, t-SNE, and UMAP
+- Clustering Algorithms: [k-means, k-means++, hierarchical clustering, Seurat clustering](https://jacenai.github.io/Biostatistics/254_Clustering&Evaluation#question-2), and Evaluation: [ARI, Silhouette Score](https://jacenai.github.io/Biostatistics/254_Clustering&Evaluation#question-3)
+
+**Biostatistics 200C** [\[course link\]](https://ucla-biostat-200c.github.io/2023spring/schedule/schedule.html) \| Spring 2024
+
+-   [Model Comparison with Microbiome High-Throughput Seq Data](https://jacenai.github.io/Biostatistics/Microbio_seq.html)
+-   [Statistical Problems in GLM](https://jacenai.github.io/Biostatistics/Stat_Prob_GLM.html)
+-   [Linear Models](https://jacenai.github.io/Biostatistics/200C_hw1_show.html), [GLM](https://jacenai.github.io/Biostatistics/200C_hw1_show.html#glm-model-fitting), [Survival Analysis](https://jacenai.github.io/Biostatistics/Survival&longitudinal.html#survival-data-analysis), and [Longitudinal Data Analysis](https://jacenai.github.io/Biostatistics/Survival&longitudinal.html#longitudinal-data-analysis)
+
+**Biostatistics 203B** [\[course link\]](https://ucla-biostat-203b.github.io/2024winter/schedule/schedule-lec1.html) | Winter 2024
+
+-   [Linux Shell Commands](https://jacenai.github.io/Biostatistics/linux_basic_show.html#linux-shell-commands), and [HPC](https://jacenai.github.io/Biostatistics/linux_basic_show.html#notes-on-usage-of-hoffman2)
+-   [Ingesting Big Data Files](https://jacenai.github.io/biostat-203b-2024-winter/hw2/hw2sol.html), and [Inquiry and Analysis on Database](https://jacenai.github.io/biostat-203b-2024-winter/hw4/hw4sol.html)
+-   [Big Data Visualization](https://jacenai.github.io/biostat-203b-2024-winter/hw3/hw3sol.html), and developing [Shiny App](https://jacenai.github.io/biostat-203b-2024-winter/hw4/Rshiny_show.html) for interactive graphics
+-   [Statistical Learning in R](https://jacenai.github.io/biostat-203b-2024-winter/hw5/hw5sol.html)
+
+
+**Biostatistics 200B** | Winter 2024
+
+-   [\[ Poster \]](assets/200B_poster.pdf) Assessing Key Factors Associated with Depression before Adjuvant Therapy in Women with Breast Cancer
+
+**Biostatistics 203A** | Fall 2023
+
+-   [\[ Report \]](assets/Biostat203_Midtern_project.pdf) Modeling Depression Risk among Noninstitutionalized US Citizens: a Retrospective Study by SAS
+
+

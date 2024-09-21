@@ -1,0 +1,92 @@
+[**CV in PDF**](assets/CV.pdf) 
+
+# Education
+
+**University of California, Los Angeles** \| Sept. 2023 -- Current
+
+\newline
+
+Master's in Biostatistics 📊 \| GPA: 4.00/4.00 (Four Quarters) \| [Transcript](assets/09.19_transcript.pdf)
+
+Honors:
+
+-   Steve Wallace Policy Fellowship, [Jun. 2024](assets/Offer_Steve_Wallace_Fellows.pdf)
+-   APEx Funding at Department of Human Genetics, [May 2024](assets/APEx_Funding.pdf)
+-   Twice Fielding School of Public Health Dean's Leadership Grant, [Apr. 2024](assets/Jiachen_Ai_Dean's_Leadership_Grant.pdf) & [May 2023](assets/Ai,Jiachen_DLG_Continuing.pdf)
+
+------------------------------------------------------------------------
+
+**Southwest University** \| Sept. 2018 -- June 2022
+
+\newline
+
+Bachelor of Science in Biological Sciences 🧬 \| GPA: 3.84/4.00 (Rank: 2nd/65) \| [Transcript](assets/Jiachen_Ai_WES_report.pdf)
+
+Honors:
+
+-   Outstanding Graduate, Intern & Thesis, June 2022\
+-   International or Overseas Research Award, Dec. 2021\
+-   Third-Class Scholarships for Academic Excellence, Dec. 2021 & 2020\
+-   Second-Class Scholarship & Merit Award, Dec. 2019
+
+------------------------------------------------------------------------
+
+# Publication
+
+-   **Ai, J.** (2021). *Lifestyle does affect semen quality: factor determination in a statistical way.* Lecture Notes in Medicine and Life Sciences, 4, 163--171. [Read Article](https://www.clausiuspress.com/conference/article/artId/7114.html)
+
+------------------------------------------------------------------------
+
+# Skills
+
+-   **Computational & Statistical Skills**:
+
+    -   R, Python (NumPy, Pandas, Matplotlib), SAS, STATA, SQL, LaTeX
+    -   Linux scripting (Git/GitHub)
+    -   Container technology (Docker)
+    -   Data wrangling (Tidyverse), Data visualization (ggplot2)
+    -   Databases: OLAP (DuckDB), Google BigQuery
+    -   Frontend development (Rshiny, web app)
+    -   Cloud computing (GCP, AWS, Azure, OCI)
+    -   High-performance computing (HPC) on cluster (Hoffman2)
+    -   Machine/deep learning (scikit-learn, TensorFlow, Keras)
+
+-   **Bioinformatics Tools**:
+
+    -   NCBI BLAST, InterProScan, JPRED4, PSIPRED, SignalP, DeepTMHMM, WoLF PSORT, SignalP, AlphaFold3 server, ChimeraX
+    -   Ensembl, UCSC Genome Browser, Galaxy, Bioconductor, BEDTools, STAR, DESeq2, edgeR, Seurat
+
+-   **Laboratory Techniques**:
+
+    -   PCR, qPCR, DNA/RNA extraction and quantification, CRISPR/Cas9, cloning, electrophoresis, next-generation sequencing library preparation
+    -   RNA-seq, ChIP-seq, single-cell RNA-seq, Bisulfite sequencing, GWAS (Genome-Wide Association Studies)
+    -   Western blotting, ELISA, mass spectrometry, protein-DNA interaction assays, chromatin immunoprecipitation (ChIP)
+    -   Cell culture, transfection, microscopy (confocal, fluorescence), immunofluorescence, flow cytometry
+
+------------------------------------------------------------------------
+
+# Coursework
+
+| **Course**                       | **Description**                                                                    | **Instructor**                                                                                                                                                                                                                                  |
+|-----------------|---------------------------------------|----------------|
+| BIOSTAT 200A, \s 200 B, \s 200 C | Methods in Biostatistics                                                           | [Dr. A. Klomhaus](https://profiles.ucla.edu/alexandra.klomhaus), <br> [Dr. C. M. Crespi](https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi), <br> [Dr. Jin Zhou](https://ph.ucla.edu/about/faculty-staff-directory/jin-zhou) |
+| BIOSTAT 203A, \s 203 B           | Intro to Data Management, \s Statistical Computing <br> Intro to Data Science by R | [Dr. Grace Kim](https://bioscience.ucla.edu/people/hyun-grace-kim/), <br> [Dr. Hua Zhou](https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou)                                                                                            |
+| STAT M254                        | Statistical Methods in Computational Biology                                       | [Dr. Jessica Li](http://jsb.ucla.edu/about-jingyi-jessica-li/)                                                                                                                                                                                  |
+| MATH 33A, \s 115A                | Linear Algebra                                                                     | [Dr. Pablo S. Ocal](https://pabloocal.github.io/index.html)                                                                                                                                                                                     |
+| MATH 131A                        | Analysis (in progress)                                                             |                                                                                                                                                                                                                                                 |
+| MATH 164                         | Optimization (in progress)                                                         |                                                                                                                                                                                                                                                 |
+| MATH 170E, \s S                  | Probability Theory and Statistics                                                  |                                                                                                                                                                                                                                                 |
+| STAT 100C                        | Linear Models                                                                      | [Dr. Nicolas Christou](http://www.stat.ucla.edu/~nchristo/)                                                                                                                                                                                     |
+|                                  | Infinite Theory, \s Calculus, \s and Partial Differential Equations                |                                                                                                                                                                                                                                                 |
+|                                  | Discrete Mathematics                                                               |                                                                                                                                                                                                                                                 |
+|                                  | Python and Computational Thinking                                                  |                                                                                                                                                                                                                                                 |
+| DS BMED 208                      | Recent Research in Machine Learning in Medicine (in progress)                      | [Dr. Jason Ernst](https://ernstlab.biolchem.ucla.edu/people/jason-ernst/)                                                                                                                                                                       |
+|                                  | Bioinformatics                                                                     |                                                                                                                                                                                                                                                 |
+|                                  | Biochemistry, \s Organic Chemistry, \s General Chemistry                           |                                                                                                                                                                                                                                                 |
+|                                  | Genetics, \s Human Genetics, \s Genetic Engineering                                |                                                                                                                                                                                                                                                 |
+|                                  | Molecular Biology, \s Cell Biology                                                 |                                                                                                                                                                                                                                                 |
+|                                  | Immunology, \s Microbiology                                                        |                                                                                                                                                                                                                                                 |
+|                                  | Ecology, \s Evolutionary Biology                                                   |                                                                                                                                                                                                                                                 |
+|                                  | Anatomy and Physiology, \s Neurobiology                                            |                                                                                                                                                                                                                                                 |
+|                                  | Developmental Biology, \s Plant Biology                                            |                                                                                                                                                                                                                                                 |
+| PUB HLTA, \s B                   | Epidemiology, Public Health Policy, Community & Environmental Health Sciences      |                                                                                                                                                                                                                                                 |
