@@ -16,7 +16,7 @@ Graduate Student Researcher | supervised by [Dr. Matteo Pellegrini](https://meds
 - Multivariate linear regression with LOOCV to establish prediction models for associations between DNA methylation CpG sites and cellular signaling pathway with sero-protection after influenza injection at day0 and day28, with considering epigenetic confounders, including age, gender, BMI, and cell types.
 
 
-<span style="font-size: 26px; font-weight: 500;">Computational Genomics Summer Institute ([CGSI](http://computationalgenomics.bioinformatics.ucla.edu/))</span>
+<span style="font-size: 26px; font-weight: 500;">(Workshop) Computational Genomics Summer Institute ([CGSI](http://computationalgenomics.bioinformatics.ucla.edu/))</span>
 
 Warren Alpert Computational Biology and AI Network Fellow
 
