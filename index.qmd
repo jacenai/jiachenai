@@ -37,8 +37,8 @@ I'm passionate about mastering mathematical and statistical methods for genetic 
 
 ### Featured Projects
 
--  [**Clustering on Mice DNA Methylation Aging Pattern**](http://localhost:22222/research.html#current): Applied K-means clustering to study methylation profiles across different aging stages in mice (young, midlife, late-life).
--  [**Longitudinal Study on Flu Vaccination Impact**](http://localhost:22222/research.html#current): Established prediction models for associations between DNA methylation CpG sites and cellular signaling pathways with sero-protection after influenza injection at day0 and day28, considering epigenetic confounders
+-  [**Clustering on Mice DNA Methylation Aging Pattern**](https://jacenai.github.io/jiachenai/research.html#current): Applied K-means clustering to study methylation profiles across different aging stages in mice (young, midlife, late-life).
+-  [**Longitudinal Study on Flu Vaccination Impact**](https://jacenai.github.io/jiachenai/research.html#current): Established prediction models for associations between DNA methylation CpG sites and cellular signaling pathways with sero-protection after influenza injection at day0 and day28, considering epigenetic confounders
 -  [**Lymphocyte Regeneration after Thymocyte Damage in Zebrafish**](https://jacenai.github.io/jiachenai/research.html#section-1): Discovered the Cxcl12b/Cxcr4b chemokine signaling pathway plays a key role in zebrafish T-lymphocyte after-damage repairment.
 
 
