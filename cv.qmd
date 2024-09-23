@@ -1,4 +1,4 @@
-[**CV in PDF**](assets/CV.pdf) 
+<a href="assets/CV.pdf" style="font-size: 30px;">**CV in PDF**</a>
 
 # Education
 
@@ -55,7 +55,7 @@ Honors:
 
     -   PCR, qPCR, DNA/RNA extraction and quantification, CRISPR/Cas9, cloning, electrophoresis, next-generation sequencing library preparation
     -   RNA-seq, ChIP-seq, single-cell RNA-seq, Bisulfite sequencing, GWAS (Genome-Wide Association Studies)
-    -   Western blotting, ELISA, mass spectrometry, protein-DNA interaction assays, chromatin immunoprecipitation (ChIP)
+    -   Western Blot, ELISA, mass spectrometry, protein-DNA interaction assays, chromatin immunoprecipitation (ChIP)
     -   Cell culture, transfection, microscopy (confocal, fluorescence), immunofluorescence, flow cytometry
 
 ------------------------------------------------------------------------

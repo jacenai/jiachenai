@@ -4,31 +4,32 @@
 
 **MCD BIO 187AL**[\[syllabus\]](assets/MCDB187AL-Summer2024-Syllabus-V2.pdf): Research Immersion Laboratory in Genomic Biology | UCLA | June 2024 – July 2024
  
-- Worked as **Graduate Teaching Assistant**. Led the [lab sessions](https://drive.google.com/drive/folders/17FTYc4qdWfscybALoi85EP3VocD3giV6?usp=drive_link) and taught bioinformatics tools (NCBI Blast, InterProScan, PSIPRED, SignalP, [ChimeraX](https://drive.google.com/file/d/1g6SUgFxOo0I3-QbX5CxZ0P0ivMQi9Idj/view?usp=sharing), etc.) and supervised student lab projects.
+- Worked as **Graduate Teaching Assistant**. Led the [lab sessions](https://drive.google.com/drive/folders/17FTYc4qdWfscybALoi85EP3VocD3giV6?usp=drive_link) and TA office hours, demonstrating the use of bioinformatics tools (NCBI Blast, InterProScan, PSIPRED, SignalP, [ChimeraX](https://drive.google.com/file/d/1g6SUgFxOo0I3-QbX5CxZ0P0ivMQi9Idj/view?usp=sharing), etc.) and mentored student final projects.
 
 ---
 
-# Professional Experience
+# Experience
 
 
 [**Higher Education in Public Health**](assets/Higher_Education_in_Public_Health.pdf) | UCLA | Apr. 2024
 
-- As one of panel members, presented on UCLA’s biostatistics program for prospective students and answered inquiries.
+- As one of panel members, presented on UCLA’s biostatistics programs for prospective students and answered inquiries.
 
 
 **Life Science Administrative Office Assistant** | Southwest University | Oct. 2018 – Jun. 2021
 
-- Provided guidance to approximately 40 freshmen regarding their academic performance, elective courses, clubs, research mentors, etc.
-- Held 5 meetings per semester. Liaised between administrative teachers and the whole class (65 schoolmates), including giving feedback to inquiries from students.
+- Organized five meetings per semester, acting as the liaison between administrative staff and a class of 65 students, addressing inquiries and providing feedback.
+- Advised 41 freshmen on academic performance, course selection, extracurriculars, and research opportunities.
 
 ---
 
 # Volunteer
 
-[**Central Library**](assets/Certificate_of_Volunteer_Service_at_Southwest University_Library.pdf) | Southwest University | Oct. 2019 – Jan. 2020
+[**Central Library**](assets/Certificate_of_Volunteer.pdf) | Southwest University | Oct. 2019 – Jan. 2020
 
-- Assisted in organizing the library, including book classification, book borrowing, and book return.
-- Organized a charity evening for over 200 people sponsored by the SWU Library Volunteer Association, including being responsible for venue reservation and decoration.
+- Coordinated a charity evening for over 200 attendees, sponsored by the SWU Library Volunteer Association, handling venue reservations and decoration.
+- Assisted with organizing the library, including classifying books and managing borrowing and returns.
+
 
 ---
 
@@ -36,10 +37,11 @@
 
 [**Western Biomedical Technology Inc.**](https://www.wstbio.com/) | Immunization Team | IT Department | Mar. 2021 – Jun. 2021
 
-- Applied Python and convolution method, developed a light-band recognition program, and improved the precision in western-blot by 20%.
-- Devised a program of calculating standard concentration curves in ELISA utilizing R, increasing the calculation speed by 60%.
-- Presentation every two weeks. Responsible for experiments and reports in Immunology, Histopathology, and Molecular Biology.
-- Promoted the work efficiency of the whole team by virtue of liaising with customers and colleagues in different departments.
+- Developed a Python program using convolution methods to recognize light bands, which improved the accuracy of western blot results.
+-	Created an R-based program for calculating standard concentration curves in ELISA, boosting calculation speed.
+-	Presented biweekly and oversaw experiments and reports in Immunology, Histopathology, and Molecular Biology.
+-	Enhanced team efficiency by coordinating effectively with customers and colleagues across departments.
+
  
 
 ---
