@@ -1,26 +1,28 @@
+# Research Experience
 
 ## 2024 – Current
 
-<span style="font-size: 26px; font-weight: 500;">Clustering on Mice DNA Methylation Aging Pattern</span>
+<span style="font-size: 26px; font-weight: 500;">DNA Methylation Biomarkers of Aging in Male Mice Colon from Non-Linear Models</span>
 
-Graduate Student Researcher  | supervised by [Dr. Feng Gao](https://ph.ucla.edu/about/faculty-staff-directory/feng-gao)
-
-
-- Applied K-means clustering to study methylation profiles across different aging stages in mice (young, midlife, late-life).  
+Graduate Student Researcher  | Supervised by [Dr. Feng Gao](https://ph.ucla.edu/about/faculty-staff-directory/feng-gao)
 
 
-<span style="font-size: 26px; font-weight: 500;">Longitudinal Study on Flu Vaccination Impact: DNA Methylation Influence the Regulation of RIG‐I Signaling Within UGA6 Cohort</span>
-
-Graduate Student Researcher | supervised by [Dr. Matteo Pellegrini](https://medschool.ucla.edu/people/matteo-pellegrini-phd) in his [Lab](https://www.pellegrini.mcdb.ucla.edu/)
-
-- Multivariate linear regression with LOOCV to establish prediction models for associations between DNA methylation CpG sites and cellular signaling pathway with sero-protection after influenza injection at day0 and day28, with considering epigenetic confounders, including age, gender, BMI, and cell types.
+- While general linear epigenetic models, such as [Horvath's aging clock](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-10-r115), have been widely established, recent reports indicate that [non-linear methylation dynamics](https://www.nature.com/articles/s41467-024-47316-2) predominantly influence nervous system genes and are enriched in bivalently marked chromatin regions. This project aims to identify age-related DNA methylation biomarkers using a non-linear model of male mice colon tissue. By applying k-means based unsupervised hierarchical clustering ([Clust](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1536-8)) on CpG methylation matrices, we identify differentially methylated regions ([DMRs](https://en.wikipedia.org/wiki/Differentially_methylated_region)) across three aging stages: young, midlife, and late-life. These DMRs are then analyzed using a [neural network](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11153885/) to further characterize age-related biomarkers. The findings will enhance our understanding of the epigenetic mechanisms driving aging and contribute to the broader understanding of age-associated methylation patterns.
 
 
-<span style="font-size: 26px; font-weight: 500;">(Workshop) Computational Genomics Summer Institute ([CGSI](http://computationalgenomics.bioinformatics.ucla.edu/))</span>
+<span style="font-size: 26px; font-weight: 500;">Epigenetic Regulation of Influenza Vaccination Immune Response: A Multi-Omics Analysis within the UGA6 Cohort</span>
+
+Graduate Student Researcher | Supervised by [Dr. Matteo Pellegrini](https://medschool.ucla.edu/people/matteo-pellegrini-phd) in his [Lab](https://www.pellegrini.mcdb.ucla.edu/)
+
+- Influenza vaccination, a prevalent prevention for annually recurring contagious pandemics, elicits immune responses that are possibly induced by DNA methylation. It has been shown that the immune response to influenza vaccination is potentially regulated by DNA methylation on [RIG‐I signaling pathway](https://www.nature.com/articles/s41598-024-51665-9), an important regulator of viral responses, and [T cell innate antiviral pathways](https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-024-01730-x), within University of Georgia cohorts (UGA3, 4, and 5). This project aims to validate and expand on these findings by integrating multi-omics data from a larger UGA6 cohort to identify the epigenetic factors influencing the immune response to influenza vaccination. We employed multivariate linear regression models with leave-one-out cross-validation (LOOCV) to investigate associations between DNA methylation profiles and sero-protection levels at day 0 and day 28 post-vaccination, as well as sero-conversion at day 28. Significant CpG sites were mapped to relevant genes and pathways using tools such as [GREAT](https://pubmed.ncbi.nlm.nih.gov/20436461/) and [Enrichr](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4987924/) to identify biological processes involved in the immune response to influenza vaccines. In parallel, similar predictive models were constructed for RNA-seq and cytokine datasets, and the multi-omics data were integrated using tensor-based coupled matrix-tensor factorization ([CMTF](https://academic.oup.com/pnasnexus/article/3/5/pgae185/7664540)). This approach provides a comprehensive understanding of the epigenetic regulation of immune responses to influenza vaccines and identifies potential therapeutic targets, contributing to advancements in precision medicine for influenza vaccination.
+
+
+<span style="font-size: 26px; font-weight: 500;">(Workshop) 2024 Computational Genomics Summer Institute ([CGSI](http://computationalgenomics.bioinformatics.ucla.edu/))</span>
 
 Warren Alpert Computational Biology and AI Network Fellow
 
-- Collaborated with faculty on epigenetics data analysis using machine learning and attended workshops on biobanks and AI in biomedical research.
+- Participating in the Computational Genomics Summer Institute (CGSI) for two consecutive summers (2024 and 2025). Engaged in [workshops](http://computationalgenomics.bioinformatics.ucla.edu/schedule/) on genomic biobanks and computational genomics with a focus on computational medicine.
+- Working with fellows across institutions to develop a collaborative research project focusing on the analysis of epigenetics data under mentorship from CGSI faculty. Responsibilities include project proposal presentations, final presentations, and comprehensive write-ups. 
 
 ## 2021 – 2023
 
@@ -28,16 +30,34 @@ Warren Alpert Computational Biology and AI Network Fellow
 
 Undergraduate Research Assistant 
 
+- Based on stochastic process theory, abstracted random walks into a time-homogeneous Markov chain and studied their recurrent and transient properties by reviewing derivations and proofs.
 - By multivariate regression in R and found significant correlation between rice yield and irrigation amount in 5 growing stages.
-- Via R, performed logistic regression with backward selection and found 3 categorical variables that correlated with semen quality.
-- Through deduction and proofs with Markov chains, multivariable calculus and matrices, discussed the recurrence and transience of random walks in three dimensions.
+- Via R, performed logistic regression and found 3 categorical variables that correlated with semen quality.
+
+## 2020 – 2021
+
+<span style="font-size: 26px; font-weight: 500;">Review: Lifestyle Factors Affecting Semen Quality</span>
+
+- This review examined the impact of dietary habits, BMI, alcohol, smoking, stress, mobile phone usage, and microplastics on sperm parameters. It highlighted that a balanced diet, exercise, and stress management improve semen quality, while smoking, alcohol, and microplastic exposure impair it. Statistical models like multivariate regression and meta-analysis were used to assess fertility impacts, emphasizing the public health importance of addressing these lifestyle factors.
 
 ## 2019 – 2020
 
-<span style="font-size: 26px; font-weight: 500;">Lymphocyte Regeneration after Thymocyte Damage in Zebrafish[\[presentation slides\]](assets/LYMPHOCYTE_REGENERATION_AFTER_THYMOCYTE_DAMAGE_IN ZEBRAFISH.pdf)</span>
+<span style="font-size: 26px; font-weight: 500;">Lymphocyte Regeneration after Thymocyte Damage in Zebrafish [\[presentation slides\]](assets/LYMPHOCYTE_REGENERATION_AFTER_THYMOCYTE_DAMAGE_IN ZEBRAFISH.pdf)</span>
 
-Volunteer | supervised by [Dr. Li Li](https://people.ucas.ac.cn/~0064236?language=en)
+Volunteer | Supervised by [Dr. Li Li](https://people.ucas.ac.cn/~0064236?language=en)
 
-- Discovered that the Cxcl12b/Cxcr4b chemokine signaling pathway plays a key role in the repair of zebrafish T-lymphocytes by real-time PCR (RT-qPCR) and then demonstrated the finding using a receptor antagonist, WZ811.
-- Detected apoptosis and a significant reduction of thymus lymphocytes through whole mount in situ hybridization (WISH) and confocal microscopy, in zebrafish treated with 2 mM Metronidazole for 12 hours in vivo.
+- Thymus atrophy and T lymphocyte deficiencies are common in aging and following damage caused by factors such as radiation, chemotherapy, or bacterial infections, leading to impaired immune function. This study investigates the regeneration of T lymphocytes in zebrafish after thymocyte injury, leveraging the transparency and genetic tractability of zebrafish as a model organism. A damage model was constructed by treating [Tg(coro1a:Dendra2-NTR)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9503817/) transgenic zebrafish with 2 mM Metronidazole for 12 hours, resulting in significant lymphocyte reduction and apoptosis in the thymus, as confirmed by whole-mount in situ hybridization ([WISH](https://pubmed.ncbi.nlm.nih.gov/25218374/)) and confocal microscopy.
+
+- Through real-time PCR ([RT-qPCR](https://www.ncbi.nlm.nih.gov/probe/docs/techqpcr/)), we discovered that the [CXCL12/CXCR4 chemokine signaling pathway](https://www.ijbs.com/v19p3341.htm) plays a critical role in the regeneration of thymic lymphocytes. Inhibition of this pathway with [WZ811](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5040679/), a CXCL12/CXCR4 receptor antagonist, significantly impaired lymphocyte recovery. Additionally, lineage tracing experiments revealed that most regenerating lymphocytes originated from hematopoietic stem cells migrating from the kidney to the thymus. These findings highlight the importance of the CXCL12/CXCR4 pathway in lymphocyte regeneration and offer insights into the mechanisms of immune recovery after thymocyte damage.
+
+
+
+------------------------------------------------------------------------
+
+# Publication
+
+- **Ai, J.** (2021). *Lifestyle does affect semen quality: factor determination in a statistical way.* Lecture Notes in Medicine and Life Sciences, 4, 163--171. [Read Article](https://www.clausiuspress.com/conference/article/artId/7114.html)
+
+
+
 

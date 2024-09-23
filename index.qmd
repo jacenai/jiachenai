@@ -25,21 +25,23 @@ about:
 
 ## About Me
 
-I'm a graduate student at UCLA, diving into the exciting world of biostatistics, computational biology, and epigenetics, currently pursuing a Master's in Biostatistics at the [Fielding School of Public Health](https://ph.ucla.edu/). My [research](research.qmd) explores gene expression patterns across epigenomic, transcriptomic, and cytokine levels, using cutting-edge models to uncover biomarkers and build predictive models related to aging, vaccines, and diseases.
+I'm a graduate student at UCLA, diving into the exciting world of biostatistics, computational biology, and epigenetics, currently pursuing a Master's in Biostatistics at the [Fielding School of Public Health](https://ph.ucla.edu/). My [research](research.qmd) explores gene expression patterns across epigenomic, transcriptomic, and proteomic levels, using cutting-edge models to uncover biomarkers, elaborate biological mechanisms, and build predictive models related to aging, vaccines, and diseases, especially in the context of epigenetic regulation.
 
-I'm passionate about mastering mathematical and statistical methods for genetic analysis to push the boundaries of epigenetic research and contribute to the future of precision medicine and personalized healthcare!
+I'm passionate about mastering mathematical and statistical methods for genetic analysis to push the boundaries of epigenetic research and contribute to the future of vaccine development and precision medicine!
 
 ## Research Interests
 
-1)  **Epigenetics**: Investigating dynamics of quintessential epigenomic biomarkers during lifespan.
-2)  **Statistical Genetics**: Modeling gene expression patterns across epigenomic, transcriptomic, and cytokine levels using linear, nonlinear, or statistical learning models to identify biomarkers and build predictive models related to age, vaccines, and chronic diseases.
-3)  **Bioinformatics**: Developing computational tools to map CpG sites to methylation patterns and optimizing algorithms for analyzing high-throughput sequencing data.
+1)  **Epigenetics**: Investigating dynamics of quintessential epigenomic biomarkers during lifespan. Studying the impact of DNA methylation, histone modification, and non-coding RNA on gene expression regulation and cellular signaling pathways.
+2)  **Statistical Genetics**: Modeling gene expression patterns across epigenomic, transcriptomic, and proteomic levels by linear or nonlinear methods and identifying biomarkers to build predictive models related to age, vaccines, and chronic diseases.
+3)  **Bioinformatics**: Developing computational tools to map CpG sites to methylation patterns and optimizing algorithms for efficiently digging into high-throughput sequencing data purposes.
 
 ### Featured Projects
 
--  [**Clustering on Mice DNA Methylation Aging Pattern**](https://jacenai.github.io/jiachenai/research.html#current): Applied K-means clustering to study methylation profiles across different aging stages in mice (young, midlife, late-life).
--  [**Longitudinal Study on Flu Vaccination Impact**](https://jacenai.github.io/jiachenai/research.html#current): Established prediction models for associations between DNA methylation CpG sites and cellular signaling pathways with sero-protection after influenza injection at day0 and day28, considering epigenetic confounders
--  [**Lymphocyte Regeneration after Thymocyte Damage in Zebrafish**](https://jacenai.github.io/jiachenai/research.html#section-1): Discovered the Cxcl12b/Cxcr4b chemokine signaling pathway plays a key role in zebrafish T-lymphocyte after-damage repairment.
+-  [**DNA Methylation Biomarkers of Aging in Male Mice Colon from Non-Linear Models**](https://jacenai.github.io/jiachenai/research.html#current): Identified age-related DNA methylation biomarkers in male mice colon using non-linear models and k-means clustering, with neural network analysis of DMRs revealing epigenetic mechanisms driving aging.
+
+-  [**Epigenetic Regulation of Influenza Vaccination Immune Response: A Multi-Omics Analysis within the UGA6 Cohort**](https://jacenai.github.io/jiachenai/research.html#current): Revealed the role of DNA methylation in regulating immune responses to influenza vaccination, identifying key CpG sites and the signaling pathway as potential therapeutic targets, and integrated multi-omics data to validate epigenetic influences on immune regulation.
+
+-  [**Lymphocyte Regeneration after Thymocyte Damage in Zebrafish**](https://jacenai.github.io/jiachenai/research.html#section-1): Demonstrated that the CXCL12/CXCR4 chemokine signaling pathway is essential for T lymphocyte regeneration post-thymocyte injury, with most regenerating cells traced back to hematopoietic stem cells migrating from the kidney to the thymus.
 
 
 
@@ -47,7 +49,7 @@ I'm passionate about mastering mathematical and statistical methods for genetic 
 
 Feel free to explore my [CV](cv.qmd) or reach out via:
 
--   **Email:** [jiachenai\@g.ucla.edu](mailto:jiachenai@g.ucla.edu)\
+-   **Email:** [jiachenai\@g.ucla.edu](mailto:jiachenai@g.ucla.edu)
 -   **Phone:** +1 424-293-9716
 -   **LinkedIn:** [Jiachen Ai](https://www.linkedin.com/in/jiachen-ai-966132264/)
 

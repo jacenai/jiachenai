@@ -31,18 +31,13 @@ Honors:
 
 ------------------------------------------------------------------------
 
-# Publication
-
--   **Ai, J.** (2021). *Lifestyle does affect semen quality: factor determination in a statistical way.* Lecture Notes in Medicine and Life Sciences, 4, 163--171. [Read Article](https://www.clausiuspress.com/conference/article/artId/7114.html)
-
-------------------------------------------------------------------------
 
 # Skills
 
 -   **Computational & Statistical Skills**:
 
     -   R, Python (NumPy, Pandas, Matplotlib), SAS, STATA, SQL, LaTeX
-    -   Linux scripting (Git/GitHub)
+    -   Linux scripting, Git/GitHub
     -   Container technology (Docker)
     -   Data wrangling (Tidyverse), Data visualization (ggplot2)
     -   Databases: OLAP (DuckDB), Google BigQuery
@@ -72,7 +67,7 @@ Honors:
 | BIOSTAT 200A, \s 200 B, \s 200 C | Methods in Biostatistics                                                           | [Dr. A. Klomhaus](https://profiles.ucla.edu/alexandra.klomhaus), <br> [Dr. C. M. Crespi](https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi), <br> [Dr. Jin Zhou](https://ph.ucla.edu/about/faculty-staff-directory/jin-zhou) |
 | BIOSTAT 203A, \s 203 B           | Intro to Data Management, \s Statistical Computing <br> Intro to Data Science by R | [Dr. Grace Kim](https://bioscience.ucla.edu/people/hyun-grace-kim/), <br> [Dr. Hua Zhou](https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou)                                                                                            |
 | STAT M254                        | Statistical Methods in Computational Biology                                       | [Dr. Jessica Li](http://jsb.ucla.edu/about-jingyi-jessica-li/)                                                                                                                                                                                  |
-| MATH 33A, \s 115A                | Linear Algebra                                                                     | [Dr. Pablo S. Ocal](https://pabloocal.github.io/index.html)                                                                                                                                                                                     |
+| MATH 115A, \s 33A                 | Linear Algebra                                                                     | [Dr. Pablo S. Ocal](https://pabloocal.github.io/index.html)                                                                                                                                                                                     |
 | MATH 131A                        | Analysis (in progress)                                                             |                                                                                                                                                                                                                                                 |
 | MATH 164                         | Optimization (in progress)                                                         |                                                                                                                                                                                                                                                 |
 | MATH 170E, \s S                  | Probability Theory and Statistics                                                  |                                                                                                                                                                                                                                                 |
@@ -89,4 +84,4 @@ Honors:
 |                                  | Ecology, \s Evolutionary Biology                                                   |                                                                                                                                                                                                                                                 |
 |                                  | Anatomy and Physiology, \s Neurobiology                                            |                                                                                                                                                                                                                                                 |
 |                                  | Developmental Biology, \s Plant Biology                                            |                                                                                                                                                                                                                                                 |
-| PUB HLTA, \s B                   | Epidemiology, Public Health Policy, Community & Environmental Health Sciences      |                                                                                                                                                                                                                                                 |
+| PUB HLT \s A, \s B                   | Epidemiology, Public Health Policy, Community & Environmental Health Sciences      |                                                                                                                                                                                                                                                 |
