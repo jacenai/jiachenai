@@ -6,7 +6,7 @@
 
 \newline
 
-Master's in Biostatistics 📊 \| GPA: 4.00/4.00 (Four Quarters) \| [Transcript](assets/09.19_transcript.pdf)
+Master of Science in Biostatistics 📊 \| GPA: 4.00/4.00 (Four Quarters) \| [Transcript](assets/09.19_transcript.pdf)
 
 Honors:
 
@@ -20,7 +20,7 @@ Honors:
 
 \newline
 
-Bachelor of Science in Biological Sciences 🧬 \| GPA: 3.84/4.00 (Rank: 2nd/65) \| [Transcript](assets/Jiachen_Ai_WES_report.pdf)
+Bachelor of Science in Biology 🧬 \| GPA: 3.84/4.00 (Rank: 2<sup>nd</sup>/65) \| [Transcript](assets/Jiachen_Ai_WES_report.pdf)
 
 Honors:
 
