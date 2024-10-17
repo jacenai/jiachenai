@@ -24,10 +24,10 @@ Graduate Student Researcher  | Supervised by [Dr. Feng Gao](https://ph.ucla.edu/
 
 <span style="font-size: 26px; font-weight: 500;">(Workshop) 2024 Computational Genomics Summer Institute ([CGSI](http://computationalgenomics.bioinformatics.ucla.edu/))</span>
 
-[Warren Alpert Computational Biology and AI Network Fellow](assets/Warren_Alpert_Computational_Biology_Fellow.pdf)
+[Warren Alpert Computational Biology and AI Network Fellow](assets/Warren_Alpert_Computational_Biology_Fellow.pdf) | Supervised by [Dr. Vanessa D Jonsson](https://jonssonlab.com/)
 
 - Participating in the Computational Genomics Summer Institute for two consecutive summers (2024 and 2025). Engaged in [workshops](http://computationalgenomics.bioinformatics.ucla.edu/schedule/) on computational medicine with a focus on genomic biobanks and computational genomics.
-- Working with fellows across institutions to develop a collaborative research project focusing on the analysis of epigenetics data under mentorship from CGSI faculty. Responsibilities include project proposal presentations, final presentations, and comprehensive write-ups. 
+- Working with Dr. Jonsson and her team to infer immune history from RNA-seq data.
 
 ## 2021 – 2023
 
