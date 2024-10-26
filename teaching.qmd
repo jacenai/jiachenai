@@ -1,0 +1,16 @@
+# Teaching
+
+## Summer 2024
+
+**MCD BIO 187AL: Research Immersion Laboratory in Genomic Biology**   
+**Instructor**: [Dr. Lukasz Salwinski](https://scholar.google.com/citations?user=oTgN_eUAAAAJ&hl=en)    
+**Graduate Teaching Assistant** | UCLA | June 2024 – Aug. 2024  
+
+- Course resources: [\[Syllabus\]](assets/MCDB187AL-Summer2024-Syllabus-V2.pdf) | [\[Students' Reviews\]](assets/AI_J._-_241_MCD_BIO_187AL_LAB_1B.pdf)
+
+- Led the [lab sessions](https://drive.google.com/drive/folders/17FTYc4qdWfscybALoi85EP3VocD3giV6?usp=drive_link) and TA office hours. Demonstrated the use of bioinformatics tools (NCBI Blast, InterProScan, PSIPRED, SignalP, [ChimeraX](https://drive.google.com/file/d/1g6SUgFxOo0I3-QbX5CxZ0P0ivMQi9Idj/view?usp=sharing), etc.) and mentored student final projects.
+
+
+
+
+

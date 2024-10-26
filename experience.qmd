@@ -1,29 +1,45 @@
-# Teaching
-
-## Summer 2024
-
-**MCD BIO 187AL**: Research Immersion Laboratory in Genomic Biology | UCLA | June 2024 – July 2024 | [\[syllabus\]](assets/MCDB187AL-Summer2024-Syllabus-V2.pdf)
- 
-- Worked as **Graduate Teaching Assistant**. Led the [lab sessions](https://drive.google.com/drive/folders/17FTYc4qdWfscybALoi85EP3VocD3giV6?usp=drive_link) and TA office hours, demonstrating the use of bioinformatics tools (NCBI Blast, InterProScan, PSIPRED, SignalP, [ChimeraX](https://drive.google.com/file/d/1g6SUgFxOo0I3-QbX5CxZ0P0ivMQi9Idj/view?usp=sharing), etc.) and mentored student final projects.
-
----
-
 # Experience
 
+## Academic
 
-[**Higher Education in Public Health**](assets/Higher_Education_in_Public_Health.pdf) | UCLA | Apr. 2024
+**Graduate Research Assistant** | UCLA | Sept. 2024 – Present
 
-- As one of panel members, presented on UCLA’s biostatistics programs for prospective students and answered inquiries.
+- Working with [Dr. Feng Gao](https://ph.ucla.edu/about/faculty-staff-directory/feng-gao) in the Department of Environmental Health Sciences to conduct research on network-based biomarker discovery for aging clocks using mice colon data.
 
 
-**Life Science Administrative Office Assistant** | Southwest University | Oct. 2018 – Jun. 2021
+**2024 & 2025 Computational Genomics Summer Institute ([CGSI](http://computationalgenomics.bioinformatics.ucla.edu/))**    
+[Warren Alpert Computational Biology and AI Network Fellow](assets/Warren_Alpert_Computational_Biology_Fellow.pdf) | UCLA | June 2024 – Sept. 2025
+
+- Participating in the Computational Genomics Summer Institute for two consecutive summers (2024 and 2025). Engaged in [workshops](http://computationalgenomics.bioinformatics.ucla.edu/schedule/) on computational medicine with a focus on genomic biobanks and computational genomics.
+- Working with [Dr. Vanessa D Jonsson](https://jonssonlab.com/people) and her team to infer immune history from RNA-seq data.
+
+
+## Professional
+
+
+[**Higher Education in Public Health**](assets/Higher_Education_in_Public_Health.pdf)    
+Committee member | UCLA | Apr. 2024
+
+- Presented on UCLA’s biostatistics programs for prospective students and answered questions about the application process and curriculum.
+
+
+[**Western Biomedical Technology Inc.**](https://www.wstbio.com/)    
+Intern | Immunization Team | IT Department | Mar. 2021 – Jun. 2021
+
+- Developed a Python program using convolution methods to recognize light bands, which improved the accuracy of western blot results.
+-	Created an R-based program for calculating standard concentration curves in ELISA, boosting calculation speed.
+-	Presented biweekly and oversaw experiments and reports in Immunology, Histopathology, and Molecular Biology.
+-	Enhanced team efficiency by coordinating effectively with customers and colleagues across departments.
+
+**Life Science Administrative Office**     
+Undergrad Assistant | Southwest University | Oct. 2018 – Jun. 2021
 
 - Organized five meetings per semester, acting as the liaison between administrative staff and a class of 65 students, addressing inquiries and providing feedback.
 - Advised 41 freshmen on academic performance, course selection, extracurriculars, and research opportunities.
 
----
 
-# Volunteer
+
+## Volunteer
 
 [**Central Library**](assets/Certificate_of_Volunteer.pdf) | Southwest University | Oct. 2019 – Jan. 2020
 
@@ -31,17 +47,3 @@
 - Assisted with organizing the library, including classifying books and managing borrowing and returns.
 
 
----
-
-# Internship
-
-[**Western Biomedical Technology Inc.**](https://www.wstbio.com/) | Immunization Team | IT Department | Mar. 2021 – Jun. 2021
-
-- Developed a Python program using convolution methods to recognize light bands, which improved the accuracy of western blot results.
--	Created an R-based program for calculating standard concentration curves in ELISA, boosting calculation speed.
--	Presented biweekly and oversaw experiments and reports in Immunology, Histopathology, and Molecular Biology.
--	Enhanced team efficiency by coordinating effectively with customers and colleagues across departments.
-
- 
-
----
