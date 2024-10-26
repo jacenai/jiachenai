@@ -13,9 +13,6 @@ about:
     - icon: file
       text: CV
       href: https://jacenai.github.io/jiachenai/cv.html
-    
-  
-  
 ---
 
 
@@ -42,13 +39,15 @@ I'm passionate about mathematical and statistical methods for genetic analysis t
 # Featured Projects
 
 
--  [**Epigenetic Regulation of Immune Response to Influenza Vaccination: A Multi-Omics Analysis in the UGA6 Cohort**](https://jacenai.github.io/jiachenai/research.html#current): Revealed the role of DNA methylation in regulating immune responses to influenza vaccination, identifying key CpG sites and the signaling pathway as potential therapeutic targets, and integrated multi-omics data to validate epigenetic influences on immune regulation.
+-  [**Epigenetic Regulation of Immune Response to Influenza Vaccination: A Multi-Omics Analysis in the UGA6 Cohort**](https://jacenai.github.io/jiachenai/research.html#epigenetic-regulation-of-immune-response-to-influenza-vaccination-a-multi-omics-analysis-in-the-uga6-cohort): Revealed the role of DNA methylation in regulating immune responses to influenza vaccination, identifying key CpG sites and the signaling pathway as potential therapeutic targets, and integrated multi-omics data to validate epigenetic influences on immune regulation.
 
 
--  [**DNA Methylation Biomarkers of Aging in Male Mice Colon from Non-Linear Models**](https://jacenai.github.io/jiachenai/research.html#current): Identified age-related DNA methylation biomarkers in male mice colon tissue using non-linear models and k-means clustering, followed by neural network analysis of differentially methylated regions across aging stages, to enhance the understanding of epigenetic mechanisms driving aging.
+-  [**DNA Methylation Biomarkers of Aging in Male Mice Colon from Non-Linear Models**](https://jacenai.github.io/jiachenai//research.html#dna-methylation-biomarkers-of-aging-in-male-mice-colon-from-non-linear-models): Identified age-related DNA methylation biomarkers in male mice colon tissue using non-linear models and k-means clustering, followed by neural network analysis of differentially methylated regions across aging stages, to enhance the understanding of epigenetic mechanisms driving aging.
+
+- [**Inferring immune histories from SARS-CoV-2 RNA-seq data**](https://jacenai.github.io/jiachenai/research.html#inferring-immune-histories-from-sars-cov-2-rna-seq-data): Utilized SARS-CoV-2 RNA-seq data combined with multi-omics approaches, incorporating immune cell deconvolution, BCR/TCR repertoire profiling, and neoantigen prediction, to infer immune histories and validate the pipeline against publicly available SARS-CoV-2 antibody datasets.
 
 
--  [**Lymphocyte Regeneration after Thymocyte Damage in Zebrafish**](https://jacenai.github.io/jiachenai/research.html#section-1): Demonstrated that the CXCL12/CXCR4 chemokine signaling pathway is essential for T lymphocyte regeneration post-thymocyte injury, with most regenerating cells traced back to hematopoietic stem cells migrating from the kidney to the thymus.
+-  [**Lymphocyte Regeneration after Thymocyte Damage in Zebrafish**](https://jacenai.github.io/jiachenai/research.html#lymphocyte-regeneration-after-thymocyte-damage-in-zebrafish-presentation-slides): Demonstrated that the CXCL12/CXCR4 chemokine signaling pathway is essential for T lymphocyte regeneration post-thymocyte injury, with most regenerating cells traced back to hematopoietic stem cells migrating from the kidney to the thymus.
 
 
 

@@ -4,7 +4,7 @@
 
 
 
-<span style="font-size: 26px; font-weight: 500;">Epigenetic Regulation of Immune Response to Influenza Vaccination: A Multi-Omics Analysis in the UGA6 Cohort</span>
+### <span style="font-size: 26px; font-weight: 500;">Epigenetic Regulation of Immune Response to Influenza Vaccination: A Multi-Omics Analysis in the UGA6 Cohort</span>
 
 **Graduate Student Researcher** | Supervised by [Dr. Matteo Pellegrini](https://medschool.ucla.edu/people/matteo-pellegrini-phd) in his [Lab](https://www.pellegrini.mcdb.ucla.edu/)
 
@@ -12,7 +12,7 @@
 
 
 
-<span style="font-size: 26px; font-weight: 500;">DNA Methylation Biomarkers of Aging in Male Mice Colon from Non-Linear Models</span>
+### <span style="font-size: 26px; font-weight: 500;">DNA Methylation Biomarkers of Aging in Male Mice Colon from Non-Linear Models</span>
 
 **Graduate Student Researcher**  | Supervised by [Dr. Feng Gao](https://ph.ucla.edu/about/faculty-staff-directory/feng-gao)
 
@@ -22,7 +22,7 @@
 
 
 
-<span style="font-size: 26px; font-weight: 500;">Inferring immune histories from SARS-CoV-2 RNA-seq data</span>
+### <span style="font-size: 26px; font-weight: 500;">Inferring immune histories from SARS-CoV-2 RNA-seq data</span>
 
 **Warren Alpert Fellow**  | Supervised by [Dr. Vanessa D Jonsson](https://jonssonlab.com/people)
 
@@ -31,7 +31,7 @@
 
 ## 2021 – 2023
 
-<span style="font-size: 26px; font-weight: 500;">Statistical Data Analysis for Biology and Biomedicine Research</span>
+### <span style="font-size: 26px; font-weight: 500;">Statistical Data Analysis for Biology and Biomedicine Research</span>
 
 Undergraduate Research Assistant 
 
@@ -41,13 +41,13 @@ Undergraduate Research Assistant
 
 ## 2020 – 2021
 
-<span style="font-size: 26px; font-weight: 500;">Review: Lifestyle Factors Affecting Semen Quality</span>
+### <span style="font-size: 26px; font-weight: 500;">Review: Lifestyle Factors Affecting Semen Quality</span>
 
 - This review examined the impact of dietary habits, BMI, alcohol, smoking, stress, mobile phone usage, and microplastics on sperm parameters. It highlighted that a balanced diet, exercise, and stress management improve semen quality, while smoking, alcohol, and microplastic exposure impair it. Statistical models like multivariate regression and meta-analysis were used to assess fertility impacts, emphasizing the public health importance of addressing these lifestyle factors.
 
 ## 2019 – 2020
 
-<span style="font-size: 26px; font-weight: 500;">Lymphocyte Regeneration after Thymocyte Damage in Zebrafish [\[presentation slides\]](assets/LYMPHOCYTE_REGENERATION_AFTER_THYMOCYTE_DAMAGE_IN ZEBRAFISH.pdf)</span>
+### <span style="font-size: 26px; font-weight: 500;">Lymphocyte Regeneration after Thymocyte Damage in Zebrafish [\[presentation slides\]](assets/LYMPHOCYTE_REGENERATION_AFTER_THYMOCYTE_DAMAGE_IN ZEBRAFISH.pdf)</span>
 
 Volunteer | Supervised by [Dr. Li Li](https://people.ucas.ac.cn/~0064236?language=en)
 

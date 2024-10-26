@@ -43,7 +43,7 @@ execute:
   
 format:
   html:
-    fontsize: 1.15em
+    fontsize: 1em
     theme: jekyll-theme-minimal
     toc: true  # Table of contents for better navigation
     toc-depth: 2
