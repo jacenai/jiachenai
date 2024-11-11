@@ -36,7 +36,7 @@ I'm passionate about mathematical and statistical methods for genetic analysis t
 
 
 
-# Featured Projects
+# Highlights
 
 
 -  [**Epigenetic Regulation of Immune Response to Influenza Vaccination: A Multi-Omics Analysis in the UGA6 Cohort**](https://jacenai.github.io/jiachenai/research.html#epigenetic-regulation-of-immune-response-to-influenza-vaccination-a-multi-omics-analysis-in-the-uga6-cohort): Revealed the role of DNA methylation in regulating immune responses to influenza vaccination, identifying key CpG sites and the signaling pathway as potential therapeutic targets, and integrated multi-omics data to validate epigenetic influences on immune regulation.
@@ -56,7 +56,6 @@ I'm passionate about mathematical and statistical methods for genetic analysis t
 Feel free to explore my [CV](cv.qmd) or reach out via:
 
 -   **Email:** [jiachenai\@ucla.edu](mailto:jiachenai@g.ucla.edu)
--   **Phone:** +1 424-293-9716
 -   **LinkedIn:** [Jiachen Ai](https://www.linkedin.com/in/jiachen-ai-966132264/)
 
 

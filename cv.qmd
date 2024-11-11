@@ -70,7 +70,7 @@ Honors:
 | [BIOSTAT 216](https://ucla-biostat-216.github.io/2024fall/schedule/schedule.html) | Mathematical Methods for Biostatistics | [Dr. Hua Zhou](https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou) |
 | STAT M254  | Statistical Methods in Computational Biology | [Dr. Jessica Li](http://jsb.ucla.edu/about-jingyi-jessica-li/) |
 | MATH 115A, 33A | Linear Algebra | [Dr. Pablo S. Ocal](https://pabloocal.github.io/index.html) |
-| MATH 131A | Analysis (in progress) |  |
+| MATH 131A | Real Analysis (in progress) |  |
 | MATH 164 | Optimization (in progress) |  |
 | MATH 170E, 170S | Probability Theory and Statistics |  |
 | [STAT 100C](assets/100c_content.pdf) | Linear Models | [Dr. Nicolas Christou](http://www.stat.ucla.edu/~nchristo/) |
