@@ -4,30 +4,37 @@
 
 
 
-### <span style="font-size: 26px; font-weight: 500;">Epigenetic Regulation of Immune Response to Influenza Vaccination: A Multi-Omics Analysis in the UGA6 Cohort</span>
+### <span style="font-size: 26px; font-weight: 500;">Influenza Vaccination Impact on DNA Methylation in UGA6 Cohort</span>
 
 **Graduate Student Researcher** | Supervised by [Dr. Matteo Pellegrini](https://medschool.ucla.edu/people/matteo-pellegrini-phd) in his [Lab](https://www.pellegrini.mcdb.ucla.edu/)
 
-- Influenza vaccination, a prevalent prevention for annually recurring contagious pandemics, elicits immune responses that are possibly induced by DNA methylation. It has been shown that the immune response to influenza vaccination is potentially regulated by DNA methylation on [RIG‐I signaling pathway](https://www.nature.com/articles/s41598-024-51665-9), an important regulator of viral responses, and [T cell innate antiviral pathways](https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-024-01730-x), within University of Georgia cohorts (UGA3, 4, and 5). This project aims to validate and expand on these findings by integrating multi-omics data from a larger UGA6 cohort to identify the epigenetic factors influencing the immune response to influenza vaccination. We employed multivariate linear regression models with leave-one-out cross-validation (LOOCV) to investigate associations between DNA methylation profiles and sero-protection levels at day 0 and day 28 post-vaccination, as well as sero-conversion at day 28. Significant CpG sites were mapped to relevant genes and pathways using gene set enrichment analysis tools to identify biological processes involved in the immune response to influenza vaccines. In parallel, similar predictive models were constructed for RNA-seq and cytokine datasets, and the multi-omics data were integrated to identify shared regulatory mechanisms and explore the interplay between DNA methylation, gene expression, and cytokine levels. This approach provides a comprehensive understanding of the epigenetic regulation of immune responses to influenza vaccines and identifies potential therapeutic targets, contributing to advancements in precision medicine for influenza vaccination.
+- Influenza vaccination, a key preventive measure against annually recurring pandemics, elicits immune responses potentially regulated by DNA methylation. Prior studies within University of Georgia cohorts (UGA3, 4, and 5) have highlighted the role of DNA methylation in modulating the [RIG‐I signaling pathway](https://www.nature.com/articles/s41598-024-51665-9) and [T cell innate antiviral pathways](https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-024-01730-x). This study validates these findings in the larger UGA6 cohort (n = 254) to identify epigenetic factors influencing immune responses to influenza vaccination. Multivariate linear regression models with leave-one-out cross-validation (LOOCV) were used to assess associations between DNA methylation profiles and sero-protection levels at day 0 and day 28, as well as sero-conversion at day 28. Significant CpG sites were mapped to genes and pathways through gene set enrichment analysis, identifying the RIG‐I signaling pathway as the key regulator of vaccine-induced immunity. Parallel predictive models for RNA-seq and cytokine datasets further elucidated molecular mechanisms. Additionally, genome-wide expression quantitative trait loci (eQTL) analyses linked DNA methylation to gene expression, and correlations between DNA methylation and cytokine data highlighted additional regulatory insights. Our study provides a comprehensive understanding of the epigenetic regulation of immune responses to influenza vaccines and identifies potential therapeutic targets in a large cohort setting, contributing to advancements in precision medicine for influenza vaccination. 
+
+![](img/UGA6.png)
 
 
-
-### <span style="font-size: 26px; font-weight: 500;">DNA Methylation Biomarkers of Aging in Male Mice Colon from Non-Linear Models</span>
+### <span style="font-size: 26px; font-weight: 500;">Nonlinear Aging Dynamics in Co-methylation Network</span>
 
 **Graduate Student Researcher**  | Supervised by [Dr. Feng Gao](https://ph.ucla.edu/about/faculty-staff-directory/feng-gao)
 
 
-- While general linear epigenetic models, such as [Horvath's aging clock](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-10-r115), have been widely established, recent reports indicate that [non-linear methylation dynamics](https://www.nature.com/articles/s41467-024-47316-2) predominantly influence nervous system genes and are enriched in bivalently marked chromatin regions. This project aims to identify age-related DNA methylation biomarkers using a non-linear model of male mice colon tissue. By applying k-means based unsupervised hierarchical clustering on CpG methylation matrices, we identify differentially methylated regions ([DMRs](https://en.wikipedia.org/wiki/Differentially_methylated_region)) across three aging stages: young, midlife, and late-life. These DMRs are integrated together to form duplicated methylation profiles for each age group, and then put into [neural network](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11153885/) to further characterize age-related biomarkers. The findings will enhance our understanding of the epigenetic mechanisms driving aging and contribute to the broader understanding of age-associated methylation patterns.
+- Non-linear epigenetic models have emerged as critical regulators of aging, with recent findings highlighting their predominant influence on nervous system genes and bivalently marked chromatin regions, in contrast to well-established linear models like [Horvath's aging clock](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-10-r115). This study investigates the role of [non-linear methylation](https://www.nature.com/articles/s41467-024-47316-2) dynamics in aging mice colon tissue and their associations with gene expression and pathways. Using [metilene](https://pmc.ncbi.nlm.nih.gov/articles/PMC4728377/), we identified differentially methylated regions (DMRs) across five age groups and constructed graph-based networks with [NetworkX](https://en.wikipedia.org/wiki/NetworkX), uncovering non-linear co-methylation clusters at chromosomal, individual, and age-group levels. Functional associations were explored with [Cytoscape](https://en.wikipedia.org/wiki/Cytoscape), mapping genes to biological processes, cellular components, pathways, and human orthologs. Gene set enrichment analysis revealed dynamic changes in gene functional groups during aging, consistent with non-linear methylation patterns. These findings enhance our understanding of the epigenetic mechanisms driving aging and highlight the significance of non-linear dynamics in age-related biological processes.
+
+![](img/mice_colon_1.png)
+![](img/mice_colon_2.png)
 
 
 
-
-### <span style="font-size: 26px; font-weight: 500;">Inferring immune histories from SARS-CoV-2 RNA-seq data</span>
+### <span style="font-size: 26px; font-weight: 500;">Inferring Immune Histories from SARS-CoV-2 RNA-Seq Data</span>
 
 **Warren Alpert Fellow**  | Supervised by [Dr. Vanessa D Jonsson](https://jonssonlab.com/people)
 
 
-- This project leverages SARS-CoV2 RNA-seq data to infer immune histories by integrating multi-omics analyses. The pipeline uses immune cell deconvolution ([CIBERSORT](https://www.nature.com/articles/nmeth.3337)) and metagenomics to estimate immune cell proportions and microbial protein landscapes from nasal swap RNA source. It employs tools like [TRUST4](https://www.nature.com/articles/s41592-021-01142-2) for BCR/TCR repertoire analysis and [pvacseq](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-016-0264-5) for neoantigen prediction, incorporating HLA typing and peptide-MHC binding affinity assessments. And finally, we will compare the immune histories inferred from the RNA-seq data with publicly available [SARS-CoV2 antibodies and nanobodies data](https://opig.stats.ox.ac.uk/webapps/covabdab/) to validate the pipeline. This integrated approach provides a comprehensive view of immune memory and response, informing personalized treatment and vaccine strategies.
+- Understanding immune memory and response to SARS-CoV-2 infection is essential for advancing COVID-19 treatment, personalized treatment and vaccine strategies. This study employs SARS-CoV-2 RNA-seq data from nasal swabs to infer immune histories through an integrated analysis pipeline. Immune cell proportions are estimated using [CIBERSORT](https://www.nature.com/articles/nmeth.3337), while metagenomics annotation characterizes microbial protein landscapes. [TRUST4](https://www.nature.com/articles/s41592-021-01142-2) is used to infer TCR and BCR repertoires, with internal tools performing isotype analysis and clustering based on sequence and biochemistry (ESM/other, tcrdist3). BCR phylogenies are reconstructed using [Immcantation](https://immcantation.readthedocs.io/en/stable/), and viral epitope binding to HLA is predicted with netMHCpan, incorporating HLA typing via HLA arcasHLA and MHC Hammer. Finally, we compare the immune histories inferred from the RNA-seq data with publicly available [SARS-CoV2 antibodies and nanobodies data](https://opig.stats.ox.ac.uk/webapps/covabdab/) to validate the pipeline. 
+
+![](img/Immune_history.png){width=70% fig-align="center"}
+
+
 
 ## 2021 – 2023
 
@@ -35,15 +42,19 @@
 
 Undergraduate Research Assistant 
 
-- Using stochastic process theory, I modeled random walks as time-homogeneous Markov chains and analyzed their recurrent and transient properties by reviewing relevant derivations and proofs, which are essential for understanding gene expression and protein interactions that involve stochastic behavior.
-- By multivariate regression in R and found significant correlation between rice yield and irrigation amount in 5 growing stages.
-- Via R, performed logistic regression and found 3 categorical variables that correlated with semen quality.
+- **Modeling Transcription Factor Diffusion with Stochastic Processes**:
+  + Simulated transcription factor (TF) diffusion in the nucleus using Markov Chain Monte Carlo (MCMC) methods, modeling TF movement as a time-homogeneous Markov process. The model quantified transient states (non-specific DNA interactions) and recurrent states (specific binding at regulatory elements).
+- **Multivariate Regression Analysis in Agricultural Research**:
+  + Conducted multivariate regression analysis in R to evaluate the relationship between rice yield and irrigation at five critical growth stages (seedling, tillering, panicle initiation, flowering, and grain filling). Identified optimal irrigation strategies to maximize yield while minimizing resource consumption. Incorporated additional variables such as soil type, weather conditions, and nutrient input for a comprehensive analysis.
 
 ## 2020 – 2021
 
 ### <span style="font-size: 26px; font-weight: 500;">Review: Lifestyle Factors Affecting Semen Quality</span>
 
 - This review examined the impact of dietary habits, BMI, alcohol, smoking, stress, mobile phone usage, and microplastics on sperm parameters. It highlighted that a balanced diet, exercise, and stress management improve semen quality, while smoking, alcohol, and microplastic exposure impair it. Statistical models like multivariate regression and meta-analysis were used to assess fertility impacts, emphasizing the public health importance of addressing these lifestyle factors.
+
+![](img/semen_quality.png){width=50% fig-align="center"}
+
 
 ## 2019 – 2020
 
@@ -55,13 +66,18 @@ Volunteer | Supervised by [Dr. Li Li](https://people.ucas.ac.cn/~0064236?languag
 
 - Through real-time PCR ([RT-qPCR](https://www.ncbi.nlm.nih.gov/probe/docs/techqpcr/)), we discovered that the [CXCL12/CXCR4 chemokine signaling pathway](https://www.ijbs.com/v19p3341.htm) plays a critical role in the regeneration of thymic lymphocytes. Inhibition of this pathway with [WZ811](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5040679/), a CXCL12/CXCR4 receptor antagonist, significantly impaired lymphocyte recovery, suggesting that CXCL12/CXCR4 signaling is essential for lymphocyte regeneration. Additionally, lineage tracing experiments revealed that most regenerating lymphocytes originated from hematopoietic stem cells migrating from the kidney to the thymus. These findings highlight the importance of the CXCL12/CXCR4 pathway in lymphocyte regeneration and offer insights into the mechanisms of immune recovery after thymocyte damage.
 
+![](img/REGENERATION.png)
+
 
 
 ------------------------------------------------------------------------
 
 # Publication
 
-- **Ai, J.** (2021). *Lifestyle does affect semen quality: factor determination in a statistical way.* Lecture Notes in Medicine and Life Sciences, 4, 163--171. [Read Article](https://www.clausiuspress.com/conference/article/artId/7114.html)
+- **Ai, J.** (2021). Lifestyle does affect semen quality: factor determination in a statistical way. *Lecture Notes in Medicine and Life Sciences*, 4, 163--171. [Read Article](https://www.clausiuspress.com/conference/article/artId/7114.html)
+- **Ai, J.**, Pickering, H., Pellegrini, M. et al. Influenza Vaccination: DNA Methylation and Immune Response Mechanisms. *Genome Biology*. (forthcoming).
+- **Ai, J.**, Fan, Y., Gao, F. et al. Nonlinear aging dynamics in co-methylation network. *Cell Reports*. (forthcoming).
+
 
 
 
