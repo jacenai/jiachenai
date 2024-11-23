@@ -2,61 +2,54 @@
 
 # Education
 
-**University of California, Los Angeles** \| Sept. 2023 -- Current
+## **University of California, Los Angeles (UCLA)**  
+**Master of Science in Biostatistics** 📊  
+*September 2023 – Present*  
 
-\newline
+- **GPA:** 4.00/4.00 | [Transcript](assets/09.19_transcript.pdf)  
+- **Advisor:** [Dr. Matteo Pellegrini](https://medschool.ucla.edu/people/matteo-pellegrini-phd)  
+- **Honors:**  
+  - Fielding School of Public Health **Dean's Leadership Grant** (2023–2025)  
+  - **Warren Alpert Computational Biology and AI Network Fellow** (2024–2025)  
+  - **Steve Wallace Policy Fellowship** (2024)  
+  - **APEx Funding**, UCLA Human Genetics (2024)  
 
-Master of Science in Biostatistics 📊 \| GPA: 4.00/4.00 (Four Quarters) \| [Transcript](assets/09.19_transcript.pdf)
 
-Honors:
+## **Southwest University**  
+**Bachelor of Science in Biology** 🧬  
+*September 2018 – June 2022*  
 
--   Steve Wallace Policy Fellowship, June 2024
--   APEx Funding at Department of Human Genetics, May 2024
--   Twice Fielding School of Public Health Dean's Leadership Grant, Apr. 2024 & May 2023
+- **GPA:** 3.84/4.00 (Rank: 2/65) | [Transcript](assets/Jiachen_Ai_WES_report.pdf)  
+- **Outstanding Graduate**  
+- **Thesis:** *Analytic Hierarchy Process for Invasive Plant Management*  
+- **Honors:**  
+  - **International Research Award** (2021)  
+  - **Academic Excellence Scholarships** (Second- and Third-Class, 2019, 2020, 2021)  
+  - Outstanding Intern (2022)  
 
-------------------------------------------------------------------------
-
-**Southwest University** \| Sept. 2018 -- June 2022
-
-\newline
-
-Bachelor of Science in Biology 🧬 \| GPA: 3.84/4.00 (Rank: 2<sup>nd</sup>/65) \| [Transcript](assets/Jiachen_Ai_WES_report.pdf)
-
-Honors:
-
--   Outstanding Graduate, Intern & Thesis, June 2022\
--   International or Overseas Research Award, Dec. 2021\
--   Third-Class Scholarships for Academic Excellence, Dec. 2021 & 2020\
--   Second-Class Scholarship & Merit Award, Dec. 2019
-
-------------------------------------------------------------------------
+---
 
 
 # Skills
 
--   **Computational & Statistical Skills**:
+- **Computational & Statistical**  
+    - *Languages & Tools*: **R** (tidyverse, ggplot2, glmnet, RShiny), **Python** (NumPy, Pandas, Biopython, Scikit-learn, Pybedtools, Matplotlib), **MATLAB**, SAS, STATA, **SQL**, HTML/CSS/JavaScript, LaTeX  
+    - *Platforms*: **Linux** scripting, **Git**/GitHub, **Hoffman2** cluster, Docker, Cloud Platforms (GCP, AWS, Azure, OCI)  
+    - *Data Analysis & Modeling*: **Machine learning**, **Bayesian inference**, **deep learning** (Keras, TensorFlow, PyTorch), **simulation**, **linear models**, **optimization**, graph theory  
+    - *High-Performance Computing (**HPC**)*: Workflow orchestration, parallelized analysis, cluster-based computations  
 
-    -   R, Python (NumPy, Pandas, Matplotlib), SAS, STATA, SQL, LaTeX
-    -   Linux scripting, Git/GitHub
-    -   Container technology (Docker)
-    -   Data wrangling (Tidyverse), Data visualization (ggplot2)
-    -   Databases: OLAP (DuckDB), Google BigQuery
-    -   Frontend development (Rshiny, web app)
-    -   Cloud computing (GCP, AWS, Azure, OCI)
-    -   High-performance computing (HPC) on cluster (Hoffman2)
-    -   Machine/deep learning (scikit-learn, TensorFlow, Keras)
+- **Bioinformatics**  
+    - *Data Analysis*: **GWAS**, **EWAS**, eQTL analysis, gene enrichment analysis, polygenic risk scores, Mendelian randomization, Gene Ontology analysis, multi-omics integration, genome annotation, **single-cell data analysis** (scRNA-seq, scDNA-seq)  
+    - *Tools*: BLAST, InterProScan, PSIPRED, AlphaFold, ChimeraX, UCSC Genome Browser, Ensembl, Galaxy, Bioconductor, BEDTools, STAR, **DESeq2**, **Seurat**, edgeR, Enrichr  
 
--   **Bioinformatics Tools**:
+- **Mathematical**  
+    - *Core Mathematics*: Linear Algebra, Real Analysis, Probability and Statistics, Stochastic Process, Calculus, Partial Differential Equations, Discrete Mathematics, Infinite Theory  
 
-    -   NCBI BLAST, InterProScan, JPRED4, PSIPRED, SignalP, DeepTMHMM, WoLF PSORT, SignalP, AlphaFold3 server, ChimeraX
-    -   Ensembl, UCSC Genome Browser, Galaxy, Bioconductor, BEDTools, STAR, DESeq2, edgeR, Seurat
-
--   **Laboratory Techniques**:
-
-    -   PCR, qPCR, DNA/RNA extraction and quantification, CRISPR/Cas9, cloning, electrophoresis, next-generation sequencing library preparation
-    -   RNA-seq, ChIP-seq, single-cell RNA-seq, Bisulfite sequencing, GWAS (Genome-Wide Association Studies)
-    -   Western Blot, ELISA, mass spectrometry, protein-DNA interaction assays, chromatin immunoprecipitation (ChIP)
-    -   Cell culture, transfection, microscopy (confocal, fluorescence), immunofluorescence, flow cytometry
+- **Laboratory**  
+    - *Molecular Biology*: **PCR**, qPCR, DNA/RNA extraction, **CRISPR/Cas9**, cloning, electrophoresis, next-generation sequencing (**NGS**) library preparation  
+    - *Genomics*: RNA-seq, ChIP-seq, **single-cell RNA-seq**, bisulfite sequencing  
+    - *Proteomics*: **Western blot**, **ELISA**, mass spectrometry, chromatin immunoprecipitation (**ChIP**)  
+    - *Cell Biology*: Cell culture, transfection, confocal and fluorescence microscopy, immunofluorescence, **flow cytometry**  
 
 ------------------------------------------------------------------------
 
@@ -65,21 +58,24 @@ Honors:
 
 | **Course**  | **Description**  | **Instructor**  |
 |--------------------|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| MATH 115A, 33A | Linear Algebra | [Dr. Pablo S. Ocal](https://pabloocal.github.io/index.html) |
+| MATH 131A | Real Analysis | Dr. Konstantinos Varvarezos |
+| MATH 170E, 170S | Probability Theory and Statistics | Dr. Zhaoyu Zhang, Dr. Jona Lelmi |
 | BIOSTAT 200A, 200B, [200C](https://ucla-biostat-200c.github.io/2023spring/schedule/schedule.html) | Methods in Biostatistics | [Dr. A. Klomhaus](https://profiles.ucla.edu/alexandra.klomhaus), <br> [Dr. C. M. Crespi](https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi), <br> [Dr. Jin Zhou](https://ph.ucla.edu/about/faculty-staff-directory/jin-zhou) |
 | BIOSTAT 203A, [203B](https://ucla-biostat-203b.github.io/2024winter/schedule/schedule-lec1.html) | Data Management, Statistical Computing <br> Data Science by R | [Dr. Grace Kim](https://bioscience.ucla.edu/people/hyun-grace-kim/), <br> [Dr. Hua Zhou](https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou) |
 | [BIOSTAT 216](https://ucla-biostat-216.github.io/2024fall/schedule/schedule.html) | Mathematical Methods for Biostatistics | [Dr. Hua Zhou](https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou) |
-| STAT M254  | Statistical Methods in Computational Biology | [Dr. Jessica Li](http://jsb.ucla.edu/about-jingyi-jessica-li/) |
-| MATH 115A, 33A | Linear Algebra | [Dr. Pablo S. Ocal](https://pabloocal.github.io/index.html) |
-| MATH 131A | Real Analysis (in progress) |  |
-| MATH 164 | Optimization (in progress) |  |
-| MATH 170E, 170S | Probability Theory and Statistics |  |
+| STAT M254  | Statistical Methods in Computational Biology | [Dr. Jingyi Jessica Li](http://jsb.ucla.edu/about-jingyi-jessica-li/) |
+| BIOMATH 210 | Optimization Methods in Biology | [Dr. Kenneth L Lange](https://bioscience.ucla.edu/people/kenneth-l-lange/) |
+| BIOMATH M281 | Survival Analysis | [Dr. Gang Li](https://ph.ucla.edu/about/faculty-staff-directory/gang-li) |
+| BIOSTAT 202A | Mathematical Statistics | [Dr. Damla Senturk](https://ph.ucla.edu/about/faculty-staff-directory/damla-senturk) |
+| BIOSTAT 231 | Statistical Power and Sample Size Methods | [Dr. C. M. Crespi](https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi) |
 | [STAT 100C](assets/100c_content.pdf) | Linear Models | [Dr. Nicolas Christou](http://www.stat.ucla.edu/~nchristo/) |
-| BIOSTAT 213 | Statistical Simulation Techniques | [Dr. Christina Ramirez](https://ph.ucla.edu/about/faculty-staff-directory/christina-ramirez) |
-| [BIOSTAT M236](https://robweiss.faculty.biostat.ucla.edu/biostat236) | Longitudinal Data (in progress) | [Dr. Robert Weiss](https://ph.ucla.edu/about/faculty-staff-directory/robert-erin-weiss) |
+| BIOSTAT 213 | Statistical Simulation | [Dr. Christina Ramirez](https://ph.ucla.edu/about/faculty-staff-directory/christina-ramirez) |
+| [BIOSTAT M236](https://robweiss.faculty.biostat.ucla.edu/biostat236) | Longitudinal Data | [Dr. Robert Weiss](https://ph.ucla.edu/about/faculty-staff-directory/robert-erin-weiss) |
 | | Infinite Theory, Calculus, and Partial Differential Equations |  |
 | | Discrete Mathematics |  |
 | | Python and Computational Thinking |  |
-| DS BMED 208 | Recent Research in Machine Learning in Medicine (in progress) | [Dr. Jason Ernst](https://ernstlab.biolchem.ucla.edu/people/jason-ernst/) |
+| DS BMED 208 | Recent Research in Machine Learning in Medicine | [Dr. Jason Ernst](https://ernstlab.biolchem.ucla.edu/people/jason-ernst/) |
 | | Bioinformatics |  |
 | | Biochemistry, Organic Chemistry, General Chemistry |  |
 | | Genetics, Human Genetics, Genetic Engineering |  |

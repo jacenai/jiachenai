@@ -11,12 +11,12 @@ website:
         href: cv.qmd
       - text: "Research"
         href: research.qmd
-      - text: "Projects"
-        href: projects.qmd
       - text: "Experience"
         href: experience.qmd
       - text: "Teaching"
         href: teaching.qmd
+      - text: "Code"
+        href: projects.qmd
     
     right:
       - icon: linkedin

@@ -6,9 +6,9 @@
 
 ### <span style="font-size: 26px; font-weight: 500;">Influenza Vaccination Impact on DNA Methylation in UGA6 Cohort</span>
 
-**Graduate Student Researcher** | Supervised by [Dr. Matteo Pellegrini](https://medschool.ucla.edu/people/matteo-pellegrini-phd) in his [Lab](https://www.pellegrini.mcdb.ucla.edu/)
+Supervised by [Dr. Matteo Pellegrini](https://medschool.ucla.edu/people/matteo-pellegrini-phd) in his [Lab](https://www.pellegrini.mcdb.ucla.edu/)
 
-- Influenza vaccination, a key preventive measure against annually recurring pandemics, elicits immune responses potentially regulated by DNA methylation. Prior studies within University of Georgia cohorts (UGA3, 4, and 5) have highlighted the role of DNA methylation in modulating the [RIG‐I signaling pathway](https://www.nature.com/articles/s41598-024-51665-9) and [T cell innate antiviral pathways](https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-024-01730-x). This study validates these findings in the larger UGA6 cohort (n = 254) to identify epigenetic factors influencing immune responses to influenza vaccination. Multivariate linear regression models with leave-one-out cross-validation (LOOCV) were used to assess associations between DNA methylation profiles and sero-protection levels at day 0 and day 28, as well as sero-conversion at day 28. Significant CpG sites were mapped to genes and pathways through gene set enrichment analysis, identifying the RIG‐I signaling pathway as the key regulator of vaccine-induced immunity. Parallel predictive models for RNA-seq and cytokine datasets further elucidated molecular mechanisms. Additionally, genome-wide expression quantitative trait loci (eQTL) analyses linked DNA methylation to gene expression, and correlations between DNA methylation and cytokine data highlighted additional regulatory insights. Our study provides a comprehensive understanding of the epigenetic regulation of immune responses to influenza vaccines and identifies potential therapeutic targets in a large cohort setting, contributing to advancements in precision medicine for influenza vaccination. 
+- Influenza vaccination, a key preventive measure against annually recurring pandemics, elicits immune responses potentially regulated by DNA methylation. Prior studies within University of Georgia cohorts (UGA3, 4, and 5) have highlighted the role of DNA methylation in modulating the [RIG‐I signaling pathway](https://www.nature.com/articles/s41598-024-51665-9) and [T cell innate antiviral pathways](https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-024-01730-x). This study validates these findings in the larger UGA6 cohort (n = 254) to identify epigenetic factors influencing immune responses to influenza vaccination. Multivariate prediction model with leave-one-out cross-validation (LOOCV) were used to model associations between DNA methylation profiles and sero-protection levels at day 0 and day 28, as well as sero-conversion at day 28. Significant CpG sites were mapped to genes and pathways through gene set enrichment analysis, identifying the RIG‐I signaling pathway as the key regulator of vaccine-induced immunity. Parallel prediction models for RNA-seq and cytokine datasets further elucidated molecular mechanisms. Additionally, genome-wide expression quantitative trait loci (eQTL) analyses linked DNA methylation to gene expression, and correlations between DNA methylation and cytokine data highlighted additional regulatory insights. Our study provides a comprehensive understanding of the epigenetic regulation of immune responses to influenza vaccines and identifies potential therapeutic targets in a large cohort setting, contributing to advancements in precision medicine for influenza vaccination. 
 
 ![](img/UGA6.png)
 
@@ -23,6 +23,14 @@
 ![](img/mice_colon_1.png)
 ![](img/mice_colon_2.png)
 
+
+### <span style="font-size: 26px; font-weight: 500;">Single-Cell RNA-Seq for Cell Type Annotation</span>
+
+Supervised by [Dr. Jingyi Jessica Li](http://jsb.ucla.edu/about-jingyi-jessica-li/)
+
+- Utilized single-cell RNA sequencing (scRNA-seq) data to characterize cellular heterogeneity in human bone marrow (BoneMarrow1 and BoneMarrow2) and pancreas samples. Preprocessing, dimensionality reduction, clustering, and biomarker identification were conducted using the Seurat package, leading to the identification and annotation of 14, 11, and 5 distinct cell types, respectively. Heatmaps were generated to visualize marker gene expression across clusters, providing insights into cell-specific functions. 
+
+![](img/scDNA.png)
 
 
 ### <span style="font-size: 26px; font-weight: 500;">Inferring Immune Histories from SARS-CoV-2 RNA-Seq Data</span>
@@ -40,11 +48,10 @@
 
 ### <span style="font-size: 26px; font-weight: 500;">Statistical Data Analysis for Biology and Biomedicine Research</span>
 
-Undergraduate Research Assistant 
 
-- **Modeling Transcription Factor Diffusion with Stochastic Processes**:
+- **Modeling Transcription Factor Diffusion**
   + Simulated transcription factor (TF) diffusion in the nucleus using Markov Chain Monte Carlo (MCMC) methods, modeling TF movement as a time-homogeneous Markov process. The model quantified transient states (non-specific DNA interactions) and recurrent states (specific binding at regulatory elements).
-- **Multivariate Regression Analysis in Agricultural Research**:
+- **Agricultural Multivariate Regression**
   + Conducted multivariate regression analysis in R to evaluate the relationship between rice yield and irrigation at five critical growth stages (seedling, tillering, panicle initiation, flowering, and grain filling). Identified optimal irrigation strategies to maximize yield while minimizing resource consumption. Incorporated additional variables such as soil type, weather conditions, and nutrient input for a comprehensive analysis.
 
 ## 2020 – 2021
@@ -60,7 +67,7 @@ Undergraduate Research Assistant
 
 ### <span style="font-size: 26px; font-weight: 500;">Lymphocyte Regeneration after Thymocyte Damage in Zebrafish [\[presentation slides\]](assets/LYMPHOCYTE_REGENERATION_AFTER_THYMOCYTE_DAMAGE_IN ZEBRAFISH.pdf)</span>
 
-Volunteer | Supervised by [Dr. Li Li](https://people.ucas.ac.cn/~0064236?language=en)
+Supervised by [Dr. Li Li](https://people.ucas.ac.cn/~0064236?language=en)
 
 - Thymus atrophy and T lymphocyte deficiencies are common in aging and following damage caused by factors such as radiation, chemotherapy, or bacterial infections, leading to impaired immune function. Our study investigates the regeneration of T lymphocytes in zebrafish after thymocyte injury, leveraging the transparency and genetic tractability of zebrafish as a model organism. A damage model was constructed by treating [Tg(coro1a:Dendra2-NTR)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9503817/) transgenic zebrafish with 2 mM Metronidazole for 12 hours, resulting in significant lymphocyte reduction and apoptosis in the thymus, as confirmed by whole-mount in situ hybridization ([WISH](https://pubmed.ncbi.nlm.nih.gov/25218374/)) and confocal microscopy.
 
@@ -72,7 +79,7 @@ Volunteer | Supervised by [Dr. Li Li](https://people.ucas.ac.cn/~0064236?languag
 
 ------------------------------------------------------------------------
 
-# Publication
+# Publications
 
 - **Ai, J.** (2021). Lifestyle does affect semen quality: factor determination in a statistical way. *Lecture Notes in Medicine and Life Sciences*, 4, 163--171. [Read Article](https://www.clausiuspress.com/conference/article/artId/7114.html)
 - **Ai, J.**, Pickering, H., Pellegrini, M. et al. Influenza Vaccination: DNA Methylation and Immune Response Mechanisms. *Genome Biology*. (forthcoming).

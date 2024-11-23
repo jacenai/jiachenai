@@ -39,15 +39,15 @@ I'm passionate about mathematical and statistical methods for genetic analysis t
 # Highlights
 
 
--  [**Influenza Vaccination Impact on DNA Methylation in UGA6 Cohort**](https://jacenai.github.io/jiachenai/research.html#epigenetic-regulation-of-immune-response-to-influenza-vaccination-a-multi-omics-analysis-in-the-uga6-cohort): Identified key epigenetic regulators of immune responses to influenza vaccination in a large cohort study, uncovering the RIG‐I signaling pathway's role in vaccine-induced immunity through integrated DNA methylation, RNA-seq, and cytokine analyses.
+-  [**Influenza Vaccination Impact on DNA Methylation in UGA6 Cohort**](https://jacenai.github.io/jiachenai//research.html#influenza-vaccination-impact-on-dna-methylation-in-uga6-cohort): Identified key epigenetic regulators of immune responses to influenza vaccination in a large cohort study, uncovering the RIG‐I signaling pathway's role in vaccine-induced immunity through integrated DNA methylation, RNA-seq, and cytokine analyses.
 
 
--  [**Nonlinear Aging Dynamics in Co-methylation Network**](https://jacenai.github.io/jiachenai//research.html#dna-methylation-biomarkers-of-aging-in-male-mice-colon-from-non-linear-models): Unveiled the critical role of non-linear co-methylation dynamics in aging by mapping epigenetic changes to gene networks and biological pathways, providing novel insights into age-related processes beyond linear models.
+-  [**Nonlinear Aging Dynamics in Co-methylation Network**](https://jacenai.github.io/jiachenai//research.html#nonlinear-aging-dynamics-in-co-methylation-network): Unveiled the critical role of non-linear co-methylation dynamics in aging by mapping epigenetic changes to gene networks and biological pathways, providing novel insights into age-related processes beyond linear models.
 
-- [**Inferring immune histories from SARS-CoV-2 RNA-seq data**](https://jacenai.github.io/jiachenai/research.html#inferring-immune-histories-from-sars-cov-2-rna-seq-data): Developed a pipeline to infer immune histories from SARS-CoV-2 RNA-seq data, linking immune profiling to personalized responses.
+- [**Inferring immune histories from SARS-CoV-2 RNA-seq data**](https://jacenai.github.io/jiachenai//research.html#inferring-immune-histories-from-sars-cov-2-rna-seq-data): Developed a pipeline to infer immune histories from SARS-CoV-2 RNA-seq data, linking immune profiling to personalized responses.
 
 
--  [**Lymphocyte Regeneration after Thymocyte Damage in Zebrafish**](https://jacenai.github.io/jiachenai/research.html#lymphocyte-regeneration-after-thymocyte-damage-in-zebrafish-presentation-slides): Uncovered the pivotal role of the CXCL12/CXCR4 pathway in thymic lymphocyte regeneration, revealing stem cell migration as a key mechanism for immune recovery.
+-  [**Lymphocyte Regeneration after Thymocyte Damage in Zebrafish**](https://jacenai.github.io/jiachenai//research.html#lymphocyte-regeneration-after-thymocyte-damage-in-zebrafish-presentation-slides): Uncovered the pivotal role of the CXCL12/CXCR4 pathway in thymic lymphocyte regeneration, revealing stem cell migration as a key mechanism for immune recovery.
 
 
 

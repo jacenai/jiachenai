@@ -100,16 +100,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./experience.html"> 
 <span class="menu-text">Experience</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./teaching.html"> 
 <span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Code</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -144,7 +144,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
+  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a>
+  <ul class="collapse">
+  <li><a href="#university-of-california-los-angeles-ucla" id="toc-university-of-california-los-angeles-ucla" class="nav-link" data-scroll-target="#university-of-california-los-angeles-ucla"><strong>University of California, Los Angeles (UCLA)</strong></a></li>
+  <li><a href="#southwest-university" id="toc-southwest-university" class="nav-link" data-scroll-target="#southwest-university"><strong>Southwest University</strong></a></li>
+  </ul></li>
   <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
   <li><a href="#coursework" id="toc-coursework" class="nav-link" data-scroll-target="#coursework">Coursework</a></li>
   </ul>
@@ -159,55 +163,82 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="assets/CV.pdf" style="font-size: 30px;"><strong>CV in PDF</strong></a></p>
 <section id="education" class="level1">
 <h1>Education</h1>
-<p><strong>University of California, Los Angeles</strong> | Sept.&nbsp;2023 – Current</p>
-<p>Master of Science in Biostatistics 📊 | GPA: 4.00/4.00 (Four Quarters) | <a href="assets/09.19_transcript.pdf">Transcript</a></p>
-<p>Honors:</p>
+<section id="university-of-california-los-angeles-ucla" class="level2">
+<h2 class="anchored" data-anchor-id="university-of-california-los-angeles-ucla"><strong>University of California, Los Angeles (UCLA)</strong></h2>
+<p><strong>Master of Science in Biostatistics</strong> 📊<br>
+<em>September 2023 – Present</em></p>
 <ul>
-<li>Steve Wallace Policy Fellowship, June 2024</li>
-<li>APEx Funding at Department of Human Genetics, May 2024</li>
-<li>Twice Fielding School of Public Health Dean’s Leadership Grant, Apr.&nbsp;2024 &amp; May 2023</li>
+<li><strong>GPA:</strong> 4.00/4.00 | <a href="assets/09.19_transcript.pdf">Transcript</a><br>
+</li>
+<li><strong>Advisor:</strong> <a href="https://medschool.ucla.edu/people/matteo-pellegrini-phd">Dr.&nbsp;Matteo Pellegrini</a><br>
+</li>
+<li><strong>Honors:</strong>
+<ul>
+<li>Fielding School of Public Health <strong>Dean’s Leadership Grant</strong> (2023–2025)<br>
+</li>
+<li><strong>Warren Alpert Computational Biology and AI Network Fellow</strong> (2024–2025)<br>
+</li>
+<li><strong>Steve Wallace Policy Fellowship</strong> (2024)<br>
+</li>
+<li><strong>APEx Funding</strong>, UCLA Human Genetics (2024)</li>
+</ul></li>
+</ul>
+</section>
+<section id="southwest-university" class="level2">
+<h2 class="anchored" data-anchor-id="southwest-university"><strong>Southwest University</strong></h2>
+<p><strong>Bachelor of Science in Biology</strong> 🧬<br>
+<em>September 2018 – June 2022</em></p>
+<ul>
+<li><strong>GPA:</strong> 3.84/4.00 (Rank: 2/65) | <a href="assets/Jiachen_Ai_WES_report.pdf">Transcript</a><br>
+</li>
+<li><strong>Outstanding Graduate</strong><br>
+</li>
+<li><strong>Thesis:</strong> <em>Analytic Hierarchy Process for Invasive Plant Management</em><br>
+</li>
+<li><strong>Honors:</strong>
+<ul>
+<li><strong>International Research Award</strong> (2021)<br>
+</li>
+<li><strong>Academic Excellence Scholarships</strong> (Second- and Third-Class, 2019, 2020, 2021)<br>
+</li>
+<li>Outstanding Intern (2022)</li>
+</ul></li>
 </ul>
 <hr>
-<p><strong>Southwest University</strong> | Sept.&nbsp;2018 – June 2022</p>
-<p>Bachelor of Science in Biology 🧬 | GPA: 3.84/4.00 (Rank: 2<sup>nd</sup>/65) | <a href="assets/Jiachen_Ai_WES_report.pdf">Transcript</a></p>
-<p>Honors:</p>
-<ul>
-<li>Outstanding Graduate, Intern &amp; Thesis, June 2022<br>
-</li>
-<li>International or Overseas Research Award, Dec.&nbsp;2021<br>
-</li>
-<li>Third-Class Scholarships for Academic Excellence, Dec.&nbsp;2021 &amp; 2020<br>
-</li>
-<li>Second-Class Scholarship &amp; Merit Award, Dec.&nbsp;2019</li>
-</ul>
-<hr>
+</section>
 </section>
 <section id="skills" class="level1">
 <h1>Skills</h1>
 <ul>
-<li><p><strong>Computational &amp; Statistical Skills</strong>:</p>
+<li><strong>Computational &amp; Statistical</strong>
 <ul>
-<li>R, Python (NumPy, Pandas, Matplotlib), SAS, STATA, SQL, LaTeX</li>
-<li>Linux scripting, Git/GitHub</li>
-<li>Container technology (Docker)</li>
-<li>Data wrangling (Tidyverse), Data visualization (ggplot2)</li>
-<li>Databases: OLAP (DuckDB), Google BigQuery</li>
-<li>Frontend development (Rshiny, web app)</li>
-<li>Cloud computing (GCP, AWS, Azure, OCI)</li>
-<li>High-performance computing (HPC) on cluster (Hoffman2)</li>
-<li>Machine/deep learning (scikit-learn, TensorFlow, Keras)</li>
+<li><em>Languages &amp; Tools</em>: <strong>R</strong> (tidyverse, ggplot2, glmnet, RShiny), <strong>Python</strong> (NumPy, Pandas, Biopython, Scikit-learn, Pybedtools, Matplotlib), <strong>MATLAB</strong>, SAS, STATA, <strong>SQL</strong>, HTML/CSS/JavaScript, LaTeX<br>
+</li>
+<li><em>Platforms</em>: <strong>Linux</strong> scripting, <strong>Git</strong>/GitHub, <strong>Hoffman2</strong> cluster, Docker, Cloud Platforms (GCP, AWS, Azure, OCI)<br>
+</li>
+<li><em>Data Analysis &amp; Modeling</em>: <strong>Machine learning</strong>, <strong>Bayesian inference</strong>, <strong>deep learning</strong> (Keras, TensorFlow, PyTorch), <strong>simulation</strong>, <strong>linear models</strong>, <strong>optimization</strong>, graph theory<br>
+</li>
+<li><em>High-Performance Computing (<strong>HPC</strong>)</em>: Workflow orchestration, parallelized analysis, cluster-based computations</li>
 </ul></li>
-<li><p><strong>Bioinformatics Tools</strong>:</p>
+<li><strong>Bioinformatics</strong>
 <ul>
-<li>NCBI BLAST, InterProScan, JPRED4, PSIPRED, SignalP, DeepTMHMM, WoLF PSORT, SignalP, AlphaFold3 server, ChimeraX</li>
-<li>Ensembl, UCSC Genome Browser, Galaxy, Bioconductor, BEDTools, STAR, DESeq2, edgeR, Seurat</li>
+<li><em>Data Analysis</em>: <strong>GWAS</strong>, <strong>EWAS</strong>, eQTL analysis, gene enrichment analysis, polygenic risk scores, Mendelian randomization, Gene Ontology analysis, multi-omics integration, genome annotation, <strong>single-cell data analysis</strong> (scRNA-seq, scDNA-seq)<br>
+</li>
+<li><em>Tools</em>: BLAST, InterProScan, PSIPRED, AlphaFold, ChimeraX, UCSC Genome Browser, Ensembl, Galaxy, Bioconductor, BEDTools, STAR, <strong>DESeq2</strong>, <strong>Seurat</strong>, edgeR, Enrichr</li>
 </ul></li>
-<li><p><strong>Laboratory Techniques</strong>:</p>
+<li><strong>Mathematical</strong>
 <ul>
-<li>PCR, qPCR, DNA/RNA extraction and quantification, CRISPR/Cas9, cloning, electrophoresis, next-generation sequencing library preparation</li>
-<li>RNA-seq, ChIP-seq, single-cell RNA-seq, Bisulfite sequencing, GWAS (Genome-Wide Association Studies)</li>
-<li>Western Blot, ELISA, mass spectrometry, protein-DNA interaction assays, chromatin immunoprecipitation (ChIP)</li>
-<li>Cell culture, transfection, microscopy (confocal, fluorescence), immunofluorescence, flow cytometry</li>
+<li><em>Core Mathematics</em>: Linear Algebra, Real Analysis, Probability and Statistics, Stochastic Process, Calculus, Partial Differential Equations, Discrete Mathematics, Infinite Theory</li>
+</ul></li>
+<li><strong>Laboratory</strong>
+<ul>
+<li><em>Molecular Biology</em>: <strong>PCR</strong>, qPCR, DNA/RNA extraction, <strong>CRISPR/Cas9</strong>, cloning, electrophoresis, next-generation sequencing (<strong>NGS</strong>) library preparation<br>
+</li>
+<li><em>Genomics</em>: RNA-seq, ChIP-seq, <strong>single-cell RNA-seq</strong>, bisulfite sequencing<br>
+</li>
+<li><em>Proteomics</em>: <strong>Western blot</strong>, <strong>ELISA</strong>, mass spectrometry, chromatin immunoprecipitation (<strong>ChIP</strong>)<br>
+</li>
+<li><em>Cell Biology</em>: Cell culture, transfection, confocal and fluorescence microscopy, immunofluorescence, <strong>flow cytometry</strong></li>
 </ul></li>
 </ul>
 <hr>
@@ -224,116 +255,131 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>BIOSTAT 200A, 200B, <a href="https://ucla-biostat-200c.github.io/2023spring/schedule/schedule.html">200C</a></td>
-<td>Methods in Biostatistics</td>
-<td><a href="https://profiles.ucla.edu/alexandra.klomhaus">Dr.&nbsp;A. Klomhaus</a>, <br> <a href="https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi">Dr.&nbsp;C. M. Crespi</a>, <br> <a href="https://ph.ucla.edu/about/faculty-staff-directory/jin-zhou">Dr.&nbsp;Jin Zhou</a></td>
-</tr>
-<tr class="even">
-<td>BIOSTAT 203A, <a href="https://ucla-biostat-203b.github.io/2024winter/schedule/schedule-lec1.html">203B</a></td>
-<td>Data Management, Statistical Computing <br> Data Science by R</td>
-<td><a href="https://bioscience.ucla.edu/people/hyun-grace-kim/">Dr.&nbsp;Grace Kim</a>, <br> <a href="https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou">Dr.&nbsp;Hua Zhou</a></td>
-</tr>
-<tr class="odd">
-<td><a href="https://ucla-biostat-216.github.io/2024fall/schedule/schedule.html">BIOSTAT 216</a></td>
-<td>Mathematical Methods for Biostatistics</td>
-<td><a href="https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou">Dr.&nbsp;Hua Zhou</a></td>
-</tr>
-<tr class="even">
-<td>STAT M254</td>
-<td>Statistical Methods in Computational Biology</td>
-<td><a href="http://jsb.ucla.edu/about-jingyi-jessica-li/">Dr.&nbsp;Jessica Li</a></td>
-</tr>
-<tr class="odd">
 <td>MATH 115A, 33A</td>
 <td>Linear Algebra</td>
 <td><a href="https://pabloocal.github.io/index.html">Dr.&nbsp;Pablo S. Ocal</a></td>
 </tr>
 <tr class="even">
 <td>MATH 131A</td>
-<td>Real Analysis (in progress)</td>
-<td></td>
+<td>Real Analysis</td>
+<td>Dr.&nbsp;Konstantinos Varvarezos</td>
 </tr>
 <tr class="odd">
-<td>MATH 164</td>
-<td>Optimization (in progress)</td>
-<td></td>
-</tr>
-<tr class="even">
 <td>MATH 170E, 170S</td>
 <td>Probability Theory and Statistics</td>
-<td></td>
+<td>Dr.&nbsp;Zhaoyu Zhang, Dr.&nbsp;Jona Lelmi</td>
+</tr>
+<tr class="even">
+<td>BIOSTAT 200A, 200B, <a href="https://ucla-biostat-200c.github.io/2023spring/schedule/schedule.html">200C</a></td>
+<td>Methods in Biostatistics</td>
+<td><a href="https://profiles.ucla.edu/alexandra.klomhaus">Dr.&nbsp;A. Klomhaus</a>, <br> <a href="https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi">Dr.&nbsp;C. M. Crespi</a>, <br> <a href="https://ph.ucla.edu/about/faculty-staff-directory/jin-zhou">Dr.&nbsp;Jin Zhou</a></td>
 </tr>
 <tr class="odd">
+<td>BIOSTAT 203A, <a href="https://ucla-biostat-203b.github.io/2024winter/schedule/schedule-lec1.html">203B</a></td>
+<td>Data Management, Statistical Computing <br> Data Science by R</td>
+<td><a href="https://bioscience.ucla.edu/people/hyun-grace-kim/">Dr.&nbsp;Grace Kim</a>, <br> <a href="https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou">Dr.&nbsp;Hua Zhou</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://ucla-biostat-216.github.io/2024fall/schedule/schedule.html">BIOSTAT 216</a></td>
+<td>Mathematical Methods for Biostatistics</td>
+<td><a href="https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou">Dr.&nbsp;Hua Zhou</a></td>
+</tr>
+<tr class="odd">
+<td>STAT M254</td>
+<td>Statistical Methods in Computational Biology</td>
+<td><a href="http://jsb.ucla.edu/about-jingyi-jessica-li/">Dr.&nbsp;Jingyi Jessica Li</a></td>
+</tr>
+<tr class="even">
+<td>BIOMATH 210</td>
+<td>Optimization Methods in Biology</td>
+<td><a href="https://bioscience.ucla.edu/people/kenneth-l-lange/">Dr.&nbsp;Kenneth L Lange</a></td>
+</tr>
+<tr class="odd">
+<td>BIOMATH M281</td>
+<td>Survival Analysis</td>
+<td><a href="https://ph.ucla.edu/about/faculty-staff-directory/gang-li">Dr.&nbsp;Gang Li</a></td>
+</tr>
+<tr class="even">
+<td>BIOSTAT 202A</td>
+<td>Mathematical Statistics</td>
+<td><a href="https://ph.ucla.edu/about/faculty-staff-directory/damla-senturk">Dr.&nbsp;Damla Senturk</a></td>
+</tr>
+<tr class="odd">
+<td>BIOSTAT 231</td>
+<td>Statistical Power and Sample Size Methods</td>
+<td><a href="https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi">Dr.&nbsp;C. M. Crespi</a></td>
+</tr>
+<tr class="even">
 <td><a href="assets/100c_content.pdf">STAT 100C</a></td>
 <td>Linear Models</td>
 <td><a href="http://www.stat.ucla.edu/~nchristo/">Dr.&nbsp;Nicolas Christou</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>BIOSTAT 213</td>
-<td>Statistical Simulation Techniques</td>
+<td>Statistical Simulation</td>
 <td><a href="https://ph.ucla.edu/about/faculty-staff-directory/christina-ramirez">Dr.&nbsp;Christina Ramirez</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="https://robweiss.faculty.biostat.ucla.edu/biostat236">BIOSTAT M236</a></td>
-<td>Longitudinal Data (in progress)</td>
+<td>Longitudinal Data</td>
 <td><a href="https://ph.ucla.edu/about/faculty-staff-directory/robert-erin-weiss">Dr.&nbsp;Robert Weiss</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td>Infinite Theory, Calculus, and Partial Differential Equations</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td>Discrete Mathematics</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td>Python and Computational Thinking</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>DS BMED 208</td>
-<td>Recent Research in Machine Learning in Medicine (in progress)</td>
+<td>Recent Research in Machine Learning in Medicine</td>
 <td><a href="https://ernstlab.biolchem.ucla.edu/people/jason-ernst/">Dr.&nbsp;Jason Ernst</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td>Bioinformatics</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td>Biochemistry, Organic Chemistry, General Chemistry</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td>Genetics, Human Genetics, Genetic Engineering</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td>Molecular Biology, Cell Biology, Developmental Biology</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td>Anatomy and Physiology, Neurology</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td>Immunology, Microbiology</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td>Ecology, Zoology, Botany, Evolutionary Biology</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>PUB HLT 200A, B</td>
 <td>Epidemiology, Public Health Policy, Community &amp; Environmental Health Sciences</td>
 <td></td>

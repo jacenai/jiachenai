@@ -1,49 +1,61 @@
 # Experience
 
-## Academic
+## Positions
+- **Graduate Student Researcher**, *University of California, Los Angeles*  
+  *September 2024 – Present*  
+- **Warren Alpert Computational Biology and AI Network Fellow**, *University of California, Los Angeles*  
+  *August 2024 – Present*  
 
-**Graduate Research Assistant** | UCLA | Sept. 2024 – Present
+---
 
-- Working with [Dr. Feng Gao](https://ph.ucla.edu/about/faculty-staff-directory/feng-gao) in the Department of Environmental Health Sciences to conduct research on network-based biomarker discovery for aging clocks using mice colon data.
+## Conferences
+### Recent Participation
+1. **Computational Genomics Summer Institute (CGSI) 2025**  
+   *UCLA, Los Angeles, CA* — *August 2025*  
+2. **Lange Symposium on Computational Statistics 2025**  
+   *UCLA, Los Angeles, CA* — *January 2025*  
+3. **10th Annual QCBio Retreat**  
+   *UCLA, Los Angeles, CA* — *September 2024*  
+4. **Computational Genomics Summer Institute (CGSI) 2024**  
+   *UCLA, Los Angeles, CA* — *August 2024*  
 
+---
 
-**2024 & 2025 Computational Genomics Summer Institute ([CGSI](http://computationalgenomics.bioinformatics.ucla.edu/))**    
-[Warren Alpert Computational Biology and AI Network Fellow](assets/Warren_Alpert_Computational_Biology_Fellow.pdf) | UCLA | June 2024 – Sept. 2025
+## Posters & Presentations
+### Selected Contributions
+1. *Influenza Vaccination: DNA Methylation and Immune Response Mechanisms*  
+   **Matteo Lab**, *UCLA* — *November 2024*  
+2. *Higher Education in Public Health*  
+   **Fielding School of Public Health**, *UCLA* — *April 2024*  
+3. *Key Factors Linked to Depression Before Adjuvant Therapy in Breast Cancer*  
+   *UCLA* — *March 2024*  
+4. *Lymphocyte Regeneration After Thymocyte Damage in Zebrafish*  
+   **Li Lab**, *Southwest University* — *June 2020*  
 
-- Participating in the Computational Genomics Summer Institute for two consecutive summers (2024 and 2025). Engaged in [workshops](http://computationalgenomics.bioinformatics.ucla.edu/schedule/) on computational medicine with a focus on genomic biobanks and computational genomics.
-- Working with [Dr. Vanessa D Jonsson](https://jonssonlab.com/people) and her team to infer immune history from RNA-seq data.
-
-
-## Professional
-
-
-[**Higher Education in Public Health**](assets/Higher_Education_in_Public_Health.pdf)    
-Committee member | UCLA | Apr. 2024
-
-- Presented on UCLA’s biostatistics programs for prospective students and answered questions about the application process and curriculum.
-
-
-[**Western Biomedical Technology Inc.**](https://www.wstbio.com/)    
-Intern | Immunization Team | IT Department | Mar. 2021 – Jun. 2021
-
-- Developed a Python program using convolution methods to recognize light bands, which improved the accuracy of western blot results.
--	Created an R-based program for calculating standard concentration curves in ELISA, boosting calculation speed.
--	Presented biweekly and oversaw experiments and reports in Immunology, Histopathology, and Molecular Biology.
--	Enhanced team efficiency by coordinating effectively with customers and colleagues across departments.
-
-**Life Science Administrative Office**     
-Undergrad Assistant | Southwest University | Oct. 2018 – Jun. 2021
-
-- Organized five meetings per semester, acting as the liaison between administrative staff and a class of 65 students, addressing inquiries and providing feedback.
-- Advised 41 freshmen on academic performance, course selection, extracurriculars, and research opportunities.
+---
 
 
+## Professional Experience
 
-## Volunteer
+### Intern | Immunization Team, IT Department 
+[Western Biomedical Technology Inc.](https://www.wstbio.com/)  
+*March 2021 – June 2021*  
 
-[**Central Library**](assets/Certificate_of_Volunteer.pdf) | Southwest University | Oct. 2019 – Jan. 2020
+- Developed a Python program utilizing convolution methods to enhance light band recognition, improving the accuracy of western blot results.  
+- Created an R-based tool for calculating ELISA standard concentration curves, significantly increasing calculation efficiency.  
+- Presented biweekly updates and supervised experiments and reports in Immunology, Histopathology, and Molecular Biology.  
+- Improved team efficiency through effective coordination with customers and cross-departmental collaboration.  
 
-- Coordinated a charity evening for over 200 attendees, sponsored by the SWU Library Volunteer Association, handling venue reservations and decoration.
-- Assisted with organizing the library, including classifying books and managing borrowing and returns.
+### Undergraduate Assistant  
+Life Science Administrative Office, Southwest University   
+*October 2018 – June 2021*  
 
+- Organized five meetings per semester, serving as the liaison between administrative staff and a class of 65 students, addressing inquiries and providing actionable feedback.  
+- Provided academic advising to 41 freshmen, assisting with course selection, extracurricular engagement, and research opportunities.  
 
+### Volunteer
+Central Library, Southwest University  
+*October 2019 – January 2020*  
+
+- Coordinated a charity evening for over 200 attendees, managing venue reservations, logistics, and decorations for the SWU Library Volunteer Association.  
+- Assisted with library organization, including book classification and managing borrowing and returns.  
