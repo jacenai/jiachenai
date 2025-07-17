@@ -1,0 +1,44 @@
+
+# Code
+
+**Statistical Methods in Computational Biology** | Spring 2024
+
+-   [Single-cell RNA-seq Cell Type Annotation](https://jacenai.github.io/Biostatistics/Final_Project.html#introduction)
+
+-   scRNA-seq Data Normalization Methods Comparison[\[real data\]](https://jacenai.github.io/Biostatistics/Normalizaion_comparision&Derivative_general_scRNA_model.html#q3.)[\[simulated data\]](https://jacenai.github.io/Biostatistics/Normalizaion_comparision&Derivative_general_scRNA_model.html#section-2) and [Simulation and Statistical Derivation of Negative Binomial scRNA-seq Model](https://jacenai.github.io/Biostatistics/Normalizaion_comparision&Derivative_general_scRNA_model.html#part-2-simulated-data)
+-  Dimension Reduction Methods: [PCA](https://jacenai.github.io/Biostatistics/254_dimen_reduc.html#question-1), [GLM-PCA, MDS](https://jacenai.github.io/Biostatistics/254_dimen_reduc.html#question-5), NMF, ICA, PNMF, t-SNE, and UMAP
+- Clustering Algorithms: [k-means, k-means++, hierarchical clustering, Seurat clustering](https://jacenai.github.io/Biostatistics/254_Clustering&Evaluation#question-2), and Evaluation: [ARI, Silhouette Score](https://jacenai.github.io/Biostatistics/254_Clustering&Evaluation#question-3)
+
+**Generalized Linear Models** [\[course link\]](https://ucla-biostat-200c.github.io/2023spring/schedule/schedule.html) \| Spring 2024
+
+-   [Comparison of Four GLM Models for Microbiome Sequencing Data](https://jacenai.github.io/Biostatistics/Microbio_seq.html)
+
+    - In this project, I compared the performance of four GLM models (Quasi-Poisson, Negative Binomial, Zero-Inflated Poisson, and Zero-Inflated Negative Binomial) for [differential abundance analysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9488820/) of microbiome sequencing data at genus and species levels, assessing type I error rates with simulated data.
+
+-   [Statistical Derivations in GLM](https://jacenai.github.io/Biostatistics/Stat_Prob_GLM.html)
+-   [Linear Models](https://jacenai.github.io/Biostatistics/200C_hw1_show.html), [GLM](https://jacenai.github.io/Biostatistics/200C_hw1_show.html#glm-model-fitting), [Survival Analysis](https://jacenai.github.io/Biostatistics/Survival&longitudinal.html#survival-data-analysis), and [Longitudinal Data Analysis](https://jacenai.github.io/Biostatistics/Survival&longitudinal.html#longitudinal-data-analysis)
+
+**Data Science** [\[course link\]](https://ucla-biostat-203b.github.io/2024winter/schedule/schedule-lec1.html) | Winter 2024
+
+-   [Linux Shell Commands](https://jacenai.github.io/Biostatistics/linux_basic_show.html#linux-shell-commands), and [HPC](https://jacenai.github.io/Biostatistics/Notes_on_Hoffman2.html)
+-   [Ingesting Big Data Files](https://jacenai.github.io/biostat-203b-2024-winter/hw2/hw2sol.html), and [Inquiry and Analysis on Database](https://jacenai.github.io/biostat-203b-2024-winter/hw4/hw4sol.html)
+-   [Big Data Visualization](https://jacenai.github.io/biostat-203b-2024-winter/hw3/hw3sol.html), and developing [Shiny App](https://jacenai.github.io/biostat-203b-2024-winter/hw4/Rshiny_show.html) for interactive graphics
+-   [Statistical Learning in R](https://jacenai.github.io/biostat-203b-2024-winter/hw5/hw5sol.html)
+
+
+**Statistical Simulation** | Fall 2024
+
+-   [Accept-Reject Algorithm](https://jacenai.github.io/Biostatistics/Accept-Reject_Algorithm.html)
+-   [Bayesian Estimation with Metropolis Hastings](https://jacenai.github.io/Biostatistics/Bayesian_Estimation_with_Metropolis-Hastings.html)
+-   [Poisson Process Simulation](https://jacenai.github.io/Biostatistics/213_Midterm.html#problem-statement)
+
+
+**Linear Models** | Winter 2024
+
+-   [\[ Poster \]](assets/200B_poster.pdf) Assessing Key Factors Associated with Depression before Adjuvant Therapy in Women with Breast Cancer
+
+**Data Management** | Fall 2023
+
+-   [\[ Report \]](assets/Biostat203_Midtern_project.pdf) Modeling Depression Risk among Noninstitutionalized US Citizens: A Retrospective Study by SAS
+
+

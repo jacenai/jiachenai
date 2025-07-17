@@ -1,0 +1,61 @@
+# Experience
+
+## Positions
+- **Graduate Student Researcher**, *University of California, Los Angeles*  
+  *September 2024 – Present*  
+- **Warren Alpert Computational Biology and AI Network Fellow**, *University of California, Los Angeles*  
+  *August 2024 – Present*  
+
+
+
+## Conferences
+1. **Computational Genomics Summer Institute (CGSI) 2025**  
+   *UCLA, Los Angeles, CA* — *August 2025*  
+2. **Lange Symposium on Computational Statistics 2025**  
+   *UCLA, Los Angeles, CA* — *January 2025*  
+3. **10th Annual QCBio Retreat**  
+   *UCLA, Los Angeles, CA* — *September 2024*  
+4. **Computational Genomics Summer Institute (CGSI) 2024**  
+   *UCLA, Los Angeles, CA* — *August 2024*  
+
+
+
+## Posters & Presentations
+<span style="font-size: 20px; font-weight: 500;">Selected Contributions</span>
+
+1. **Influenza Vaccination Impact on DNA Methylation in UGA6 Cohort**  
+   *Matteo Lab, UCLA* — *November 2024*  
+2. **Higher Education in Public Health**  
+   *Fielding School of Public Health, UCLA* — *April 2024*  
+3. **Key Factors Linked to Depression Before Adjuvant Therapy in Breast Cancer**  
+   *UCLA* — *March 2024*  
+4. **Lymphocyte Regeneration After Thymocyte Damage in Zebrafish**  
+   *Li Lab, Southwest University* — *June 2020*  
+
+
+
+
+## Professional Experience
+
+### Intern | Immunization Team, IT Department 
+[Western Biomedical Technology Inc.](https://www.wstbio.com/)  
+*March 2021 – June 2021*  
+
+- Developed a Python program utilizing convolution methods to enhance light band recognition, improving the accuracy of western blot results.  
+- Created an R-based tool for calculating ELISA standard concentration curves, significantly increasing calculation efficiency.  
+- Presented biweekly updates and supervised experiments and reports in Immunology, Histopathology, and Molecular Biology.  
+- Improved team efficiency through effective coordination with customers and cross-departmental collaboration.  
+
+### Undergraduate Assistant  
+Life Science Administrative Office, Southwest University   
+*October 2018 – June 2021*  
+
+- Organized five meetings per semester, serving as the liaison between administrative staff and a class of 65 students, addressing inquiries and providing actionable feedback.  
+- Provided academic advising to 41 freshmen, assisting with course selection, extracurricular engagement, and research opportunities.  
+
+### Volunteer
+Central Library, Southwest University  
+*October 2019 – January 2020*  
+
+- Coordinated a charity evening for over 200 attendees, managing venue reservations, logistics, and decorations for the SWU Library Volunteer Association.  
+- Assisted with library organization, including book classification and managing borrowing and returns.  
