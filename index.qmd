@@ -22,9 +22,9 @@ about:
 
 # About Me
 
-I'm a UCLA grad student exploring the exciting fields of biostatistics, computational biology, and epigenetics while pursuing my MS in Biostatistics at the [Fielding School of Public Health](https://ph.ucla.edu/). My [research](research.qmd) explores gene expression patterns across epigenomic, transcriptomic, and proteomic levels, using statistical models to uncover biomarkers, elaborate biological mechanisms, and build predictive models related to aging, vaccines, and diseases, especially in the context of epigenetic regulation.
+I'm a UCLA grad student exploring the exciting fields of biostatistics, computational biology, and epigenetics while pursuing my MS in Biostatistics at the [Fielding School of Public Health](https://ph.ucla.edu/), UCLA. My [research](research.qmd) explores gene expression patterns across epigenomic, transcriptomic, and proteomic levels, using statistical models to uncover biomarkers, elaborate biological mechanisms, and build predictive models related to aging, vaccines, and diseases, especially in the context of epigenetic regulation.
 
-I'm passionate about mathematical and statistical methods for genetic analysis to push the boundaries of epigenetic research and contribute to the future of vaccine development and precision medicine!
+I'm passionate about mathematical and statistical methods for genetic analysis to push the boundaries of epigenetic research and contribute to the future of vaccine development and precision medicine.
 
 
 
@@ -32,7 +32,7 @@ I'm passionate about mathematical and statistical methods for genetic analysis t
 
 1)  **Epigenetics**: Investigating dynamics of quintessential epigenomic biomarkers during lifespan. Studying the impact of DNA methylation, histone modification, and non-coding RNA on gene expression regulation and cellular signaling pathways.
 2)  **Statistical Genetics**: Modeling gene expression patterns across epigenomic, transcriptomic, and proteomic levels by linear or nonlinear methods and identifying biomarkers to build predictive models related to age, vaccines, and chronic diseases.
-3)  **Bioinformatics**: Developing computational tools to map CpG sites to methylation patterns and optimizing algorithms for efficiently digging into high-throughput sequencing data purposes.
+3)  **Bioinformatics**: Developing computational tools to map CpG sites to methylation patterns and optimizing algorithms for efficiently vetting into high-throughput sequencing data purposes.
 
 
 

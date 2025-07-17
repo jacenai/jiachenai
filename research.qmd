@@ -81,9 +81,10 @@ Supervised by [Dr. Li Li](https://people.ucas.ac.cn/~0064236?language=en)
 
 # Publications
 
-- **Ai, J.** (2021). Lifestyle does affect semen quality: factor determination in a statistical way. *Lecture Notes in Medicine and Life Sciences*, 4, 163--171. [Read Article](https://www.clausiuspress.com/conference/article/artId/7114.html)
 - **Ai, J.**, Pickering, H., Pellegrini, M. et al. Influenza Vaccination: DNA Methylation and Immune Response Mechanisms. *Genome Biology*. (forthcoming).
-- **Ai, J.**, Fan, Y., Gao, F. et al. Nonlinear aging dynamics in co-methylation network. *Cell Reports*. (forthcoming).
+- **Ai, J.**, Fan, Y., Gao, F. et al. Nonlinear Aging Dynamics in Co-methylation Network. *Cell Reports*. (forthcoming).
+- **Ai, J.** (2021). Lifestyle Does Affect Semen Quality: Factor Determination in a Statistical Way. *Lecture Notes in Medicine and Life Sciences*, 4, 163--171. [Read Article](https://www.clausiuspress.com/conference/article/artId/7114.html)
+
 
 
 

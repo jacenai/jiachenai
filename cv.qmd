@@ -58,19 +58,19 @@
 
 | **Course**  | **Description**  | **Instructor**  |
 |--------------------|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| MATH 115A, 33A | Linear Algebra | [Dr. Pablo S. Ocal](https://pabloocal.github.io/index.html) |
-| MATH 131A | Real Analysis | Dr. Konstantinos Varvarezos |
-| MATH 170E, 170S | Probability Theory and Statistics | Dr. Zhaoyu Zhang, Dr. Jona Lelmi |
-| BIOSTAT 200A, 200B, [200C](https://ucla-biostat-200c.github.io/2023spring/schedule/schedule.html) | Methods in Biostatistics | [Dr. A. Klomhaus](https://profiles.ucla.edu/alexandra.klomhaus), <br> [Dr. C. M. Crespi](https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi), <br> [Dr. Jin Zhou](https://ph.ucla.edu/about/faculty-staff-directory/jin-zhou) |
-| BIOSTAT 203A, [203B](https://ucla-biostat-203b.github.io/2024winter/schedule/schedule-lec1.html) | Data Management, Statistical Computing <br> Data Science by R | [Dr. Grace Kim](https://bioscience.ucla.edu/people/hyun-grace-kim/), <br> [Dr. Hua Zhou](https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou) |
-| [BIOSTAT 216](https://ucla-biostat-216.github.io/2024fall/schedule/schedule.html) | Mathematical Methods for Biostatistics | [Dr. Hua Zhou](https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou) |
 | STAT M254  | Statistical Methods in Computational Biology | [Dr. Jingyi Jessica Li](http://jsb.ucla.edu/about-jingyi-jessica-li/) |
 | BIOMATH 210 | Optimization Methods in Biology | [Dr. Kenneth L Lange](https://bioscience.ucla.edu/people/kenneth-l-lange/) |
 | BIOMATH M281 | Survival Analysis | [Dr. Gang Li](https://ph.ucla.edu/about/faculty-staff-directory/gang-li) |
 | BIOSTAT 202A | Mathematical Statistics | [Dr. Damla Senturk](https://ph.ucla.edu/about/faculty-staff-directory/damla-senturk) |
-| BIOSTAT 231 | Statistical Power and Sample Size Methods | [Dr. C. M. Crespi](https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi) |
+| BIOSTAT 200A, 200B, [200C](https://ucla-biostat-200c.github.io/2023spring/schedule/schedule.html) | Methods in Biostatistics | [Dr. A. Klomhaus](https://profiles.ucla.edu/alexandra.klomhaus), <br> [Dr. C. M. Crespi](https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi), <br> [Dr. Jin Zhou](https://ph.ucla.edu/about/faculty-staff-directory/jin-zhou) |
 | [STAT 100C](assets/100c_content.pdf) | Linear Models | [Dr. Nicolas Christou](http://www.stat.ucla.edu/~nchristo/) |
 | BIOSTAT 213 | Statistical Simulation | [Dr. Christina Ramirez](https://ph.ucla.edu/about/faculty-staff-directory/christina-ramirez) |
+| MATH 115A, 33A | Linear Algebra | [Dr. Pablo S. Ocal](https://pabloocal.github.io/index.html) |
+| MATH 131A | Real Analysis | Dr. Konstantinos Varvarezos |
+| MATH 170E, 170S | Probability Theory and Statistics | Dr. Zhaoyu Zhang, Dr. Jona Lelmi |
+| BIOSTAT 203A, [203B](https://ucla-biostat-203b.github.io/2024winter/schedule/schedule-lec1.html) | Data Management, Statistical Computing <br> Data Science by R | [Dr. Grace Kim](https://bioscience.ucla.edu/people/hyun-grace-kim/), <br> [Dr. Hua Zhou](https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou) |
+| [BIOSTAT 216](https://ucla-biostat-216.github.io/2024fall/schedule/schedule.html) | Mathematical Methods for Biostatistics | [Dr. Hua Zhou](https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou) |
+| BIOSTAT 231 | Statistical Power and Sample Size Methods | [Dr. C. M. Crespi](https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi) |
 | [BIOSTAT M236](https://robweiss.faculty.biostat.ucla.edu/biostat236) | Longitudinal Data | [Dr. Robert Weiss](https://ph.ucla.edu/about/faculty-staff-directory/robert-erin-weiss) |
 | | Infinite Theory, Calculus, and Partial Differential Equations |  |
 | | Discrete Mathematics |  |
@@ -84,3 +84,5 @@
 | | Immunology, Microbiology |  |
 | | Ecology, Zoology, Botany, Evolutionary Biology |  |
 | PUB HLT 200A, B | Epidemiology, Public Health Policy, Community & Environmental Health Sciences |  |
+
+

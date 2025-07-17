@@ -1,8 +1,10 @@
 # Teaching Experience
 
-## **Summer 2024**  
 
-### **Graduate Teaching Assistant**  
+
+## **Graduate Teaching Assistant**  
+
+### Summer 2024 
 **MCD BIO 187AL: Research Immersion Laboratory in Genomic Biology** (5 units)  
 **University of California, Los Angeles (UCLA)**  
 *June 2024 – August 2024*  
@@ -16,4 +18,11 @@
   - Demonstrated bioinformatics tools, including NCBI BLAST, InterProScan, PSIPRED, SignalP, and [ChimeraX](https://drive.google.com/file/d/1g6SUgFxOo0I3-QbX5CxZ0P0ivMQi9Idj/view?usp=sharing).  
   - Mentored students on designing, implementing, and presenting their final research projects.  
   - Evaluated students' progress through weekly quizzes, assignments, and final project presentations.
+
+### Spring 2025
+**C&S BIO M187: Research Communication in Computational and Systems Biology** (4 units)  
+**University of California, Los Angeles (UCLA)**  
+*March 2025 – June 2025*  
+**Instructor:** [Dr. Matteo Pellegrini](https://medschool.ucla.edu/people/matteo-pellegrini-phd) 
+
 
