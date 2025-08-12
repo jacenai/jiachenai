@@ -116,7 +116,7 @@
     "href": "index.html",
     "title": "About Me",
     "section": "",
-    "text": "LinkedIn\n  \n  \n    \n     Email\n  \n  \n    \n     CV\n  \n\n\n\n\nAbout Me\nI’m a UCLA grad student exploring the exciting fields of biostatistics, computational biology, and epigenetics while pursuing my MS in Biostatistics at the Fielding School of Public Health, UCLA. My research explores gene expression patterns across epigenomic, transcriptomic, and proteomic levels, using statistical models to uncover biomarkers, elaborate biological mechanisms, and build predictive models related to aging, vaccines, and diseases, especially in the context of epigenetic regulation.\nI’m passionate about mathematical and statistical methods for genetic analysis to push the boundaries of epigenetic research and contribute to the future of vaccine development and precision medicine.\n\n\nResearch Interests\n\nEpigenetics: Investigating dynamics of quintessential epigenomic biomarkers during lifespan. Studying the impact of DNA methylation, histone modification, and non-coding RNA on gene expression regulation and cellular signaling pathways.\nStatistical Genetics: Modeling gene expression patterns across epigenomic, transcriptomic, and proteomic levels by linear or nonlinear methods and identifying biomarkers to build predictive models related to age, vaccines, and chronic diseases.\nBioinformatics: Developing computational tools to map CpG sites to methylation patterns and optimizing algorithms for efficiently vetting into high-throughput sequencing data purposes.\n\n\n\nHighlights\n\nInfluenza Vaccination Impact on DNA Methylation in UGA6 Cohort: Identified key epigenetic regulators of immune responses to influenza vaccination in a large cohort study, uncovering the RIG‐I signaling pathway’s role in vaccine-induced immunity through integrated DNA methylation, RNA-seq, and cytokine analyses.\nNonlinear Aging Dynamics in Co-methylation Network: Unveiled the critical role of non-linear co-methylation dynamics in aging by mapping epigenetic changes to gene networks and biological pathways, providing novel insights into age-related processes beyond linear models.\nInferring immune histories from SARS-CoV-2 RNA-seq data: Developed a pipeline to infer immune histories from SARS-CoV-2 RNA-seq data, linking immune profiling to personalized responses.\nLymphocyte Regeneration after Thymocyte Damage in Zebrafish: Uncovered the pivotal role of the CXCL12/CXCR4 pathway in thymic lymphocyte regeneration, revealing stem cell migration as a key mechanism for immune recovery.\n\n\n\nLet’s Connect\nFeel free to explore my CV or reach out via:\n\nEmail: jiachenai@ucla.edu\nLinkedIn: Jiachen Ai"
+    "text": "LinkedIn\n  \n  \n    \n     Email\n  \n  \n    \n     CV\n  \n\n  \n  \n\n\nUniversity of California, Los Angeles (UCLA)\nM.S., Biostatistics\nSouthwest University\nB.S., Biological Sciences\n\n\n\nCedars-Sinai, Casero Lab | Research Intern\nUCLA, Pellegrini Lab | Graduate Student Researcher\nUCLA, Gao Lab | Graduate Student Researcher"
   },
   {
     "objectID": "about.html",
@@ -131,5 +131,40 @@
     "title": "Teaching Experience",
     "section": "",
     "text": "MCD BIO 187AL: Research Immersion Laboratory in Genomic Biology (5 units)\nUniversity of California, Los Angeles (UCLA)\nJune 2024 – August 2024\nInstructor: Dr. Lukasz Salwinski\n\nCourse Resources:\n\nSyllabus\n\nStudents’ Reviews\n\n\nResponsibilities:\n\nConducted lab sessions and held office hours to provide individualized support for students.\n\nDemonstrated bioinformatics tools, including NCBI BLAST, InterProScan, PSIPRED, SignalP, and ChimeraX.\n\nMentored students on designing, implementing, and presenting their final research projects.\n\nEvaluated students’ progress through weekly quizzes, assignments, and final project presentations.\n\n\n\n\n\nC&S BIO M187: Research Communication in Computational and Systems Biology (4 units)\nUniversity of California, Los Angeles (UCLA)\nMarch 2025 – June 2025\nInstructor: Dr. Matteo Pellegrini"
+  },
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "Jiachen (Jacen) Ai",
+    "section": "",
+    "text": "is it true\n\n  \n    \n\n    \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n  \n    \n     CV\n  \n\n  \n  \nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\n\n\nUniversity of California, Los Angeles | Los Angeles, CA\nMS in Biostatistics | Sept 2023 - Present\nSouthwest University | Chongqing, China\nBS in Biological Sciences | Sept 2018 - June 2022\n\n\n\nCedars-Sinai | Reseach Intern at Casero Lab | July 2025 - Present\nUCLA | Graduate Student Researcher at Pellegrini Lab | March 2024 - June 2025\nUCLA | Graduate Student Researcher at Gao Lab | Sept. 2024 - March 2025"
+  },
+  {
+    "objectID": "test.html#education",
+    "href": "test.html#education",
+    "title": "Jiachen (Jacen) Ai",
+    "section": "",
+    "text": "University of California, Los Angeles | Los Angeles, CA\nMS in Biostatistics | Sept 2023 - Present\nSouthwest University | Chongqing, China\nBS in Biological Sciences | Sept 2018 - June 2022"
+  },
+  {
+    "objectID": "test.html#experience",
+    "href": "test.html#experience",
+    "title": "Jiachen (Jacen) Ai",
+    "section": "",
+    "text": "Cedars-Sinai | Reseach Intern at Casero Lab | July 2025 - Present\nUCLA | Graduate Student Researcher at Pellegrini Lab | March 2024 - June 2025\nUCLA | Graduate Student Researcher at Gao Lab | Sept. 2024 - March 2025"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "About Me",
+    "section": "",
+    "text": "University of California, Los Angeles (UCLA)\nM.S., Biostatistics\nSouthwest University\nB.S., Biological Sciences"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "About Me",
+    "section": "",
+    "text": "Cedars-Sinai, Casero Lab | Research Intern\nUCLA, Pellegrini Lab | Graduate Student Researcher\nUCLA, Gao Lab | Graduate Student Researcher"
   }
 ]

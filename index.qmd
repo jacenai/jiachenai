@@ -1,8 +1,8 @@
 ---
 about:
-  template: jolla
   id: about-block
-  image: "img/jiachenai.jpg"
+  template: trestles
+  image: "img/portrait.jpg"
   links:
     - icon: linkedin
       text: LinkedIn
@@ -13,10 +13,29 @@ about:
     - icon: file
       text: CV
       href: https://jacenai.github.io/jiachenai/cv.html
+
 ---
 
 
 ::: {#about-block}
+## Education
+
+**University of California, Los Angeles** (UCLA)  
+M.S., Biostatistics
+
+**Southwest University**  
+B.S., Biological Sciences
+
+
+## Experience
+
+**Cedars-Sinai**, [Casero Lab](https://www.cedars-sinai.edu/health-sciences-university/research/labs/casero-lab.html) | Research Intern  
+
+**UCLA**, [Pellegrini Lab](https://www.pellegrini.mcdb.ucla.edu/) | Graduate Student Researcher
+
+**UCLA**, [Gao Lab](https://github.com/ThePeachLab) | Graduate Student Researcher 
+
+
 :::
 
 
