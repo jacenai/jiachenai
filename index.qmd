@@ -1,9 +1,13 @@
 ---
+title: Jiachen (Jacen) Ai
 about:
   id: about-block
   template: trestles
   image: "img/portrait.jpg"
   links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/jacenai
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/jiachen-ai-966132264/
@@ -43,7 +47,7 @@ B.S., Biological Sciences
 
 I'm a UCLA grad student exploring the exciting fields of biostatistics, computational biology, and epigenetics while pursuing my MS in Biostatistics at the [Fielding School of Public Health](https://ph.ucla.edu/), UCLA. My [research](research.qmd) explores gene expression patterns across epigenomic, transcriptomic, and proteomic levels, using statistical models to uncover biomarkers, elaborate biological mechanisms, and build predictive models related to aging, vaccines, and diseases, especially in the context of epigenetic regulation.
 
-I'm passionate about mathematical and statistical methods for genetic analysis to push the boundaries of epigenetic research and contribute to the future of vaccine development and precision medicine.
+I'm passionate about mathematical and statistical methods for genetic analysis to push the boundaries of epigenetic research and contribute to the future of vaccine development and precision medicine. 
 
 
 
@@ -72,9 +76,59 @@ I'm passionate about mathematical and statistical methods for genetic analysis t
 
 # Let's Connect
 
+In the free time, you can find me hiking or exploring new cuisines. I am a music enthusiast, always on the lookout for new tunes to add to my playlist. I also recently started my interest in tiki world and am excited to learn more about tiki culture and cocktails.
+
 Feel free to explore my [CV](cv.qmd) or reach out via:
 
 -   **Email:** [jiachenai\@ucla.edu](mailto:jiachenai@g.ucla.edu)
 -   **LinkedIn:** [Jiachen Ai](https://www.linkedin.com/in/jiachen-ai-966132264/)
 
 
+
+```{=html}
+<div id="travel-carousel" class="carousel slide w-100 shadow-lg rounded-2 overflow-hidden mt-4 mb-6" data-bs-ride="carousel" data-bs-interval="3500">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#travel-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#travel-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#travel-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Ketchikan.jpg" class="d-block w-100" alt="Ketchikan, Alaska">
+      <div class="carousel-caption d-none d-md-block">
+        <h6>Alaska</h6>
+        <p>Ketchikan</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/Seattle.jpg" class="d-block w-100" alt="Starbucks Reserve Roastery @ Seattle">
+      <div class="carousel-caption d-none d-md-block">
+        <h6>Seattle</h6>
+        <p>Starbucks Reserve Roastery</p>
+      </div>
+    <div class="carousel-item">
+      <img src="img/Cruise.jpg" class="d-block w-100" alt="Cruise to Alaska">
+      <div class="carousel-caption d-none d-md-block">
+        <h6>Princess Cruise</h6>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/Canada.jpg" class="d-block w-100" alt="Train to Canada">
+      <div class="carousel-caption d-none d-md-block">
+        <h6>Canada</h6>
+        <p>Glacial lake</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#travel-carousel" data-bs-slide="prev" aria-label="Previous">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#travel-carousel" data-bs-slide="next" aria-label="Next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+```
