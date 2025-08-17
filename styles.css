@@ -38,16 +38,3 @@
     </div>
   </div>
 </nav>
-
-/* ---------- Carousel image sizing ---------- */
-#travel-carousel img {
-  height: 60vh;           /* force all slides to same height (60% of viewport) */
-  width: 100%;            /* stretch horizontally */
-  object-fit: cover;      /* crop images to fill without distortion */
-}
-
-@media (max-width: 768px) {
-  #travel-carousel img {
-    height: 40vh;         /* smaller height on phones/tablets */
-  }
-}
