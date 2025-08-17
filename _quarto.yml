@@ -45,6 +45,7 @@ format:
   html:
     fontsize: 1em
     theme: jekyll-theme-minimal
+    css: styles.css
     toc: true  # Table of contents for better navigation
     toc-depth: 2
     code-link: true
