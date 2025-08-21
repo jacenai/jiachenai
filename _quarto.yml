@@ -4,6 +4,8 @@ website:
 
   # Navigation bar settings
   navbar:
+    background: "#546a90"        # Bootstrap “bg-primary”
+    pinned: false               # stays at top on scroll
     left:
       - text: "Home"
         href: index.qmd
@@ -11,10 +13,6 @@ website:
         href: cv.qmd
       - text: "Research"
         href: research.qmd
-      - text: "Experience"
-        href: experience.qmd
-      - text: "Teaching"
-        href: teaching.qmd
       - text: "Code"
         href: projects.qmd
     
@@ -44,7 +42,7 @@ execute:
 format:
   html:
     fontsize: 1em
-    theme: jekyll-theme-minimal
+    theme: cosmo
     css: styles.css
     toc: true  # Table of contents for better navigation
     toc-depth: 2
