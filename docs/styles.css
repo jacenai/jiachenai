@@ -38,6 +38,9 @@
 /* ========================================
    1) BASE / RESETS
    ======================================== */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -46,16 +49,16 @@ html, body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Prevent accidental horizontal scroll on small screens */
+  width: 100%;
+  overflow-x: hidden;
 }
 
-a { 
-  text-decoration: none; 
-  color: var(--bs-link-color); 
-}
-a:hover, a:focus { 
-  text-decoration: underline; 
-  color: var(--bs-link-hover-color); 
-}
+img, svg, video { max-width: 100%; height: auto; }
+
+a { text-decoration: none; color: var(--bs-link-color); }
+a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color); }
 
 /* ========================================
    2) LAYOUT CONTAINERS & GRIDS
@@ -80,9 +83,9 @@ a:hover, a:focus {
 .cv-three { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px 20px; }
 
 @media (max-width:1000px) { .cv-three { grid-template-columns: 1fr 1fr; } }
-@media (max-width:800px)  { 
-  .cv-two   { grid-template-columns: 1fr; } 
-  .cv-three { grid-template-columns: 1fr; } 
+@media (max-width:800px)  {
+  .cv-two   { grid-template-columns: 1fr; }
+  .cv-three { grid-template-columns: 1fr; }
 }
 
 /* Page header */
@@ -97,10 +100,7 @@ a:hover, a:focus {
   font-weight: 700;
   letter-spacing: .1px;
 }
-.header p {
-  margin: 0 0 .8rem;
-  color: var(--cv-muted);
-}
+.header p { margin: 0 0 .8rem; color: var(--cv-muted); }
 
 /* Actions group (top-right) */
 .header-actions-wrap {
@@ -199,7 +199,7 @@ a:hover, a:focus {
 .cv-btn-primary { background: var(--cv-accent); color: #fff; border-color: transparent; }
 .cv-btn-primary:hover { filter: brightness(0.95); }
 
-/* Slide link */
+/* Slide link (small pill on the right) */
 .slide-link {
   display: inline-block;
   margin-top: .25rem;
@@ -237,8 +237,17 @@ a:hover, a:focus {
 .cv-subhead::before { content: "#"; margin-right: .4rem; color: #2f3e5f; font-weight: 800; }
 
 /* Bullets & tags */
-.cv-bullets { list-style: none; padding: 0; margin: .1rem 0 .6rem; font-size: .95rem; line-height: 1.5; }
-.cv-bullets li { margin: .2rem 0; color: var(--cv-ink); }
+.cv-bullets {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: .3rem 0 .6rem;
+  font-size: .95rem;
+  line-height: 1.45;
+  color: var(--cv-ink);
+}
+.cv-bullets li { margin: .25rem 0; }
+.cv-bullets a { text-decoration: none; color: var(--bs-link-color); }
+.cv-bullets a:hover { text-decoration: underline; }
 
 .cv-tags {
   display: flex;
@@ -264,21 +273,8 @@ a:hover, a:focus {
 .cv-card--tinted { background: linear-gradient(0deg, #fff 0%, #fff 65%, var(--cv-accent-soft) 100%); }
 
 /* ========================================
-   4) UTILITIES
+   4) MODULES
    ======================================== */
-.px-compact { padding-left: 16px; padding-right: 16px; }
-.py-compact { padding-top: 14px; padding-bottom: 14px; }
-.mb-0 { margin-bottom: 0 !important; }
-.mt-0 { margin-top: 0 !important; }
-.mb-tight { margin-bottom: .35rem !important; }
-.p-0 { padding: 0 !important; }
-.m-0 { margin: 0 !important; }
-.no-border { border: none !important; }
-.row-gap-sm { row-gap: 10px !important; }
-
-/* Background helpers */
-.bg-soft-blue   { background: var(--cv-accent-soft) !important; }
-.bg-soft-purple { background: var(--cv-purple-bg) !important; }
 
 /* ---- Publications grid ---- */
 .pub-list{
@@ -291,81 +287,41 @@ a:hover, a:focus {
 }
 .pub-item{
   display: grid;
-  grid-template-columns: 120px 1fr;  /* thumbnail column + content */
+  grid-template-columns: 120px 1fr;  /* thumbnail + content */
   gap: 16px;
   align-items: start;
   padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border: 1px solid var(--cv-line);
+  border-radius: var(--cv-radius);
   background: #fff;
-  box-shadow: var(--shadow);
+  box-shadow: var(--cv-shadow);
 }
 @media (min-width: 900px){
   .pub-item{ grid-template-columns: 140px 1fr; }
 }
-
 .pub-item .thumb{
   width: 100%;
-  aspect-ratio: 1 / 1;           /* perfect square thumbnails */
+  aspect-ratio: 1 / 1;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 1px solid var(--cv-line);
   background: #f7f8fb;
 }
 .pub-item .thumb img{
-  width: 100%; height: 100%;
-  object-fit: cover;              /* consistent crop/fit */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
-
 .pub-item .meta .cv-title{ margin-bottom: .25rem; line-height: 1.35; }
-.pub-item .meta .cv-loc{ margin-bottom: .4rem; color: var(--muted); }
+.pub-item .meta .cv-loc{ margin-bottom: .4rem; color: var(--cv-muted); }
 .pub-item .meta .cv-year{ margin-bottom: .55rem; display: flex; gap: .4rem; flex-wrap: wrap; }
 
+/* ---- Presentations tweaks ---- */
+.cv-card-presentations .cv-entry { margin-bottom: .35rem; padding-bottom: .35rem; }
+.cv-card-presentations .cv-entry .cv-row + .cv-row { margin-top: .2rem; }
 
-
-/* Reduce motion */
-@media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
-}
-
-/* ========================================
-   5) PRINT
-   ======================================== */
-@media print {
-  .navbar { display: none !important; }
-  .cv-card { box-shadow: none; border-color: #cfd3d7; }
-  a { color: black; text-decoration: none; }
-}
-
-
-#travel-carousel{
-  margin-top:.75rem; border-radius:var(--radius);
-  box-shadow:var(--shadow); overflow:hidden;
-}
-#travel-carousel .carousel-item{
-  aspect-ratio:16/9;                 /* sets the frame */
-}
-#travel-carousel .carousel-item > img{
-  width:100%;
-  height:100%;
-  object-fit:cover;                   /* fill the frame, crop if needed */
-  display:block;
-}
-
-
-/* Tighten vertical rhythm inside Presentations only */
-.cv-card-presentations .cv-entry { 
-  margin-bottom: .35rem; 
-  padding-bottom: .35rem; 
-}
-
-/* Small gap between the title/link row and the meta row */
-.cv-card-presentations .cv-entry .cv-row + .cv-row { 
-  margin-top: .2rem; 
-}
-
-/* First row: title left, icon link right */
+/* First row: title left, icon link right (optional helper) */
 .cv-row--tight{
   display: flex;
   align-items: baseline;
@@ -374,22 +330,74 @@ a:hover, a:focus {
 .cv-row--tight .cv-title{ font-weight: 700; line-height: 1.35; }
 .cv-row--tight .cv-actions{ margin-left: auto; }
 
+/* ---- Carousel polish ---- */
+#travel-carousel{
+  margin-top:.75rem;
+  border-radius:var(--cv-radius);
+  box-shadow:var(--cv-shadow);
+  overflow:hidden;
+}
+#travel-carousel .carousel-item{
+  aspect-ratio:16/9;  /* sets consistent frame */
+}
+#travel-carousel .carousel-item > img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+#travel-carousel .carousel-caption{
+  background: linear-gradient(180deg,rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 100%);
+  border-radius: 12px;
+  padding:.6rem .8rem;
+  bottom: 8%;
+}
+#travel-carousel .carousel-caption h6{ margin:0; font-weight:800; color:#fff; }
+#travel-carousel .carousel-caption p{ margin:.1rem 0 0; color:#e9eef7; }
 
-.cv-bullets {
-  list-style: disc;
-  padding-left: 1.2rem;
-  margin: .3rem 0 .6rem;
-  font-size: .95rem;
-  line-height: 1.45;
-  color: var(--cv-ink);
+/* ========================================
+   5) UTILITIES
+   ======================================== */
+.px-compact { padding-left: 16px; padding-right: 16px; }
+.py-compact { padding-top: 14px; padding-bottom: 14px; }
+.mb-0 { margin-bottom: 0 !important; }
+.mt-0 { margin-top: 0 !important; }
+.mb-tight { margin-bottom: .35rem !important; }
+.p-0 { padding: 0 !important; }
+.m-0 { margin: 0 !important; }
+.no-border { border: none !important; }
+.row-gap-sm { row-gap: 10px !important; }
+
+.bg-soft-blue   { background: var(--cv-accent-soft) !important; }
+.bg-soft-purple { background: var(--cv-purple-bg) !important; }
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
 }
-.cv-bullets li { 
-  margin: .25rem 0; 
+
+/* ========================================
+   6) RESPONSIVE TWEAKS
+   ======================================== */
+@media (max-width: 600px){
+  /* Collapse two-column helpers cleanly */
+  .cv-two { display: block; }
+
+  /* Softer padding on small screens */
+  .cv-card, .card-slim { padding-left: .9rem; padding-right: .9rem; }
+
+  /* Publications: smaller thumbnail column */
+  .pub-item{ grid-template-columns: 100px 1fr; gap: 12px; }
+
+  /* Carousel caption padding on tiny screens */
+  #travel-carousel .carousel-caption{ padding: .45rem .6rem; bottom: 6%; }
 }
-.cv-bullets a { 
-  text-decoration: none; 
-  color: var(--bs-link-color); 
-}
-.cv-bullets a:hover { 
-  text-decoration: underline; 
+
+/* ========================================
+   7) PRINT
+   ======================================== */
+@media print {
+  .navbar { display: none !important; }
+  .cv-card { box-shadow: none; border-color: #cfd3d7; }
+  a { color: black; text-decoration: none; }
 }
