@@ -348,7 +348,7 @@ a:hover, a:focus {
 #travel-carousel .carousel-item > img{
   aspect-ratio: 16/9;
   object-fit: cover;
-  width: 100%;
+  width: auto;
   height: auto;
   display: block;
 }
