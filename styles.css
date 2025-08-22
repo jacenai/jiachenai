@@ -1,40 +1,375 @@
-<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home
-            <span class="visually-hidden">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+/* ========================================
+   0) THEME TOKENS — Slate Blue + Faded Purple
+   ======================================== */
+:root {
+  --cv-content-width: 1100px;
+  --cv-gap: 18px;
+  --cv-radius: 8px;
+  --cv-pad-x: 1.1rem;
+  --cv-pad-y: .9rem;
+
+  /* Core palette */
+  --cv-accent: #546a90;            /* primary brand/nav (slate blue) */
+  --cv-accent-light: #8ca6d1;      /* lighter blue for hovers */
+  --cv-accent-soft: #e7ecf7;       /* very light blue background/tint */
+
+  --cv-purple: #7b68b6;            /* secondary accent (muted indigo/purple) */
+  --cv-purple-light: #dcd6f2;      /* soft purple for chips, tints */
+  --cv-purple-bg: #f7f5fb;         /* very light purple background */
+
+  --cv-ink: #1e2230;               /* primary text */
+  --cv-muted: #5c6375;             /* muted text */
+  --cv-line: #e3e6ed;              /* borders/dividers */
+  --cv-bg: #ffffff;                /* page background */
+
+  --cv-chip-bg: #f4f6fa;           /* neutral chip background */
+  --cv-chip-ink: #424c61;          /* chip text */
+
+  --cv-shadow: 0 1px 3px rgba(0,0,0,.06);
+  --cv-shadow-hover: 0 2px 8px rgba(0,0,0,.08);
+
+  /* Bootstrap helpers */
+  --bs-primary: var(--cv-accent);
+  --bs-primary-rgb: 84,106,144;
+  --bs-link-color: #2c5aa0;
+  --bs-link-hover-color: #234a85;
+}
+
+/* ========================================
+   1) BASE / RESETS
+   ======================================== */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--cv-bg);
+  color: var(--cv-ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { 
+  text-decoration: none; 
+  color: var(--bs-link-color); 
+}
+a:hover, a:focus { 
+  text-decoration: underline; 
+  color: var(--bs-link-hover-color); 
+}
+
+/* ========================================
+   2) LAYOUT CONTAINERS & GRIDS
+   ======================================== */
+.cv-container,
+.cv-grid,
+.cv-card-presentations {
+  max-width: var(--cv-content-width);
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--cv-gap);
+}
+
+/* Internal grids */
+.cv-two   { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; }
+.cv-three { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px 20px; }
+
+@media (max-width:1000px) { .cv-three { grid-template-columns: 1fr 1fr; } }
+@media (max-width:800px)  { 
+  .cv-two   { grid-template-columns: 1fr; } 
+  .cv-three { grid-template-columns: 1fr; } 
+}
+
+/* Page header */
+.header {
+  max-width: var(--cv-content-width);
+  margin: 1.5rem auto 0;
+  padding: 0 1rem;
+}
+.header h1 {
+  margin: 0 0 .2rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: .1px;
+}
+.header p {
+  margin: 0 0 .8rem;
+  color: var(--cv-muted);
+}
+
+/* Actions group (top-right) */
+.header-actions-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+}
+@media (max-width:640px) {
+  .header-actions-wrap { flex-direction: column; align-items: flex-start; }
+}
+
+/* ========================================
+   3) COMPONENTS
+   ======================================== */
+
+/* Navbar */
+.navbar {
+  --bs-navbar-brand-color: #ffffff;
+  --bs-navbar-brand-hover-color: #ffffff;
+  --bs-navbar-color: #e9eef7;
+  --bs-navbar-hover-color: #ffffff;
+  --bs-navbar-active-color: #ffffff;
+  --bs-navbar-toggler-border-color: rgba(255,255,255,.35);
+  box-shadow: 0 1px 0 var(--cv-line);
+}
+.navbar.bg-primary { background-color: var(--cv-accent) !important; }
+.navbar .nav-link.active { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Card */
+.cv-card {
+  background: #fff;
+  border: 1px solid var(--cv-line);
+  border-radius: var(--cv-radius);
+  padding: var(--cv-pad-y) var(--cv-pad-x);
+  box-shadow: var(--cv-shadow);
+  transition: box-shadow .15s ease, transform .12s ease, border-color .15s ease, background .15s ease;
+}
+.cv-card:hover { transform: translateY(-1px); box-shadow: var(--cv-shadow-hover); }
+
+/* Section titles */
+.cv-card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--cv-ink);
+  margin: .1rem 0 .75rem;
+  padding-bottom: .25rem;
+  border-bottom: 1px solid var(--cv-line);
+}
+
+/* Lists */
+.cv-list { list-style: none; padding: 0; margin: 0; font-size: .96rem; line-height: 1.5; }
+.cv-entry { margin-bottom: .6rem; padding-bottom: .6rem; border-bottom: 1px solid var(--cv-line); }
+.cv-entry:last-child { border-bottom: none; }
+
+/* Row with right-justified date */
+.cv-row   { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 10px; }
+.cv-title { font-weight: 600; color: var(--cv-ink); }
+.cv-year  { color: var(--cv-muted); font-weight: 500; white-space: nowrap; }
+.cv-loc   { color: #495466; font-size: .9rem; margin-top: .1rem; }
+
+/* Chips */
+.cv-chip {
+  display: inline-block;
+  margin: 0 0 .5rem;
+  padding: .2rem .5rem;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .1px;
+  color: var(--cv-chip-ink);
+  background: var(--cv-chip-bg);
+  border-radius: 999px;
+  border: 1px solid #e9ecf1;
+}
+.cv-chip.is-purple { background: var(--cv-purple-light); color: #524990; border-color: #e6e0f5; }
+.cv-chip.is-blue   { background: var(--cv-accent-soft); color: #384a6b; border-color: #dbe3f2; }
+
+/* Buttons */
+.cv-actions { display: flex; gap: .5rem; align-items: center; margin-top: .5rem; }
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  font-weight: 650;
+  font-size: .92rem;
+  white-space: nowrap;
+  border: 1px solid var(--cv-line);
+  background: #fff;
+  color: var(--cv-ink);
+  box-shadow: 0 1px 0 rgba(0,0,0,.03);
+  transition: transform .12s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease, color .15s ease;
+}
+.cv-btn:hover { transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,.07); background: var(--cv-accent-soft); border-color: #d7ddea; }
+.cv-btn-primary { background: var(--cv-accent); color: #fff; border-color: transparent; }
+.cv-btn-primary:hover { filter: brightness(0.95); }
+
+/* Slide link */
+.slide-link {
+  display: inline-block;
+  margin-top: .25rem;
+  padding: .18rem .5rem;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #2c5aa0;
+  background: #f3f6fb;
+  border: 1px solid #e5ebf5;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background .15s ease, border-color .15s ease, color .15s ease;
+}
+.slide-link:hover { background: #eaf1fb; border-color: #dfe7f5; color: #234a85; text-decoration: none; }
+
+/* Education badge */
+.edu-badge {
+  display: inline-block;
+  background: #2f3e5f;
+  color: #fff;
+  padding: 3px 10px;
+  font-size: .82rem;
+  border-radius: 999px;
+  font-weight: 650;
+  letter-spacing: .1px;
+}
+
+/* Subheads */
+.cv-subhead {
+  margin: .5rem 0 .35rem;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #2f3e5f;
+}
+.cv-subhead::before { content: "#"; margin-right: .4rem; color: #2f3e5f; font-weight: 800; }
+
+/* Bullets & tags */
+.cv-bullets { list-style: none; padding: 0; margin: .1rem 0 .6rem; font-size: .95rem; line-height: 1.5; }
+.cv-bullets li { margin: .2rem 0; color: var(--cv-ink); }
+
+.cv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: .1rem 0 .9rem;
+}
+.cv-tags li {
+  padding: .22rem .5rem;
+  border: 1px solid #e9ecf1;
+  background: #f5f7fa;
+  color: #384152;
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 600;
+}
+.cv-tags li.is-purple { background: var(--cv-purple-bg); border-color: #ebe6f7; color: #4b3f80; }
+.cv-tags li.is-blue   { background: var(--cv-accent-soft); border-color: #dbe3f2; color: #394c6e; }
+
+/* Optional tinted cards */
+.cv-card--tinted { background: linear-gradient(0deg, #fff 0%, #fff 65%, var(--cv-accent-soft) 100%); }
+
+/* ========================================
+   4) UTILITIES
+   ======================================== */
+.px-compact { padding-left: 16px; padding-right: 16px; }
+.py-compact { padding-top: 14px; padding-bottom: 14px; }
+.mb-0 { margin-bottom: 0 !important; }
+.mt-0 { margin-top: 0 !important; }
+.mb-tight { margin-bottom: .35rem !important; }
+.p-0 { padding: 0 !important; }
+.m-0 { margin: 0 !important; }
+.no-border { border: none !important; }
+.row-gap-sm { row-gap: 10px !important; }
+
+/* Background helpers */
+.bg-soft-blue   { background: var(--cv-accent-soft) !important; }
+.bg-soft-purple { background: var(--cv-purple-bg) !important; }
+
+/* ---- Publications grid ---- */
+.pub-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 700px){
+  .pub-list{ gap: 18px; }
+}
+.pub-item{
+  display: grid;
+  grid-template-columns: 120px 1fr;  /* thumbnail column + content */
+  gap: 16px;
+  align-items: start;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+@media (min-width: 900px){
+  .pub-item{ grid-template-columns: 140px 1fr; }
+}
+
+.pub-item .thumb{
+  width: 100%;
+  aspect-ratio: 1 / 1;           /* perfect square thumbnails */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #f7f8fb;
+}
+.pub-item .thumb img{
+  width: 100%; height: 100%;
+  object-fit: cover;              /* consistent crop/fit */
+  display: block;
+}
+
+.pub-item .meta .cv-title{ margin-bottom: .25rem; line-height: 1.35; }
+.pub-item .meta .cv-loc{ margin-bottom: .4rem; color: var(--muted); }
+.pub-item .meta .cv-year{ margin-bottom: .55rem; display: flex; gap: .4rem; flex-wrap: wrap; }
+
+
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* ========================================
+   5) PRINT
+   ======================================== */
+@media print {
+  .navbar { display: none !important; }
+  .cv-card { box-shadow: none; border-color: #cfd3d7; }
+  a { color: black; text-decoration: none; }
+}
+
+
+#travel-carousel{
+  margin-top: .75rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;          /* ensures rounded corners apply to images */
+}
+#travel-carousel .carousel-item > img{
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Tighten vertical rhythm inside Presentations only */
+.cv-card-presentations .cv-entry { 
+  margin-bottom: .35rem; 
+  padding-bottom: .35rem; 
+}
+
+/* Small gap between the title/link row and the meta row */
+.cv-card-presentations .cv-entry .cv-row + .cv-row { 
+  margin-top: .2rem; 
+}
+
+/* First row: title left, icon link right */
+.cv-row--tight{
+  display: flex;
+  align-items: baseline;
+  gap: .75rem;
+}
+.cv-row--tight .cv-title{ font-weight: 700; line-height: 1.35; }
+.cv-row--tight .cv-actions{ margin-left: auto; }
