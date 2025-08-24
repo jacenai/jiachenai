@@ -65,7 +65,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -172,6 +171,180 @@ ul.task-list li input[type="checkbox"] {
   <div class="about-contents"><div id="about-block">
 <section id="education" class="level2">
 <h2 data-anchor-id="education">Education</h2>
+<style>
+/* ========================================
+   ABOUT BLOCK (page-specific micro-tweaks)
+   ======================================== */
+.cv-about p { 
+  margin: .5rem 0 .8rem; 
+}
+.cv-about .cv-lead { 
+  font-size: 1.02rem; 
+  line-height: 1.6; 
+}
+.cv-about .cv-muted-note { 
+  color: var(--cv-muted); 
+}
+/* ========================================
+   THEME TOKENS (local to this page)
+   ======================================== */
+:root {
+  --ink: #1f2430;
+  --muted: #636b7a;
+  --line: #eceff3;
+  --bg: #fbfbfd;
+  --accent: #6f42c1;
+  --accent-2: #f1e9ff;
+  --radius: 14px;
+  --shadow: 0 6px 18px rgba(0,0,0,.06);
+  --maxw: 1080px;
+}
+/* ========================================
+   BASE
+   ======================================== */
+body { 
+  background: var(--bg); 
+  color: var(--ink); 
+}
+main.content { 
+  max-width: var(--maxw); 
+  margin-inline: auto; 
+}
+section, .block { 
+  margin: 1.25rem 0 1.75rem; 
+}
+/* ========================================
+   HEADINGS
+   ======================================== */
+h1, h2 { 
+  letter-spacing: .2px; 
+}
+h1 { 
+  font-weight: 800; 
+}
+h2 { 
+  font-weight: 800; 
+  font-size: 1.45rem; 
+  margin-bottom: .85rem; 
+}
+.section-title {
+  display: flex; 
+  align-items: center; 
+  gap: .6rem; 
+  margin-bottom: .85rem;
+  font-weight: 800; 
+  font-size: 1.35rem;
+}
+.section-title::after {
+  content: ""; 
+  flex: 1 1 auto; 
+  height: 2px; 
+  background: linear-gradient(90deg, var(--accent), transparent);
+  opacity: .35; 
+  border-radius: 999px;
+}
+/* ========================================
+   CARDS
+   ======================================== */
+.card-slim {
+  background: #fff; 
+  border: 1px solid var(--line); 
+  border-radius: var(--radius);
+  box-shadow: var(--shadow); 
+  padding: 1rem 1.1rem;
+}
+.card-slim + .card-slim { 
+  margin-top: .75rem; 
+}
+/* ========================================
+   CHIPS (small tags)
+   ======================================== */
+.chip {
+  display: inline-block; 
+  padding: .25rem .58rem; 
+  border-radius: 999px;
+  background: var(--accent-2); 
+  border: 1px solid rgba(111, 66, 193, .18);
+  color: #4a2aa6; 
+  font-weight: 700; 
+  font-size: .78rem; 
+  letter-spacing: .2px;
+}
+/* ========================================
+   GRID HELPERS
+   ======================================== */
+.grid-2 { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 14px 22px; 
+}
+@media (max-width: 900px) { 
+  .grid-2 { grid-template-columns: 1fr; } 
+}
+/* ========================================
+   COMPACT LISTS (with right-aligned dates)
+   ======================================== */
+.cv-list { 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+.cv-item { 
+  padding: .55rem 0; 
+  border-bottom: 1px solid var(--line); 
+}
+.cv-item:last-child { 
+  border-bottom: none; 
+}
+.row-2 { 
+  display: grid; 
+  grid-template-columns: 1fr auto; 
+  gap: 10px; 
+  align-items: baseline; 
+}
+.cv-title { 
+  font-weight: 700; 
+}
+.cv-year { 
+  color: var(--muted); 
+  white-space: nowrap; 
+  font-weight: 600; 
+}
+.cv-loc { 
+  color: var(--muted); 
+  font-size: .95rem; 
+  margin-top: .2rem; 
+}
+/* ========================================
+   LINKS
+   ======================================== */
+a { 
+  color: #0a58ca; 
+  text-decoration: none; 
+}
+a:hover { 
+  text-decoration: underline; 
+}
+/* ========================================
+   BUTTONS (inline CTA style)
+   ======================================== */
+.btn-ghost {
+  display: inline-flex; 
+  gap: .4rem; 
+  align-items: center;
+  padding: .35rem .6rem; 
+  border-radius: 10px; 
+  border: 1px solid var(--line);
+  background: #fff; 
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  font-weight: 600; 
+  font-size: .9rem;
+}
+.btn-ghost:hover { 
+  text-decoration: none; 
+  border-color: #e0e3ea; 
+}
+</style>
 <div class="card-slim one-col">
   <ul class="cv-list">
     <!-- UCLA -->
@@ -251,99 +424,18 @@ ul.task-list li input[type="checkbox"] {
     Outside work I love hiking, music hunting, and I’ve recently fallen into the tiki rabbit hole 🍹.
   </p>
 </div>
-
 <style>
+  /* Page-specific micro-tweaks only */
+  .cv-about p { margin: .5rem 0 .8rem; }
+  .cv-about .cv-lead { font-size: 1.02rem; line-height: 1.6; }
+  .cv-about .cv-muted-note { color: var(--cv-muted); }
 
-/* About block tweaks (reuses your theme tokens) */
-.cv-about p { margin: .5rem 0 .8rem; }
-.cv-about .cv-lead { font-size: 1.02rem; line-height: 1.6; }
-.cv-about .cv-muted-note { color: var(--cv-muted); }
-
-/* ===== THEME TOKENS ===== */
-:root{
-  --ink:#1f2430; --muted:#636b7a; --line:#eceff3; --bg:#fbfbfd;
-  --accent:#6f42c1; --accent-2:#f1e9ff; --radius:14px; --shadow:0 6px 18px rgba(0,0,0,.06);
-  --maxw: 1080px;
-}
-
-/* Base */
-body{ background:var(--bg); color:var(--ink); }
-main.content { max-width: var(--maxw); margin-inline: auto; }
-section, .block { margin: 1.25rem 0 1.75rem; }
-
-/* Headings */
-h1,h2{ letter-spacing:.2px; }
-h1{ font-weight:800; }
-h2{ font-weight:800; font-size:1.45rem; margin-bottom:.85rem; }
-.section-title{
-  display:flex; align-items:center; gap:.6rem; margin-bottom:.85rem;
-  font-weight:800; font-size:1.35rem;
-}
-.section-title::after{
-  content:""; flex:1 1 auto; height:2px; background:linear-gradient(90deg,var(--accent),transparent);
-  opacity:.35; border-radius:999px;
-}
-
-/* Cards */
-.card-slim{
-  background:#fff; border:1px solid var(--line); border-radius:var(--radius);
-  box-shadow:var(--shadow); padding:1rem 1.1rem;
-}
-.card-slim + .card-slim{ margin-top:.75rem; }
-
-/* Chips (small tags) */
-.chip{
-  display:inline-block; padding:.25rem .58rem; border-radius:999px;
-  background:var(--accent-2); border:1px solid rgba(111,66,193,.18);
-  color:#4a2aa6; font-weight:700; font-size:.78rem; letter-spacing:.2px;
-}
-
-/* Two-column utility */
-.grid-2{ display:grid; grid-template-columns:1fr 1fr; gap:14px 22px; }
-@media (max-width: 900px){ .grid-2{ grid-template-columns:1fr; }}
-
-/* Compact list with right-aligned dates */
-.cv-list{ list-style:none; padding:0; margin:0; }
-.cv-item{ padding:.55rem 0; border-bottom:1px solid var(--line); }
-.cv-item:last-child{ border-bottom:none; }
-.row-2{ display:grid; grid-template-columns: 1fr auto; gap:10px; align-items:baseline; }
-.cv-title{ font-weight:700; }
-.cv-year{ color:var(--muted); white-space:nowrap; font-weight:600; }
-.cv-loc{ color:var(--muted); font-size:.95rem; margin-top:.2rem; }
-
-/* Links */
-a{ color:#0a58ca; text-decoration:none; }
-a:hover{ text-decoration:underline; }
-
-/* Buttons (for inline CTA links if needed) */
-.btn-ghost{
-  display:inline-flex; gap:.4rem; align-items:center;
-  padding:.35rem .6rem; border-radius:10px; border:1px solid var(--line);
-  background:#fff; box-shadow:0 2px 8px rgba(0,0,0,.04);
-  font-weight:600; font-size:.9rem;
-}
-.btn-ghost:hover{ text-decoration:none; border-color:#e0e3ea; }
-
-/* ===== Carousel polish ===== */
-#travel-carousel{ border-radius: var(--radius); box-shadow: var(--shadow); }
-#travel-carousel .carousel-item > img{
-  aspect-ratio: 16/9; object-fit: cover; width:100%; height:auto;
-}
-#travel-carousel .carousel-caption{
-  background: linear-gradient(180deg,rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 100%);
-  border-radius: 12px; padding:.6rem .8rem; bottom: 8%;
-}
-#travel-carousel .carousel-caption h6{ margin:0; font-weight:800; color:#fff; }
-#travel-carousel .carousel-caption p{ margin:.1rem 0 0; color:#e9eef7; }
-
-/* ===== About block spacing tweak ===== */
-#about-block{ margin-top: .5rem; }
+  /* Optional: slight spacing above the About block on this page */
+  #about-block { margin-top: .5rem; }
 </style>
 
-
-  
-<!-- Carousel -->
-<div id="travel-carousel" class="carousel slide w-100 mt-4" data-bs-ride="carousel" data-bs-interval="3200">
+<!-- Carousel (styling handled by styles.css) -->
+<div id="travel-carousel" class="carousel slide w-100 mt-4" data-bs-ride="carousel" data-bs-interval="3200" aria-label="Travel photos">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#travel-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#travel-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -385,10 +477,12 @@ a:hover{ text-decoration:underline; }
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
 </div>
+
+
 </section>
 <section id="research-interests" class="level1">
 <h1>Research Interests</h1>
-<div class="card-slim"> <ul class="cv-list"> <li class="cv-item"><div class="cv-title">Statistical Genetics</div> <div class="cv-loc">Modeling across -omics layers to discover biomarkers and build predictive models.</div></li> <li class="cv-item"><div class="cv-title">Bioinformatics</div> <div class="cv-loc">CpG–methylation mapping, eQTL detection, and scalable HTS pipelines.</div></li> <li class="cv-item"><div class="cv-title">Precision Medicine</div> <div class="cv-loc">Multi-omics integration for mechanism discovery and treatment response prediction.</div></li> <li class="cv-item"><div class="cv-title">Epigenetics</div> <div class="cv-loc">Dynamics of DNA methylation, histone marks, ncRNA and their regulatory impact.</div></li> </ul> </div>
+<div class="card-slim"> <ul class="cv-list"> <li class="cv-item"><div class="cv-title">Bioinformatics / Statistical Genomics</div> <div class="cv-loc">Modeling across -omics layers to discover biomarkers and build predictive models.</div></li>  <li class="cv-item"><div class="cv-title">Precision Medicine</div> <div class="cv-loc">Multi-omics integration for mechanism discovery and treatment response prediction.</div></li> <li class="cv-item"><div class="cv-title">Epigenetics</div> <div class="cv-loc">Dynamics of DNA methylation, histone marks, ncRNA and their regulatory impact.</div></li> </ul> </div>
 </section>
 <section id="publications" class="level1">
 <h1>Publications</h1>
