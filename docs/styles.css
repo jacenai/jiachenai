@@ -482,3 +482,46 @@ table, .table, pre, code, .sourceCode {
   padding-right: 16px;
   max-width: 100%;
 }
+
+
+/* --- Final mobile overflow & chip-wrapping fixes --- */
+
+/* Let key flex containers actually shrink their contents */
+.pub-item .meta,
+.pub-item .meta .cv-year,
+.row-2 > * {
+  min-width: 0;               /* allow shrinking within flex/grid */
+}
+
+/* Chips: allow wrapping + shrinking inside flex rows */
+.cv-chip {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.3;
+  white-space: normal;        /* allow line breaks */
+  overflow-wrap: anywhere;    /* break long phrases */
+  word-break: break-word;     /* fallback */
+  max-width: 100%;
+  min-width: 0;               /* critical in flex context */
+}
+
+/* If the chip row is flex (it is), ensure wrap and no hard min */
+.pub-item .meta .cv-year {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: .4rem;
+  row-gap: .4rem;
+}
+
+/* Buttons: stop forcing one line (can overflow on small screens) */
+.cv-btn {
+  white-space: normal;        /* was: nowrap */
+  min-width: 0;
+}
+
+/* Extra belt & suspenders: long text in typical offenders */
+.cv-title, .cv-loc, .cv-year, .cv-actions, .cv-tags li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-width: 0;
+}
