@@ -18,7 +18,7 @@
   --cv-purple-bg: #f7f5fb;         /* very light purple background */
 
   --cv-ink: #1e2230;               /* primary text */
-  --cv-muted: #5c6375;             /* muted text */
+  --cv-muted: #636b7a;             /* muted text */
   --cv-line: #e3e6ed;              /* borders/dividers */
   --cv-bg: #ffffff;                /* page background */
 
@@ -63,6 +63,33 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
 /* ========================================
    2) LAYOUT CONTAINERS & GRIDS
    ======================================== */
+
+/* Slim card for Education/Experience blocks */
+.card-slim {
+  background:#fff;
+  border:1px solid var(--cv-line);
+  border-radius: var(--cv-radius);
+  box-shadow: var(--cv-shadow);
+  padding: 1rem 1.1rem;
+}
+.card-slim + .card-slim { margin-top:.75rem; }
+
+/* Compact list with right-aligned dates */
+.cv-list { list-style:none; padding:0; margin:0; }
+.cv-item { padding:.55rem 0; border-bottom:1px solid var(--cv-line); }
+.cv-item:last-child { border-bottom:none; }
+
+.row-2 { 
+  display:grid; 
+  grid-template-columns: 1fr auto; 
+  gap:10px; 
+  align-items:baseline; 
+}
+
+.cv-title { font-weight:700; }
+.cv-year  { color: var(--cv-muted); white-space:nowrap; font-weight:600; }
+.cv-loc   { color: var(--cv-muted); font-size:.95rem; margin-top:.2rem; }
+
 .cv-container,
 .cv-grid,
 .cv-card-presentations {
@@ -160,7 +187,7 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
 .cv-row   { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 10px; }
 .cv-title { font-weight: 600; color: var(--cv-ink); }
 .cv-year  { color: var(--cv-muted); font-weight: 500; white-space: nowrap; }
-.cv-loc   { color: #495466; font-size: .9rem; margin-top: .1rem; }
+
 
 /* Chips */
 .cv-chip {
@@ -400,4 +427,50 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
   .navbar { display: none !important; }
   .cv-card { box-shadow: none; border-color: #cfd3d7; }
   a { color: black; text-decoration: none; }
+}
+
+
+/* --- Mobile overflow fixes (append to end of styles.css) --- */
+
+/* 1) Let the page scroll horizontally if something still overflows */
+html, body {
+  overflow-x: auto; /* was hidden */
+}
+
+/* 2) Make CSS Grid columns shrinkable to avoid pushing width > 100vw */
+.row-2 { 
+  grid-template-columns: minmax(0, 1fr) auto;  /* allow left column to shrink */
+}
+.pub-item { 
+  grid-template-columns: 120px minmax(0, 1fr); /* same idea for publications */
+}
+@media (min-width: 900px){
+  .pub-item { grid-template-columns: 140px minmax(0, 1fr); }
+}
+
+/* 3) Wrap long strings/URLs so they don’t force overflow */
+.cv-title, .cv-loc, .cv-year, .cv-btn, .cv-chip, .cv-actions, .cv-tags li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* 4) Ensure media never exceed viewport width */
+img, video, svg, canvas, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5) If you show wide tables or code, allow local scrolling instead of page overflow */
+table, .table, pre, code, .sourceCode {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* 6) Bootstrap navbar sometimes overflows due to container padding; normalize it */
+.navbar .container,
+.navbar .container-fluid {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 100%;
 }
