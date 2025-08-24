@@ -191,7 +191,8 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
 
 /* Chips */
 .cv-chip {
-  display: inline-block;
+  display: inline-flex;          /* inline but flex so padding stays even */
+  align-items: center;
   margin: 0 0 .5rem;
   padding: .2rem .5rem;
   font-size: .78rem;
@@ -201,6 +202,13 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
   background: var(--cv-chip-bg);
   border-radius: 999px;
   border: 1px solid #e9ecf1;
+
+  /* Fix for long text */
+  white-space: normal;        /* allow wrapping */
+  overflow-wrap: anywhere;    /* break words if needed */
+  word-break: break-word;     /* fallback */
+  max-width: 100%;            /* never overflow container */
+  line-height: 1.3;           /* nicer multi-line spacing */
 }
 .cv-chip.is-purple { background: var(--cv-purple-light); color: #524990; border-color: #e6e0f5; }
 .cv-chip.is-blue   { background: var(--cv-accent-soft); color: #384a6b; border-color: #dbe3f2; }
