@@ -191,7 +191,7 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
 
 /* Chips */
 .cv-chip {
-  display: inline-flex;          /* keeps padding consistent even when wrapping */
+  display: inline-flex;          /* inline but flex so padding stays even */
   align-items: center;
   margin: 0 0 .5rem;
   padding: .2rem .5rem;
@@ -203,13 +203,13 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
   border-radius: 999px;
   border: 1px solid #e9ecf1;
 
-  /* NEW: allow wrapping inside the pill */
-  white-space: normal;       
-  overflow-wrap: anywhere;   
-  word-break: break-word;    
-  max-width: 100%;           /* prevent chips from exceeding container width */
+  /* Fix for long text */
+  white-space: normal;        /* allow wrapping */
+  overflow-wrap: anywhere;    /* break words if needed */
+  word-break: break-word;     /* fallback */
+  max-width: 100%;            /* never overflow container */
+  line-height: 1.3;           /* nicer multi-line spacing */
 }
-
 .cv-chip.is-purple { background: var(--cv-purple-light); color: #524990; border-color: #e6e0f5; }
 .cv-chip.is-blue   { background: var(--cv-accent-soft); color: #384a6b; border-color: #dbe3f2; }
 
@@ -481,4 +481,47 @@ table, .table, pre, code, .sourceCode {
   padding-left: 16px;
   padding-right: 16px;
   max-width: 100%;
+}
+
+
+/* --- Final mobile overflow & chip-wrapping fixes --- */
+
+/* Let key flex containers actually shrink their contents */
+.pub-item .meta,
+.pub-item .meta .cv-year,
+.row-2 > * {
+  min-width: 0;               /* allow shrinking within flex/grid */
+}
+
+/* Chips: allow wrapping + shrinking inside flex rows */
+.cv-chip {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.3;
+  white-space: normal;        /* allow line breaks */
+  overflow-wrap: anywhere;    /* break long phrases */
+  word-break: break-word;     /* fallback */
+  max-width: 100%;
+  min-width: 0;               /* critical in flex context */
+}
+
+/* If the chip row is flex (it is), ensure wrap and no hard min */
+.pub-item .meta .cv-year {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: .4rem;
+  row-gap: .4rem;
+}
+
+/* Buttons: stop forcing one line (can overflow on small screens) */
+.cv-btn {
+  white-space: normal;        /* was: nowrap */
+  min-width: 0;
+}
+
+/* Extra belt & suspenders: long text in typical offenders */
+.cv-title, .cv-loc, .cv-year, .cv-actions, .cv-tags li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-width: 0;
 }
