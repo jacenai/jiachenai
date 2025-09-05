@@ -307,7 +307,7 @@ ul.task-list li input[type="checkbox"] {
       <p>
         Working with
         <a href="https://brunildaballiu.github.io/" target="_blank" rel="noopener">Dr. Brunilda Balliu</a>,
-        I refined <a href="https://www.biorxiv.org/content/10.1101/2021.06.17.448889v2" target="_blank" rel="noopener">FastGxC</a>, a statistical framework for efficient mapping of context-specific eQTLs. FastGxC operates in three principal steps: (1) Decomposition of gene expression into context-shared and context-specific components. (2) Regression of cis-acting single nucleotide polymorphisms (cis-SNPs) on these components. (3) Identification of significant eQTLs using hierarchical false discovery rate (FDR) control. I focused on refining the third step of multiple testing correction. I compared two hierarchical FDR control methods—TreeQTL and TreeBH—against the empirical Bayes shrinkage framework in mashR, using simulations that varied in intra-individual correlation and sample size. Results showed that with larger sample sizes, hierarchical methods (especially TreeBH) achieved improved power and competitive performance relative to mashR. These findings highlight that sample size and correlation structure should guide the choice of correction strategy. The
+        I refined <a href="https://www.biorxiv.org/content/10.1101/2021.06.17.448889v2" target="_blank" rel="noopener">FastGxC</a>, a statistical framework for efficient mapping of context-specific eQTLs. FastGxC operates in three principal steps: (1) Decomposition of gene expression into context-shared and context-specific components. (2) Regression of local single nucleotide polymorphisms (cis-SNPs) genotypes on context-shared and context-specific profiles respectively. (3) Identification of significant context-shared and context-specific eQTLs using hierarchical false discovery rate (FDR) control. I focused on refining the third step of multiple testing correction. I compared two hierarchical FDR control methods—<a href="https://www.bioinformatics.org/treeqtl/" target="_blank" rel="noopener">TreeQTL</a> and <a href="https://github.com/cbpeterson/TreeBH" target="_blank" rel="noopener">TreeBH</a>—against the empirical Bayes shrinkage framework in <a href="https://stephenslab.github.io/mashr/articles/intro_mash.html" target="_blank" rel="noopener">mashR</a>, using simulations that varied in intra-individual correlation and sample size. Results showed that with larger sample sizes, hierarchical methods (especially TreeBH) achieved improved power and competitive performance relative to mashR. These findings highlight that sample size and correlation structure should guide the choice of correction strategy. The
         <a href="https://github.com/BalliuLab/FastGxC" target="_blank" rel="noopener">updated FastGxC pipeline</a> thus provides a flexible, computationally efficient, and statistically rigorous framework for detecting context-specific regulatory effects. By enabling more precise identification of genetic effects across tissues, cell types, and conditions, this approach advances both the methodological toolkit for eQTL mapping and the broader goal of understanding the genetic basis of human phenotypic diversity.
       </p>
 
@@ -324,8 +324,7 @@ ul.task-list li input[type="checkbox"] {
 
       <p style="margin-top: 1.2rem;">
         Building on these, I have begun applying FastGxC to clinically relevant contexts, where cell-type–specific eQTLs hold meaningful implications for the treatment of complex diseases. Crohn’s disease (CD), a chronic inflammatory bowel disorder with a complex genetic architecture, shows cell-type–specific transcriptional perturbations in the ileum and colon during active disease. This suggests that cell-type specific eQTLs may play a role in CD pathogenesis. While the FastGxC framework provides a powerful tool, it currently relies on single-cell RNA-seq data, which are substantially more costly than bulk RNA-seq for large-scale studies, for detecting cell-type specific eQTLs. Motivated by the hypothesis that bulk RNA-seq contains sufficient information to infer cell-type specific eQTLs, I am working with
-        <a href="https://www.cedars-sinai.edu/health-sciences-university/research/labs/casero-lab.html" target="_blank" rel="noopener">Dr. David Casero</a>
-        on developing a pipeline to: (1) Impute cell-type proportions from bulk RNA-seq data of inflammatory bowel disease patients using scRNA-seq as a reference; (2) Estimate cell-type specific expression from bulk RNA-seq via a Bayesian deconvolution method; (3) Apply FastGxC to identify cell-type specific eQTLs. Ultimately, this work could help shift precision medicine from an aspiration to a reality, by showing that the genetic underpinnings of complex disease can be resolved at cell-type resolution using the same bulk RNA-seq data already collected in clinical practice.
+        <a href="https://www.cedars-sinai.edu/health-sciences-university/research/labs/casero-lab.html" target="_blank" rel="noopener">Dr. David Casero</a> at Cedars-Sinai Medical Center on developing a pipeline to: (1) Impute cell-type proportions from bulk RNA-seq data of inflammatory bowel disease patients using scRNA-seq as a reference; (2) Estimate cell-type specific expression from bulk RNA-seq via a Bayesian deconvolution method; (3) Apply FastGxC to identify cell-type specific eQTLs. Ultimately, this work could help shift precision medicine from an aspiration to a reality, by showing that the genetic underpinnings of complex disease can be resolved at cell-type resolution using the same bulk RNA-seq data already collected in clinical practice.
       </p>
 
       <figure class="figure">
@@ -342,22 +341,23 @@ ul.task-list li input[type="checkbox"] {
       <h2 class="anchored">DNA Methylation Dynamics and Epigenetic Regulation</h2>
 
       <p>
-        Epigenetic variation provides insights into cellular states and developmental histories that static genotype information cannot: DNA methylation and related marks are dynamic, cell-type–specific, and mitotically heritable, encoding both regulatory activity and environmental exposures. Furthermore, unlike the fixed genome sequence, these patterns are plastic, making the correction of aberrant, disease-causing epigenetic states a compelling therapeutic avenue.
+        Epigenetic variation provides insights into cellular states and developmental histories that static genotype information cannot: DNA methylation (DNAm) and related marks are dynamic, cell-type–specific, and mitotically heritable, encoding both regulatory activity and environmental exposures. Furthermore, unlike the fixed genome sequence, these patterns are plastic, making the correction of aberrant, disease-causing epigenetic states a compelling therapeutic avenue.
       </p>
 
       <p>
-        Building on the hypothesis that DNA methylation (DNAm) shapes gene regulation and thereby influences biological processes, I worked with
+        Building on the hypothesis that DNAm shapes gene regulation and thereby influences biological processes, I worked with
         <a href="https://medschool.ucla.edu/people/matteo-pellegrini-phd" target="_blank" rel="noopener">Dr. Matteo Pellegrini</a>
-        to develop statistical models that extract informative DNAm features predictive of immune response to influenza vaccination and to probe the regulatory mechanisms by which DNAm modulates gene expression. Our approach unfolded in three steps: (1) identifying CpG sites significantly associated with vaccine response; (2) linking these response-associated CpGs to putative target genes which can also predict immune response; and (3) testing two mechanistic hypotheses: (a) cis-regulatory effects, where DNAm at regulatory elements directly modulates nearby immune-response genes, and (b) TF-mediated effects, where DNAm at transcription-factor binding motifs alters TF occupancy and downstream transcription. These findings highlight the potential of DNAm-based signatures to refine our understanding of vaccine responsiveness and support the development of next-generation influenza vaccines tailored to individual epigenetic profiles.
+        to develop statistical models that extract informative DNAm features predictive of immune response to influenza vaccination and to probe the regulatory mechanisms by which DNAm modulates gene expression. Our approach unfolded in three steps: (1) identifying CpG sites significantly associated with vaccine response; (2) linking these response-associated CpGs to putative target genes which can also predict immune response; and (3) testing two mechanistic hypotheses: (a) cis-regulatory effects, where DNAm at regulatory elements directly modulates nearby immune-response genes, and (b) TF-mediated effects, where DNAm at transcription-factor binding motifs alters TF occupancy and downstream transcription. We found that 
+        These findings highlight the potential of DNAm-based signatures to refine our understanding of vaccine responsiveness and support the development of next-generation influenza vaccines tailored to individual epigenetic profiles.
       </p>
 
       <figure class="figure">
         <img src="img/UGA6.png" alt="Overview diagram of the UGA6 research for mapping DNA methylation dynamics." class="figure-img">
-        <figcaption class="muted">DNAm Regulation in UGA6 Cohort — Methods Overview.</figcaption>
+        <figcaption class="muted">Methods Overview: DNAm Regulation in UGA6 Cohort.</figcaption>
       </figure>
 
       <p>
-        In DNAm models, age and immune measures are highly correlated and thus confound each other, leading to non-identifiable coefficients. This is a common issue in statistical modeling, particularly in high-dimensional settings where predictors can be highly correlated. If we simply include both in a regression model, the coefficients for each may not accurately reflect their individual contributions to DNAm variation. Inspired by Gram–Schmidt process, I address this with a
+        In building DNA methylation models, age and immune measures are often highly correlated, creating confounding and non-identifiable coefficients, which is a common challenge in high-dimensional statistical modeling with correlated predictors. If we simply include both in a regression model, the coefficients for each may not accurately reflect their individual contributions to DNAm variation. Inspired by Gram–Schmidt process, I address this with a
         <a href="https://jacenai.github.io/Biostatistics/08.12.25.UGA6_Methylation.html#sequential-orthogonalization" target="_blank" rel="noopener"><em>sequential orthogonalization</em></a>
         of predictors: for each predictor \(X_j\), I remove what is explained by all earlier (already orthogonalized) predictors, \(X_j^{\perp}=X_j-\mathcal{P}_{\{X_1^{\perp},\ldots,X_{j-1}^{\perp}\}}(X_j)\). The transformed design \(X^{\perp}=(X_1^{\perp},\ldots,X_p^{\perp})\) has mutually orthogonal columns, so coefficients are identifiable and each \(\beta_j\) captures the unique contribution of \(X_j\) (e.g., immune response) after accounting for confounders (e.g., age). In practice this yields stable fits, clearer effect estimates, and coefficients whose interpretation depends on a biologically motivated ordering, with demographic factors entered first to ensure immune-response variables are properly adjusted.
       </p>
@@ -365,8 +365,49 @@ ul.task-list li input[type="checkbox"] {
       <div class="link-row" aria-label="Related Links">
         <a class="btn-ghost" href="https://jacenai.github.io/Biostatistics/08.12.25.UGA6_Methylation.html#sequential-orthogonalization" target="_blank" rel="noopener">📄 Sequential Orthogonalization</a>
       </div>
+      
+      <p>
+        Beyond vaccine response, I’m interested in how dynamic DNAm programs shape the aging process itself. Aging unfolds as a nonlinear trajectory of interacting molecular systems rather than a monotonic drift, and DNAm is both a sensor and effector of those shifts. Building on the hypothesis that regional methylation patterns better capture regulatory context than isolated CpGs and differentially methylated regions (DMRs) provide a natural unit to interrogate age-related regulation and its coordination across the genome, I worked with <a href="https://pharmacology.ucla.edu/people/feng-gao" target="_blank" rel="noopener">Dr. Feng Gao</a> to model aging as a changing network of co-methylated regions. Our workflow includes: (1) summarizing each aDMR by distributional features (mean, variance, skewness, kurtosis) and constructing age-stratified co-methylation networks to quantify topology (degree, clustering, modularity); (2) in each age group, mapping top network communities and top aDMRs to nearby genes and perform GO enrichment to link topology shifts to biological pathways; (3) training an age “clock” using only aDMR summary features, enabling robust prediction without relying on individual CpG measurements. This work reveals that mid-life inflection points and late-life reconnection of modules, with enrichments in neurodevelopmental and immune processes and support the view that aging is a coordinated, system-level reorganization rather than isolated changes. 
+      </p> 
+      
+      
     </section>
 
+<section id="PrecisionMedicine" class="card">
+  <div class="eyebrow">Precision Medicine</div>
+  <h2 class="anchored">Precision Desirability Optimization</h2>
+  <p>
+    Precision medicine tailors therapy to an individual’s genetics, physiology, lifestyle, and environment. 
+    <em>Desirability functions</em> translate multiple clinical endpoints into a single, interpretable score of overall treatment success, enabling principled trade-offs across safety and efficacy.
+    Optimizing these scores can surface individualized treatment plans that maximize benefit while respecting clinical constraints.
+  </p>
+
+  <p>
+    Formally, with <em>p</em> controllable factors \(x=(x_1,\ldots,x_p)\), bounds \(L_h \le x_h \le U_h\), and <em>m</em> endpoints mapped to individual desirabilities \(d_i(y_i)\), the composite score is typically the weighted geometric mean
+  </p>
+  \[
+  D(x) \;=\; \Big(\prod_{i=1}^m d_i\!\big(y_i(x)\big)^{w_i}\Big)^{1/\sum_i w_i},
+  \]
+  <p>
+    and the goal is \(x^\star=\arg\max_{x\in[L,U]} D(x)\).
+    In practice, \(D(x)\) is highly nonconvex and frequently nonsmooth: smaller-/larger-/nominal-the-better (STB/LTB/NTB) constructions introduce kinks at specification limits; a single out-of-range outcome can create zero plateaus; and correlated, noisy endpoints yield rugged “ridge–valley” landscapes that stall gradient-based solvers.
+  </p>
+
+  <p>
+    Metaheuristics are well-suited to this setting because (i) they are gradient-free and cope with piecewise power laws (Derringer–Suich curves) and abrupt changes in \(D(x)\);
+    (ii) population-based exploration reduces trapping in local optima; 
+    (iii) constraints are handled simply via projection/penalties; and 
+    (iv) they remain robust under noisy or simulation-based evaluations through replication and averaging.
+    Working with 
+    <a href="https://ph.ucla.edu/about/faculty-staff-directory/weng-kee-wong" target="_blank" rel="noopener">Dr. Weng Kee Wong</a>, 
+    I develop Particle Swarm Optimization (PSO) methods tailored to desirability landscapes—incorporating bound-repair, soft-constraint penalties, and adaptive inertia—to efficiently search high-dimensional treatment spaces and deliver patient-specific, multi-endpoint–optimized regimens.
+  </p>
+</section>
+
+
+
+  
+  
   </main>
 
 
