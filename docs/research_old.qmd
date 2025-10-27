@@ -1,0 +1,351 @@
+# Research
+
+## 2024 -- Current
+
+### [Influenza Vaccination Impact on DNA Methylation in UGA6 Cohort]{style="font-size: 26px; font-weight: 500;"}
+
+Supervised by [Dr. Matteo Pellegrini](https://medschool.ucla.edu/people/matteo-pellegrini-phd) in his [Lab](https://www.pellegrini.mcdb.ucla.edu/)
+
+-   Influenza vaccination, a key preventive measure against annually recurring pandemics, elicits immune responses potentially regulated by DNA methylation. Prior studies within University of Georgia cohorts (UGA3, 4, and 5) have highlighted the role of DNA methylation in modulating the [RIG‐I signaling pathway](https://www.nature.com/articles/s41598-024-51665-9) and [T cell innate antiviral pathways](https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-024-01730-x). This study validates these findings in the larger UGA6 cohort (n = 254) to identify epigenetic factors influencing immune responses to influenza vaccination. Multivariate prediction model with leave-one-out cross-validation (LOOCV) were used to model associations between DNA methylation profiles and sero-protection levels at day 0 and day 28, as well as sero-conversion at day 28. Significant CpG sites were mapped to genes and pathways through gene set enrichment analysis, identifying the RIG‐I signaling pathway as the key regulator of vaccine-induced immunity. Parallel prediction models for RNA-seq and cytokine datasets further elucidated molecular mechanisms. Additionally, genome-wide expression quantitative trait loci (eQTL) analyses linked DNA methylation to gene expression, and correlations between DNA methylation and cytokine data highlighted additional regulatory insights. Our study provides a comprehensive understanding of the epigenetic regulation of immune responses to influenza vaccines and identifies potential therapeutic targets in a large cohort setting, contributing to advancements in precision medicine for influenza vaccination.
+
+![](img/UGA6.png)
+
+### [Nonlinear Aging Dynamics in Co-methylation Network]{style="font-size: 26px; font-weight: 500;"}
+
+**Graduate Student Researcher** \| Supervised by [Dr. Feng Gao](https://ph.ucla.edu/about/faculty-staff-directory/feng-gao)
+
+-   Non-linear epigenetic models have emerged as critical regulators of aging, with recent findings highlighting their predominant influence on nervous system genes and bivalently marked chromatin regions, in contrast to well-established linear models like [Horvath's aging clock](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-10-r115). This study investigates the role of [non-linear methylation](https://www.nature.com/articles/s41467-024-47316-2) dynamics in aging mice colon tissue and their associations with gene expression and pathways. Using [metilene](https://pmc.ncbi.nlm.nih.gov/articles/PMC4728377/), we identified differentially methylated regions (DMRs) across five age groups and constructed graph-based networks with [NetworkX](https://en.wikipedia.org/wiki/NetworkX), uncovering non-linear co-methylation clusters at chromosomal, individual, and age-group levels. Functional associations were explored with [Cytoscape](https://en.wikipedia.org/wiki/Cytoscape), mapping genes to biological processes, cellular components, pathways, and human orthologs. Gene set enrichment analysis revealed dynamic changes in gene functional groups during aging, consistent with non-linear methylation patterns. These findings enhance our understanding of the epigenetic mechanisms driving aging and highlight the significance of non-linear dynamics in age-related biological processes.
+
+![](img/mice_colon_1.png) ![](img/mice_colon_2.png)
+
+### [Single-Cell RNA-Seq for Cell Type Annotation]{style="font-size: 26px; font-weight: 500;"}
+
+Supervised by [Dr. Jingyi Jessica Li](http://jsb.ucla.edu/about-jingyi-jessica-li/)
+
+-   Utilized single-cell RNA sequencing (scRNA-seq) data to characterize cellular heterogeneity in human bone marrow (BoneMarrow1 and BoneMarrow2) and pancreas samples. Preprocessing, dimensionality reduction, clustering, and biomarker identification were conducted using the Seurat package, leading to the identification and annotation of 14, 11, and 5 distinct cell types, respectively. Heatmaps were generated to visualize marker gene expression across clusters, providing insights into cell-specific functions.
+
+![](img/scDNA.png)
+
+### [Inferring Immune Histories from SARS-CoV-2 RNA-Seq Data]{style="font-size: 26px; font-weight: 500;"}
+
+**Warren Alpert Fellow** \| Supervised by [Dr. Vanessa D Jonsson](https://jonssonlab.com/people)
+
+-   Understanding immune memory and response to SARS-CoV-2 infection is essential for advancing COVID-19 treatment, personalized treatment and vaccine strategies. This study employs SARS-CoV-2 RNA-seq data from nasal swabs to infer immune histories through an integrated analysis pipeline. Immune cell proportions are estimated using [CIBERSORT](https://www.nature.com/articles/nmeth.3337), while metagenomics annotation characterizes microbial protein landscapes. [TRUST4](https://www.nature.com/articles/s41592-021-01142-2) is used to infer TCR and BCR repertoires, with internal tools performing isotype analysis and clustering based on sequence and biochemistry (ESM/other, tcrdist3). BCR phylogenies are reconstructed using [Immcantation](https://immcantation.readthedocs.io/en/stable/), and viral epitope binding to HLA is predicted with netMHCpan, incorporating HLA typing via HLA arcasHLA and MHC Hammer. Finally, we compare the immune histories inferred from the RNA-seq data with publicly available [SARS-CoV2 antibodies and nanobodies data](https://opig.stats.ox.ac.uk/webapps/covabdab/) to validate the pipeline.
+
+![](img/Immune_history.png){width="70%" fig-align="center"}
+
+## 2021 -- 2023
+
+### [Statistical Data Analysis for Biology and Biomedicine Research]{style="font-size: 26px; font-weight: 500;"}
+
+-   **Modeling Transcription Factor Diffusion**
+    -   Simulated transcription factor (TF) diffusion in the nucleus using Markov Chain Monte Carlo (MCMC) methods, modeling TF movement as a time-homogeneous Markov process. The model quantified transient states (non-specific DNA interactions) and recurrent states (specific binding at regulatory elements).
+-   **Agricultural Multivariate Regression**
+    -   Conducted multivariate regression analysis in R to evaluate the relationship between rice yield and irrigation at five critical growth stages (seedling, tillering, panicle initiation, flowering, and grain filling). Identified optimal irrigation strategies to maximize yield while minimizing resource consumption. Incorporated additional variables such as soil type, weather conditions, and nutrient input for a comprehensive analysis.
+
+## 2020 -- 2021
+
+### [Review: Lifestyle Factors Affecting Semen Quality]{style="font-size: 26px; font-weight: 500;"}
+
+-   This review examined the impact of dietary habits, BMI, alcohol, smoking, stress, mobile phone usage, and microplastics on sperm parameters. It highlighted that a balanced diet, exercise, and stress management improve semen quality, while smoking, alcohol, and microplastic exposure impair it. Statistical models like multivariate regression and meta-analysis were used to assess fertility impacts, emphasizing the public health importance of addressing these lifestyle factors.
+
+![](img/semen_quality.png){width="50%" fig-align="center"}
+
+## 2019 -- 2020
+
+### [Lymphocyte Regeneration after Thymocyte Damage in Zebrafish [\[presentation slides\]](assets/LYMPHOCYTE_REGENERATION_AFTER_THYMOCYTE_DAMAGE_IN%20ZEBRAFISH.pdf)]{style="font-size: 26px; font-weight: 500;"}
+
+Supervised by [Dr. Li Li](https://people.ucas.ac.cn/~0064236?language=en)
+
+-   Thymus atrophy and T lymphocyte deficiencies are common in aging and following damage caused by factors such as radiation, chemotherapy, or bacterial infections, leading to impaired immune function. Our study investigates the regeneration of T lymphocytes in zebrafish after thymocyte injury, leveraging the transparency and genetic tractability of zebrafish as a model organism. A damage model was constructed by treating [Tg(coro1a:Dendra2-NTR)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9503817/) transgenic zebrafish with 2 mM Metronidazole for 12 hours, resulting in significant lymphocyte reduction and apoptosis in the thymus, as confirmed by whole-mount in situ hybridization ([WISH](https://pubmed.ncbi.nlm.nih.gov/25218374/)) and confocal microscopy.
+
+-   Through real-time PCR ([RT-qPCR](https://www.ncbi.nlm.nih.gov/probe/docs/techqpcr/)), we discovered that the [CXCL12/CXCR4 chemokine signaling pathway](https://www.ijbs.com/v19p3341.htm) plays a critical role in the regeneration of thymic lymphocytes. Inhibition of this pathway with [WZ811](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5040679/), a CXCL12/CXCR4 receptor antagonist, significantly impaired lymphocyte recovery, suggesting that CXCL12/CXCR4 signaling is essential for lymphocyte regeneration. Additionally, lineage tracing experiments revealed that most regenerating lymphocytes originated from hematopoietic stem cells migrating from the kidney to the thymus. These findings highlight the importance of the CXCL12/CXCR4 pathway in lymphocyte regeneration and offer insights into the mechanisms of immune recovery after thymocyte damage.
+
+![](img/REGENERATION.png)
+
+------------------------------------------------------------------------
+
+# Publications
+
+-   **Ai, J.**, Pickering, H., Pellegrini, M. et al. Influenza Vaccination: DNA Methylation and Immune Response Mechanisms. *Genome Biology*. (forthcoming).
+-   **Ai, J.**, Fan, Y., Gao, F. et al. Nonlinear Aging Dynamics in Co-methylation Network. *Cell Reports*. (forthcoming).
+-   **Ai, J.** (2021). Lifestyle Does Affect Semen Quality: Factor Determination in a Statistical Way. *Lecture Notes in Medicine and Life Sciences*, 4, 163--171. [Read Article](https://www.clausiuspress.com/conference/article/artId/7114.html)
+
+
+------------------------------------------------------------------------
+
+
+```{=html}
+<div class="card-slim"> <ul class="cv-list"> <li class="cv-item"> <div class="cv-title"><a href="https://jacenai.github.io/jiachenai//research.html#influenza-vaccination-impact-on-dna-methylation-in-uga6-cohort" target="_blank" rel="noopener">Influenza Vaccination Impact on DNA Methylation in UGA6 Cohort</a></div> <div class="cv-loc">RIG-I signaling highlighted via integrated methylation, RNA-seq, and cytokine profiles.</div> </li> <li class="cv-item"> <div class="cv-title"><a href="https://jacenai.github.io/jiachenai//research.html#nonlinear-aging-dynamics-in-co-methylation-network" target="_blank" rel="noopener">Nonlinear Aging Dynamics in Co-methylation Networks</a></div> <div class="cv-loc">Mapped non-linear epigenetic changes to pathways beyond linear models.</div> </li> <li class="cv-item"> <div class="cv-title"><a href="https://jacenai.github.io/jiachenai//research.html#inferring-immune-histories-from-sars-cov-2-rna-seq-data" target="_blank" rel="noopener">Inferring Immune Histories from SARS-CoV-2 RNA-seq</a></div> <div class="cv-loc">Pipeline linking immune profiles to personalized responses.</div> </li> <li class="cv-item"> <div class="cv-title"><a href="https://jacenai.github.io/jiachenai//research.html#lymphocyte-regeneration-after-thymocyte-damage-in-zebrafish-presentation-slides" target="_blank" rel="noopener">Lymphocyte Regeneration after Thymocyte Damage in Zebrafish</a></div> <div class="cv-loc">Revealed CXCL12/CXCR4-mediated stem cell migration in thymic recovery.</div> </li> </ul> </div>
+```
+
+
+# Reseach Interests
+
+I was born in 2000, just as sequencers were humming and computers were finally fast enough to keep up. I fell for math, statistics, and computer science early—tools that could turn biological messiness into testable questions. And yes, my last name is Ai; in a world obsessed with “AI,” it still introduces me before I do. I don't know if I have a silicon chip in my brain, but what hooked me wasn’t a gadget. It was a stubborn question: why do two people with the same disease and the same drug end up with wildly different outcomes? If we could answer that, medicine wouldn’t be one-size-fits-all—it would be personal.
+
+The digital revolution means we can actually try. We can read genomes, watch gene expression, map epigenetic shifts, and stitch these signals together with models that learn. That’s the work I love: translate noisy data into clear hypotheses, test them, and push the results toward decisions that help real patients.
+
+# Statistical Methods for Detecting Context-Specific eQTLs
+
+I begin with the hypothesis that genetic variants exert regulatory effects on gene expression in a context-dependent manner—specific to certain cell types, tissues, or environmental conditions—and that these context-specific eQTLs mediate genetic risk for complex diseases. Therefore, systematically identifying and characterizing such eQTLs can bridge the gap between non-coding variation and functional consequences, refine our understanding of disease-relevant mechanisms, and ultimately support precision medicine tailored to individual genetic backgrounds and biological contexts.
+
+Genome-wide association studies (GWAS) have identified thousands of variants associated with complex traits and diseases, but most lie in non-coding regions, leaving their functional roles unclear. Expression quantitative trait loci (eQTL) mapping provides a critical link, uncovering how genetic variants regulate transcription. The advent of single-cell RNA-sequencing (scRNA-seq) has transformed this field by measuring genome-wide expression at the resolution of individual cells, in contrast to bulk RNA-seq, which averages expression across cell populations. scRNA-seq not only enables identification of cell subtypes and their marker genes but also reveals that cellular heterogeneity is far greater than previously appreciated. This motivates my research: to leverage scRNA-seq data to test the hypothesis that many eQTLs exhibit context-specific effects, influencing expression in one tissue, cell type, or condition but not in another.
+
+Working with Dr. Brunilda Balliu, I refined [FastGxC](https://www.biorxiv.org/content/10.1101/2021.06.17.448889v2), a statistical framework for efficient mapping of context-specific eQTLs. FastGxC operates in three principal steps: 1) Decomposition of gene expression into context-shared and context-specific components. 2) Regression of cis-acting single nucleotide polymorphisms (cis-SNPs) on these components. 3) Identification of significant eQTLs using hierarchical false discovery rate (FDR) control. I focused on refining the third step of multiple testing correction. I compared two hierarchical FDR control methods—TreeQTL and TreeBH—against the empirical Bayes shrinkage framework in mashR, using simulations that varied in intra-individual correlation and sample size. Results showed that with larger sample sizes, hierarchical methods (especially TreeBH) achieved improved power and competitive performance relative to mashR. These findings highlight that sample size and correlation structure should guide the choice of correction strategy. The [updated FastGxC pipeline](https://github.com/BalliuLab/FastGxC) thus provides a flexible, computationally efficient, and statistically rigorous framework for detecting context-specific regulatory effects. By enabling more precise identification of genetic effects across tissues, cell types, and conditions, this approach advances both the methodological toolkit for eQTL mapping and the broader goal of understanding the genetic basis of human phenotypic diversity.
+
+![](img/FastGxC.png)
+
+Cell-type specific eQTLs have meaningful clinical implications for the treatment of complex diseases. For example, Crohn’s disease (CD), a chronic inflammatory bowel disorder with a complex genetic architecture, shows cell-type–specific transcriptional perturbations in the ileum and colon during active disease. This suggests that cell-type specific eQTLs may play a role in CD pathogenesis.
+
+While the FastGxC framework provides a powerful tool, it currently relies on single-cell RNA-seq data, which are substantially more costly than bulk RNA-seq for large-scale studies, for detecting cell-type specific eQTLs. Motivated by the hypothesis that bulk RNA-seq contains sufficient information to infer cell-type specific eQTLs, I am working with Dr. David Casero on developing a pipeline to: (1) Impute cell-type proportions from bulk RNA-seq data of inflammatory bowel disease patients using scRNA-seq as a reference; (2) Estimate cell-type specific expression from bulk RNA-seq via a Bayesian deconvolution method; (3) Apply FastGxC to identify cell-type specific eQTLs. Ultimately, this work could help shift precision medicine from an aspiration to a reality, by showing that the genetic underpinnings of complex disease can be resolved at cell-type resolution using the same bulk RNA-seq data already collected in clinical practice.
+
+
+# DNA Methylation Dynamics and Epigenetic Regulation
+
+
+
+Epigenetic variation provides insights into cellular states and developmental histories that static genotype information cannot: DNA methylation and related marks are dynamic, cell-type–specific, and mitotically heritable, encoding both regulatory activity and environmental exposures. Furthermore, unlike the fixed genome sequence, these patterns are plastic, making the correction of aberrant, disease-causing epigenetic states a compelling therapeutic avenue. 
+
+Building on the hypothesis that DNA methylation (DNAm) shapes gene regulation and thereby influences biological processes, I worked with Dr. Matteo Pellegrini to develop statistical models that extract informative DNAm features predictive of immune response to influenza vaccination and to probe the regulatory mechanisms by which DNAm modulates gene expression. Our approach unfolded in three steps: (1) identifying CpG sites significantly associated with vaccine response; (2) linking these response-associated CpGs to putative target genes; and (3) testing two mechanistic hypotheses: (a) cis-regulatory effects, where DNAm at regulatory elements directly modulates nearby immune-response genes, and (b) TF-mediated effects, where DNAm at transcription-factor binding motifs alters TF occupancy and downstream transcription.
+
+
+
+
+
+```{=html}
+<!-- ===================== RESEARCH HIGHLIGHTS ===================== -->
+<section class="cv-card" id="highlights">
+  <h2>Research Highlights</h2>
+
+  <!-- 2024 – Current -->
+  <div class="cv-subhead">2024 – Current</div>
+
+  <!-- Project: Influenza Vaccination Impact on DNA Methylation -->
+  <div class="cv-entry">
+    <div class="cv-row">
+      <div class="cv-title">Influenza Vaccination Impact on DNA Methylation in UGA6 Cohort</div>
+      <div class="cv-year">with <a href="https://medschool.ucla.edu/people/matteo-pellegrini-phd">M. Pellegrini</a> · <a class="slide-link" href="https://www.pellegrini.mcdb.ucla.edu/">Lab</a></div>
+    </div>
+    <ul class="cv-bullets">
+      <li>Validated prior UGA3–5 findings on vaccine‑responsive methylation in a larger UGA6 cohort (n=254).</li>
+      <li>Built multivariate LOOCV predictors linking methylomes to baseline protection (D0), response (D28), and sero‑conversion.</li>
+      <li>Mapped significant CpGs to pathways; <a href="https://www.nature.com/articles/s41598-024-51665-9">RIG‑I signaling</a> emerged as a key regulator; cross‑modal models for RNA‑seq and cytokines supported mechanisms.</li>
+      <li>Integrated eQTL and methylation–cytokine correlations for mechanistic insight.</li>
+    </ul>
+    <ul class="cv-tags">
+      <li class="is-purple">DNA methylation</li>
+      <li class="is-blue">Vaccinology</li>
+      <li class="is-blue">LOOCV</li>
+      <li>Pathway GSEA</li>
+    </ul>
+    <img src="img/UGA6.png" alt="UGA6 overview" style="max-width:100%;border:1px solid var(--cv-line);border-radius:var(--cv-radius);margin-top:.4rem;" />
+  </div>
+
+  <!-- Project: Nonlinear Aging Dynamics -->
+  <div class="cv-entry">
+    <div class="cv-row">
+      <div class="cv-title">Nonlinear Aging Dynamics in Co‑methylation Network</div>
+      <div class="cv-year">Graduate Student Researcher · with <a href="https://ph.ucla.edu/about/faculty-staff-directory/feng-gao">F. Gao</a></div>
+    </div>
+    <ul class="cv-bullets">
+      <li>Identified DMRs across five ages (mouse colon) using <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4728377/">metilene</a>; constructed co‑methylation graphs (<a href="https://en.wikipedia.org/wiki/NetworkX">NetworkX</a>).</li>
+      <li>Found non‑linear clusters at chromosomal, individual, and age‑group levels; functions via <a href="https://en.wikipedia.org/wiki/Cytoscape">Cytoscape</a> mapping.</li>
+      <li>Enrichment analyses highlight nervous‑system genes and bivalently marked regions; complements linear clocks (e.g., <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-10-r115">Horvath</a>).</li>
+    </ul>
+    <ul class="cv-tags">
+      <li class="is-purple">Epigenetics</li>
+      <li class="is-blue">Graph models</li>
+      <li>DMR</li>
+      <li>GSEA</li>
+    </ul>
+    <div class="cv-two">
+      <img src="img/mice_colon_1.png" alt="Aging methylation figure 1" style="width:100%;border:1px solid var(--cv-line);border-radius:var(--cv-radius);" />
+      <img src="img/mice_colon_2.png" alt="Aging methylation figure 2" style="width:100%;border:1px solid var(--cv-line);border-radius:var(--cv-radius);" />
+    </div>
+  </div>
+
+  <!-- Project: scRNA‑seq annotation -->
+  <div class="cv-entry">
+    <div class="cv-row">
+      <div class="cv-title">Single‑Cell RNA‑seq for Cell Type Annotation</div>
+      <div class="cv-year">with <a href="http://jsb.ucla.edu/about-jingyi-jessica-li/">J. J. Li</a></div>
+    </div>
+    <ul class="cv-bullets">
+      <li>Processed bone marrow (2 datasets) and pancreas scRNA‑seq using Seurat; DR → clustering → biomarker identification.</li>
+      <li>Annotated 14, 11, and 5 cell types; heatmaps summarized marker expression per cluster.</li>
+    </ul>
+    <ul class="cv-tags">
+      <li class="is-purple">scRNA‑seq</li>
+      <li class="is-blue">Seurat</li>
+      <li>Dim. Reduction</li>
+      <li>Biomarkers</li>
+    </ul>
+    <img src="img/scDNA.png" alt="scRNA heatmap" style="max-width:100%;border:1px solid var(--cv-line);border-radius:var(--cv-radius);margin-top:.4rem;" />
+  </div>
+
+  <!-- Project: SARS‑CoV‑2 immune histories -->
+  <div class="cv-entry">
+    <div class="cv-row">
+      <div class="cv-title">Inferring Immune Histories from SARS‑CoV‑2 RNA‑seq</div>
+      <div class="cv-year">Warren Alpert Fellow · with <a href="https://jonssonlab.com/people">V. D. Jonsson</a></div>
+    </div>
+    <ul class="cv-bullets">
+      <li>Deconvolution via <a href="https://www.nature.com/articles/nmeth.3337">CIBERSORT</a>; metagenomics protein annotation from reads.</li>
+      <li>TCR/BCR repertoire with <a href="https://www.nature.com/articles/s41592-021-01142-2">TRUST4</a>; BCR phylogenies using <a href="https://immcantation.readthedocs.io/en/stable/">Immcantation</a>.</li>
+      <li>Epitope–HLA binding (netMHCpan); integrated HLA typing; validation vs <a href="https://opig.stats.ox.ac.uk/webapps/covabdab/">CoV‑AbDab</a>.</li>
+    </ul>
+    <ul class="cv-tags">
+      <li class="is-purple">RNA‑seq</li>
+      <li class="is-blue">Immune repertoires</li>
+      <li>HLA binding</li>
+      <li>Metagenomics</li>
+    </ul>
+    <img src="img/Immune_history.png" alt="immune history pipeline" style="max-width:100%;border:1px solid var(--cv-line);border-radius:var(--cv-radius);margin-top:.4rem;" />
+  </div>
+
+  <!-- 2021 – 2023 -->
+  <div class="cv-subhead">2021 – 2023</div>
+  <div class="cv-entry">
+    <div class="cv-title">Statistical Data Analysis for Biology & Biomedicine</div>
+    <ul class="cv-bullets">
+      <li><strong>TF diffusion:</strong> MCMC to model nuclear TF movement; transient vs recurrent binding states.</li>
+      <li><strong>Agricultural regression:</strong> multivariate models of rice yield vs staged irrigation; included soil, weather, nutrients.</li>
+    </ul>
+    <ul class="cv-tags">
+      <li class="is-purple">MCMC</li>
+      <li class="is-blue">Multivariate</li>
+      <li>Simulation</li>
+    </ul>
+  </div>
+
+  <!-- 2020 – 2021 -->
+  <div class="cv-subhead">2020 – 2021</div>
+  <div class="cv-entry">
+    <div class="cv-title">Review: Lifestyle Factors Affecting Semen Quality</div>
+    <ul class="cv-bullets">
+      <li>Surveyed diet, BMI, alcohol, smoking, stress, mobile phone usage, microplastics; assessed via regression and meta‑analysis.</li>
+      <li>Emphasized modifiable risk factors and public‑health relevance.</li>
+    </ul>
+    <ul class="cv-tags">
+      <li class="is-purple">Epidemiology</li>
+      <li class="is-blue">Meta‑analysis</li>
+      <li>Reproductive health</li>
+    </ul>
+    <img src="img/semen_quality.png" alt="semen quality summary" style="max-width:70%;border:1px solid var(--cv-line);border-radius:var(--cv-radius);margin:.4rem auto;display:block;" />
+  </div>
+
+  <!-- 2019 – 2020 -->
+  <div class="cv-subhead">2019 – 2020</div>
+  <div class="cv-entry">
+    <div class="cv-row">
+      <div class="cv-title">Lymphocyte Regeneration after Thymocyte Damage in Zebrafish</div>
+      <div class="cv-year">with <a href="https://people.ucas.ac.cn/~0064236?language=en">Li Li</a> · <a class="slide-link" href="assets/LYMPHOCYTE_REGENERATION_AFTER_THYMOCYTE_DAMAGE_IN ZEBRAFISH.pdf">[presentation slides]</a></div>
+    </div>
+    <ul class="cv-bullets">
+      <li>Constructed damage model in Tg(coro1a:Dendra2‑NTR) zebrafish via 2 mM metronidazole (12h); validated reduction by WISH/confocal.</li>
+      <li><strong>CXCL12/CXCR4</strong> pathway required for thymic lymphocyte regeneration; inhibition with WZ811 impeded recovery.</li>
+      <li>Lineage tracing suggested HSC migration from kidney to thymus as source of regenerating lymphocytes.</li>
+    </ul>
+    <ul class="cv-tags">
+      <li class="is-purple">Immunology</li>
+      <li class="is-blue">Zebrafish</li>
+      <li>Regeneration</li>
+    </ul>
+    <img src="img/REGENERATION.png" alt="zebrafish regeneration" style="max-width:100%;border:1px solid var(--cv-line);border-radius:var(--cv-radius);margin-top:.4rem;" />
+  </div>
+
+</section>
+```
+
+
+## 2024 – Current
+
+
+
+### <span style="font-size: 26px; font-weight: 500;">Influenza Vaccination Impact on DNA Methylation in UGA6 Cohort</span>
+
+Supervised by [Dr. Matteo Pellegrini](https://medschool.ucla.edu/people/matteo-pellegrini-phd) in his [Lab](https://www.pellegrini.mcdb.ucla.edu/)
+
+- Influenza vaccination, a key preventive measure against annually recurring pandemics, elicits immune responses potentially regulated by DNA methylation. Prior studies within University of Georgia cohorts (UGA3, 4, and 5) have highlighted the role of DNA methylation in modulating the [RIG‐I signaling pathway](https://www.nature.com/articles/s41598-024-51665-9) and [T cell innate antiviral pathways](https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-024-01730-x). This study validates these findings in the larger UGA6 cohort (n = 254) to identify epigenetic factors influencing immune responses to influenza vaccination. Multivariate prediction model with leave-one-out cross-validation (LOOCV) were used to model associations between DNA methylation profiles and sero-protection levels at day 0 and day 28, as well as sero-conversion at day 28. Significant CpG sites were mapped to genes and pathways through gene set enrichment analysis, identifying the RIG‐I signaling pathway as the key regulator of vaccine-induced immunity. Parallel prediction models for RNA-seq and cytokine datasets further elucidated molecular mechanisms. Additionally, genome-wide expression quantitative trait loci (eQTL) analyses linked DNA methylation to gene expression, and correlations between DNA methylation and cytokine data highlighted additional regulatory insights. Our study provides a comprehensive understanding of the epigenetic regulation of immune responses to influenza vaccines and identifies potential therapeutic targets in a large cohort setting, contributing to advancements in precision medicine for influenza vaccination. 
+
+![](img/UGA6.png)
+
+
+### <span style="font-size: 26px; font-weight: 500;">Nonlinear Aging Dynamics in Co-methylation Network</span>
+
+**Graduate Student Researcher**  | Supervised by [Dr. Feng Gao](https://ph.ucla.edu/about/faculty-staff-directory/feng-gao)
+
+
+- Non-linear epigenetic models have emerged as critical regulators of aging, with recent findings highlighting their predominant influence on nervous system genes and bivalently marked chromatin regions, in contrast to well-established linear models like [Horvath's aging clock](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-10-r115). This study investigates the role of [non-linear methylation](https://www.nature.com/articles/s41467-024-47316-2) dynamics in aging mice colon tissue and their associations with gene expression and pathways. Using [metilene](https://pmc.ncbi.nlm.nih.gov/articles/PMC4728377/), we identified differentially methylated regions (DMRs) across five age groups and constructed graph-based networks with [NetworkX](https://en.wikipedia.org/wiki/NetworkX), uncovering non-linear co-methylation clusters at chromosomal, individual, and age-group levels. Functional associations were explored with [Cytoscape](https://en.wikipedia.org/wiki/Cytoscape), mapping genes to biological processes, cellular components, pathways, and human orthologs. Gene set enrichment analysis revealed dynamic changes in gene functional groups during aging, consistent with non-linear methylation patterns. These findings enhance our understanding of the epigenetic mechanisms driving aging and highlight the significance of non-linear dynamics in age-related biological processes.
+
+![](img/mice_colon_1.png)
+![](img/mice_colon_2.png)
+
+
+### <span style="font-size: 26px; font-weight: 500;">Single-Cell RNA-Seq for Cell Type Annotation</span>
+
+Supervised by [Dr. Jingyi Jessica Li](http://jsb.ucla.edu/about-jingyi-jessica-li/)
+
+- Utilized single-cell RNA sequencing (scRNA-seq) data to characterize cellular heterogeneity in human bone marrow (BoneMarrow1 and BoneMarrow2) and pancreas samples. Preprocessing, dimensionality reduction, clustering, and biomarker identification were conducted using the Seurat package, leading to the identification and annotation of 14, 11, and 5 distinct cell types, respectively. Heatmaps were generated to visualize marker gene expression across clusters, providing insights into cell-specific functions. 
+
+![](img/scDNA.png)
+
+
+### <span style="font-size: 26px; font-weight: 500;">Inferring Immune Histories from SARS-CoV-2 RNA-Seq Data</span>
+
+**Warren Alpert Fellow**  | Supervised by [Dr. Vanessa D Jonsson](https://jonssonlab.com/people)
+
+
+- Understanding immune memory and response to SARS-CoV-2 infection is essential for advancing COVID-19 treatment, personalized treatment and vaccine strategies. This study employs SARS-CoV-2 RNA-seq data from nasal swabs to infer immune histories through an integrated analysis pipeline. Immune cell proportions are estimated using [CIBERSORT](https://www.nature.com/articles/nmeth.3337), while metagenomics annotation characterizes microbial protein landscapes. [TRUST4](https://www.nature.com/articles/s41592-021-01142-2) is used to infer TCR and BCR repertoires, with internal tools performing isotype analysis and clustering based on sequence and biochemistry (ESM/other, tcrdist3). BCR phylogenies are reconstructed using [Immcantation](https://immcantation.readthedocs.io/en/stable/), and viral epitope binding to HLA is predicted with netMHCpan, incorporating HLA typing via HLA arcasHLA and MHC Hammer. Finally, we compare the immune histories inferred from the RNA-seq data with publicly available [SARS-CoV2 antibodies and nanobodies data](https://opig.stats.ox.ac.uk/webapps/covabdab/) to validate the pipeline. 
+
+![](img/Immune_history.png){width=70% fig-align="center"}
+
+
+
+## 2021 – 2023
+
+### <span style="font-size: 26px; font-weight: 500;">Statistical Data Analysis for Biology and Biomedicine Research</span>
+
+
+- **Modeling Transcription Factor Diffusion**
+  + Simulated transcription factor (TF) diffusion in the nucleus using Markov Chain Monte Carlo (MCMC) methods, modeling TF movement as a time-homogeneous Markov process. The model quantified transient states (non-specific DNA interactions) and recurrent states (specific binding at regulatory elements).
+- **Agricultural Multivariate Regression**
+  + Conducted multivariate regression analysis in R to evaluate the relationship between rice yield and irrigation at five critical growth stages (seedling, tillering, panicle initiation, flowering, and grain filling). Identified optimal irrigation strategies to maximize yield while minimizing resource consumption. Incorporated additional variables such as soil type, weather conditions, and nutrient input for a comprehensive analysis.
+
+## 2020 – 2021
+
+### <span style="font-size: 26px; font-weight: 500;">Review: Lifestyle Factors Affecting Semen Quality</span>
+
+- This review examined the impact of dietary habits, BMI, alcohol, smoking, stress, mobile phone usage, and microplastics on sperm parameters. It highlighted that a balanced diet, exercise, and stress management improve semen quality, while smoking, alcohol, and microplastic exposure impair it. Statistical models like multivariate regression and meta-analysis were used to assess fertility impacts, emphasizing the public health importance of addressing these lifestyle factors.
+
+![](img/semen_quality.png){width=50% fig-align="center"}
+
+
+## 2019 – 2020
+
+### <span style="font-size: 26px; font-weight: 500;">Lymphocyte Regeneration after Thymocyte Damage in Zebrafish [\[presentation slides\]](assets/LYMPHOCYTE_REGENERATION_AFTER_THYMOCYTE_DAMAGE_IN ZEBRAFISH.pdf)</span>
+
+Supervised by [Dr. Li Li](https://people.ucas.ac.cn/~0064236?language=en)
+
+- Thymus atrophy and T lymphocyte deficiencies are common in aging and following damage caused by factors such as radiation, chemotherapy, or bacterial infections, leading to impaired immune function. Our study investigates the regeneration of T lymphocytes in zebrafish after thymocyte injury, leveraging the transparency and genetic tractability of zebrafish as a model organism. A damage model was constructed by treating [Tg(coro1a:Dendra2-NTR)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9503817/) transgenic zebrafish with 2 mM Metronidazole for 12 hours, resulting in significant lymphocyte reduction and apoptosis in the thymus, as confirmed by whole-mount in situ hybridization ([WISH](https://pubmed.ncbi.nlm.nih.gov/25218374/)) and confocal microscopy.
+
+- Through real-time PCR ([RT-qPCR](https://www.ncbi.nlm.nih.gov/probe/docs/techqpcr/)), we discovered that the [CXCL12/CXCR4 chemokine signaling pathway](https://www.ijbs.com/v19p3341.htm) plays a critical role in the regeneration of thymic lymphocytes. Inhibition of this pathway with [WZ811](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5040679/), a CXCL12/CXCR4 receptor antagonist, significantly impaired lymphocyte recovery, suggesting that CXCL12/CXCR4 signaling is essential for lymphocyte regeneration. Additionally, lineage tracing experiments revealed that most regenerating lymphocytes originated from hematopoietic stem cells migrating from the kidney to the thymus. These findings highlight the importance of the CXCL12/CXCR4 pathway in lymphocyte regeneration and offer insights into the mechanisms of immune recovery after thymocyte damage.
+
+![](img/REGENERATION.png)
+
+
+
+------------------------------------------------------------------------
+
+# Publications
+
+- **Ai, J.**, Pickering, H., Pellegrini, M. et al. Influenza Vaccination: DNA Methylation and Immune Response Mechanisms. *Genome Biology*. (forthcoming).
+- **Ai, J.**, Fan, Y., Gao, F. et al. Nonlinear Aging Dynamics in Co-methylation Network. *Cell Reports*. (forthcoming).
+- **Ai, J.** (2021). Lifestyle Does Affect Semen Quality: Factor Determination in a Statistical Way. *Lecture Notes in Medicine and Life Sciences*, 4, 163--171. [Read Article](https://www.clausiuspress.com/conference/article/artId/7114.html)
+
+
+
+
+
+

@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -131,7 +131,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About Me</a></li>
+  <li><a href="#research-interests" id="toc-research-interests" class="nav-link" data-scroll-target="#research-interests">Research Interests</a></li>
+  <li><a href="#highlights" id="toc-highlights" class="nav-link" data-scroll-target="#highlights">Highlights</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -171,271 +181,131 @@ ul.task-list li input[type="checkbox"] {
   <div class="about-contents"><div id="about-block">
 <section id="education" class="level2">
 <h2 data-anchor-id="education">Education</h2>
-<style>
-/* ========================================
-   ABOUT BLOCK (page-specific micro-tweaks)
-   ======================================== */
-.cv-about p { 
-  margin: .5rem 0 .8rem; 
-}
-.cv-about .cv-lead { 
-  font-size: 1.02rem; 
-  line-height: 1.6; 
-}
-.cv-about .cv-muted-note { 
-  color: var(--cv-muted); 
-}
-/* ========================================
-   THEME TOKENS (local to this page)
-   ======================================== */
-:root {
-  --ink: #1f2430;
-  --muted: #636b7a;
-  --line: #eceff3;
-  --bg: #fbfbfd;
-  --accent: #6f42c1;
-  --accent-2: #f1e9ff;
-  --radius: 14px;
-  --shadow: 0 6px 18px rgba(0,0,0,.06);
-  --maxw: 1080px;
-}
-/* ========================================
-   BASE
-   ======================================== */
-body { 
-  background: var(--bg); 
-  color: var(--ink); 
-}
-main.content { 
-  max-width: var(--maxw); 
-  margin-inline: auto; 
-}
-section, .block { 
-  margin: 1.25rem 0 1.75rem; 
-}
-/* ========================================
-   HEADINGS
-   ======================================== */
-h1, h2 { 
-  letter-spacing: .2px; 
-}
-h1 { 
-  font-weight: 800; 
-}
-h2 { 
-  font-weight: 800; 
-  font-size: 1.45rem; 
-  margin-bottom: .85rem; 
-}
-.section-title {
-  display: flex; 
-  align-items: center; 
-  gap: .6rem; 
-  margin-bottom: .85rem;
-  font-weight: 800; 
-  font-size: 1.35rem;
-}
-.section-title::after {
-  content: ""; 
-  flex: 1 1 auto; 
-  height: 2px; 
-  background: linear-gradient(90deg, var(--accent), transparent);
-  opacity: .35; 
-  border-radius: 999px;
-}
-/* ========================================
-   CARDS
-   ======================================== */
-.card-slim {
-  background: #fff; 
-  border: 1px solid var(--line); 
-  border-radius: var(--radius);
-  box-shadow: var(--shadow); 
-  padding: 1rem 1.1rem;
-}
-.card-slim + .card-slim { 
-  margin-top: .75rem; 
-}
-/* ========================================
-   CHIPS (small tags)
-   ======================================== */
-.chip {
-  display: inline-block; 
-  padding: .25rem .58rem; 
-  border-radius: 999px;
-  background: var(--accent-2); 
-  border: 1px solid rgba(111, 66, 193, .18);
-  color: #4a2aa6; 
-  font-weight: 700; 
-  font-size: .78rem; 
-  letter-spacing: .2px;
-}
-/* ========================================
-   GRID HELPERS
-   ======================================== */
-.grid-2 { 
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  gap: 14px 22px; 
-}
-@media (max-width: 900px) { 
-  .grid-2 { grid-template-columns: 1fr; } 
-}
-/* ========================================
-   COMPACT LISTS (with right-aligned dates)
-   ======================================== */
-.cv-list { 
-  list-style: none; 
-  padding: 0; 
-  margin: 0; 
-}
-.cv-item { 
-  padding: .55rem 0; 
-  border-bottom: 1px solid var(--line); 
-}
-.cv-item:last-child { 
-  border-bottom: none; 
-}
-.row-2 { 
-  display: grid; 
-  grid-template-columns: 1fr auto; 
-  gap: 10px; 
-  align-items: baseline; 
-}
-.cv-title { 
-  font-weight: 700; 
-}
-.cv-year { 
-  color: var(--muted); 
-  white-space: nowrap; 
-  font-weight: 600; 
-}
-.cv-loc { 
-  color: var(--muted); 
-  font-size: .95rem; 
-  margin-top: .2rem; 
-}
-/* ========================================
-   LINKS
-   ======================================== */
-a { 
-  color: #0a58ca; 
-  text-decoration: none; 
-}
-a:hover { 
-  text-decoration: underline; 
-}
-/* ========================================
-   BUTTONS (inline CTA style)
-   ======================================== */
-.btn-ghost {
-  display: inline-flex; 
-  gap: .4rem; 
-  align-items: center;
-  padding: .35rem .6rem; 
-  border-radius: 10px; 
-  border: 1px solid var(--line);
-  background: #fff; 
-  box-shadow: 0 2px 8px rgba(0,0,0,.04);
-  font-weight: 600; 
-  font-size: .9rem;
-}
-.btn-ghost:hover { 
-  text-decoration: none; 
-  border-color: #e0e3ea; 
-}
-</style>
-<div class="card-slim one-col">
-  <ul class="cv-list">
-    <!-- UCLA -->
-    <li class="cv-item">
-      <div class="row-2">
-        <div class="cv-title">M.S., Biostatistics</div>
-        <div class="cv-year">Sep 2023 – Present</div>
-      </div>
-      <div class="cv-loc">
-        <strong>University of California, Los Angeles (UCLA)</strong>
-      </div>
-    </li>
-    <!-- Southwest University -->
-    <li class="cv-item">
-      <div class="row-2">
-        <div class="cv-title">B.S., Biological Sciences</div>
-        <div class="cv-year">Sep 2018 – Jun 2022</div>
-      </div>
-      <div class="cv-loc">
-        <strong>Southwest University</strong>
-      </div>
-    </li>
-  </ul>
-</div>
+<p><strong>University of California, Los Angeles</strong> (UCLA)<br>
+M.S., Biostatistics</p>
+<p><strong>Southwest University</strong><br>
+B.S., Biological Sciences</p>
+<div class="card-slim grid-2"> <div> <div class="row-2"> <div class="cv-title">M.S., Biostatistics</div> <div class="cv-year">Sep 2023 – Present</div> </div> <div class="cv-loc"><strong>University of California, Los Angeles (UCLA)</strong></div> </div> <div> <div class="row-2"> <div class="cv-title">B.S., Biological Sciences</div> <div class="cv-year">Sep 2018 – Jun 2022</div> </div> <div class="cv-loc"><strong>Southwest University</strong></div> </div> </div>
 </section>
 <section id="experience" class="level2">
 <h2 data-anchor-id="experience">Experience</h2>
-<div class="card-slim">
-  <ul class="cv-list">
-    <li class="cv-item">
-      <div class="row-2">
-        <div class="cv-title">
-          Cedars-Sinai | 
-          <a href="https://www.cedars-sinai.edu/health-sciences-university/research/labs/casero-lab.html" target="_blank" rel="noopener">Casero Lab</a>
-        </div>
-        <div class="cv-year">Current</div>
-      </div>
-    </li>
-    <li class="cv-item">
-      <div class="row-2">
-        <div class="cv-title">
-          UCLA | 
-          <a href="https://www.pellegrini.mcdb.ucla.edu/" target="_blank" rel="noopener">Pellegrini Lab</a>, 
-          <a href="https://brunildaballiu.github.io/" target="_blank" rel="noopener">Balliu Lab</a>, 
-          <a href="https://ph.ucla.edu/about/faculty-staff-directory/feng-gao" target="_blank" rel="noopener">Gao Lab</a>
-        </div>
-        <div class="cv-year"></div>
-      </div>
-    </li>
-  </ul>
-</div>
+<div class="card-slim"> <ul class="cv-list"> <li class="cv-item"> <div class="row-2"> <div class="cv-title">Cedars-Sinai, <a href="https://www.cedars-sinai.edu/health-sciences-university/research/labs/casero-lab.html" target="_blank" rel="noopener">Casero Lab</a> | Research Intern</div> <div class="cv-year">Current</div> </div> </li> <li class="cv-item"> <div class="row-2"> <div class="cv-title">Graduate Student Researcher — UCLA, <a href="https://www.pellegrini.mcdb.ucla.edu/" target="_blank" rel="noopener">Pellegrini Lab</a></div> <div class="cv-year"></div> </div> </li> <li class="cv-item"> <div class="row-2"> <div class="cv-title">Graduate Student — UCLA, <a href="https://brunildaballiu.github.io/" target="_blank" rel="noopener">Balliu Lab</a></div> <div class="cv-year"></div> </div> </li> <li class="cv-item"> <div class="row-2"> <div class="cv-title">Graduate Student Researcher — UCLA, <a href="https://github.com/ThePeachLab" target="_blank" rel="noopener">Gao Lab</a></div> <div class="cv-year"></div> </div> </li> </ul> </div>
+<p><strong>Cedars-Sinai</strong>, <a href="https://www.cedars-sinai.edu/health-sciences-university/research/labs/casero-lab.html">Casero Lab</a> | Research Intern</p>
+<p><strong>UCLA</strong>, <a href="https://www.pellegrini.mcdb.ucla.edu/">Pellegrini Lab</a> | Graduate Student Researcher</p>
+<p><strong>UCLA</strong>, <a href="https://brunildaballiu.github.io/">Balliu Lab</a> | Graduate Student</p>
+<p><strong>UCLA</strong>, <a href="https://github.com/ThePeachLab">Gao Lab</a> | Graduate Student Researcher</p>
 </section>
 </div></div>
 </div>
 
 <section id="about-me" class="level1">
 <h1>About Me</h1>
-  <div class="cv-card cv-about">
-  <p class="cv-lead">
-    I’m a UCLA graduate student in <strong>Biostatistics</strong>, working at the intersection of 
-    <strong>computational biology</strong> and <strong>statistics</strong>. 
-    My <a href="./research.html" class="link-primary fw-semibold">research</a> explores 
-    <em>gene expression across epigenomic, transcriptomic, and proteomic layers</em> 
-    to identify biomarkers, explain biological mechanisms, and build predictive models 
-    for <strong>aging</strong>, <strong>flu vaccines</strong>, and <strong>immune-related diseases</strong>.
-  </p>
-  
-  <p>
-    I’m passionate about applying advanced 
-    <strong>mathematical</strong> and <strong>statistical methods</strong> 
-    to genetic analysis, with the goal of pushing forward the boundaries of 
-    <strong>genetic research</strong> and contributing to 
-    <strong>precision medicine</strong> and <strong>vaccine development</strong>.
-  </p>
+<p>I’m a UCLA grad student exploring the exciting fields of biostatistics, computational biology, and epigenetics while pursuing my MS in Biostatistics at the <a href="https://ph.ucla.edu/">Fielding School of Public Health</a>, UCLA. My <a href="./research.html">research</a> explores gene expression patterns across epigenomic, transcriptomic, and proteomic levels, using statistical models to uncover biomarkers, elaborate biological mechanisms, and build predictive models related to aging, vaccines, and diseases, especially in the context of epigenetic regulation.</p>
+<p>I’m passionate about mathematical and statistical methods for genetic analysis to push the boundaries of epigenetic research and contribute to the future of vaccine development and precision medicine.</p>
+<p>Outside work I love hiking, music hunting, and I’ve recently fallen into the tiki rabbit hole 🍹.</p>
+</section>
+<section id="research-interests" class="level1">
+<h1>Research Interests</h1>
+<ol type="1">
+<li><strong>Statistical Genetics</strong>: Modeling gene expression patterns across epigenomic, transcriptomic, and proteomic levels by linear or nonlinear methods and identifying biomarkers to build predictive models related to age, vaccines, and chronic diseases.</li>
+<li><strong>Bioinformatics</strong>: Developing computational tools to map CpG sites to methylation patterns, detecting eQTLs, and optimizing algorithms for efficiently vetting into high-throughput sequencing data purposes.</li>
+<li><strong>Precision Medicine</strong>: Integrating multi-omics data to identify biomarkers that elucidate disease mechanisms, connect theory with practice, and predict treatment responses for personalized healthcare.</li>
+<li><strong>Epigenetics</strong>: Investigating dynamics of quintessential epigenomic biomarkers during lifespan. Studying the impact of DNA methylation, histone modification, and non-coding RNA on gene expression regulation and cellular signaling pathways.</li>
+</ol>
+</section>
+<section id="highlights" class="level1">
+<h1>Highlights</h1>
+<ul>
+<li><p><a href="https://jacenai.github.io/jiachenai//research.html#influenza-vaccination-impact-on-dna-methylation-in-uga6-cohort"><strong>Influenza Vaccination Impact on DNA Methylation in UGA6 Cohort</strong></a>: Identified key epigenetic regulators of immune responses to influenza vaccination in a large cohort study, uncovering the RIG‐I signaling pathway’s role in vaccine-induced immunity through integrated DNA methylation, RNA-seq, and cytokine analyses.</p></li>
+<li><p><a href="https://jacenai.github.io/jiachenai//research.html#nonlinear-aging-dynamics-in-co-methylation-network"><strong>Nonlinear Aging Dynamics in Co-methylation Network</strong></a>: Unveiled the critical role of non-linear co-methylation dynamics in aging by mapping epigenetic changes to gene networks and biological pathways, providing novel insights into age-related processes beyond linear models.</p></li>
+<li><p><a href="https://jacenai.github.io/jiachenai//research.html#inferring-immune-histories-from-sars-cov-2-rna-seq-data"><strong>Inferring immune histories from SARS-CoV-2 RNA-seq data</strong></a>: Developed a pipeline to infer immune histories from SARS-CoV-2 RNA-seq data, linking immune profiling to personalized responses.</p></li>
+<li><p><a href="https://jacenai.github.io/jiachenai//research.html#lymphocyte-regeneration-after-thymocyte-damage-in-zebrafish-presentation-slides"><strong>Lymphocyte Regeneration after Thymocyte Damage in Zebrafish</strong></a>: Uncovered the pivotal role of the CXCL12/CXCR4 pathway in thymic lymphocyte regeneration, revealing stem cell migration as a key mechanism for immune recovery.</p></li>
+</ul>
 
-  <p class="cv-muted-note">
-    Outside work I love hiking, music hunting, and I’ve recently fallen into the tiki rabbit hole 🍹.
-  </p>
-</div>
 <style>
-  /* Page-specific micro-tweaks only */
-  .cv-about p { margin: .5rem 0 .8rem; }
-  .cv-about .cv-lead { font-size: 1.02rem; line-height: 1.6; }
-  .cv-about .cv-muted-note { color: var(--cv-muted); }
+/* ===== THEME TOKENS ===== */
+:root{
+  --ink:#1f2430; --muted:#636b7a; --line:#eceff3; --bg:#fbfbfd;
+  --accent:#6f42c1; --accent-2:#f1e9ff; --radius:14px; --shadow:0 6px 18px rgba(0,0,0,.06);
+  --maxw: 1080px;
+}
 
-  /* Optional: slight spacing above the About block on this page */
-  #about-block { margin-top: .5rem; }
+/* Base */
+body{ background:var(--bg); color:var(--ink); }
+main.content { max-width: var(--maxw); margin-inline: auto; }
+section, .block { margin: 1.25rem 0 1.75rem; }
+
+/* Headings */
+h1,h2{ letter-spacing:.2px; }
+h1{ font-weight:800; }
+h2{ font-weight:800; font-size:1.45rem; margin-bottom:.85rem; }
+.section-title{
+  display:flex; align-items:center; gap:.6rem; margin-bottom:.85rem;
+  font-weight:800; font-size:1.35rem;
+}
+.section-title::after{
+  content:""; flex:1 1 auto; height:2px; background:linear-gradient(90deg,var(--accent),transparent);
+  opacity:.35; border-radius:999px;
+}
+
+/* Cards */
+.card-slim{
+  background:#fff; border:1px solid var(--line); border-radius:var(--radius);
+  box-shadow:var(--shadow); padding:1rem 1.1rem;
+}
+.card-slim + .card-slim{ margin-top:.75rem; }
+
+/* Chips (small tags) */
+.chip{
+  display:inline-block; padding:.25rem .58rem; border-radius:999px;
+  background:var(--accent-2); border:1px solid rgba(111,66,193,.18);
+  color:#4a2aa6; font-weight:700; font-size:.78rem; letter-spacing:.2px;
+}
+
+/* Two-column utility */
+.grid-2{ display:grid; grid-template-columns:1fr 1fr; gap:14px 22px; }
+@media (max-width: 900px){ .grid-2{ grid-template-columns:1fr; }}
+
+/* Compact list with right-aligned dates */
+.cv-list{ list-style:none; padding:0; margin:0; }
+.cv-item{ padding:.55rem 0; border-bottom:1px solid var(--line); }
+.cv-item:last-child{ border-bottom:none; }
+.row-2{ display:grid; grid-template-columns: 1fr auto; gap:10px; align-items:baseline; }
+.cv-title{ font-weight:700; }
+.cv-year{ color:var(--muted); white-space:nowrap; font-weight:600; }
+.cv-loc{ color:var(--muted); font-size:.95rem; margin-top:.2rem; }
+
+/* Links */
+a{ color:#0a58ca; text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+/* Buttons (for inline CTA links if needed) */
+.btn-ghost{
+  display:inline-flex; gap:.4rem; align-items:center;
+  padding:.35rem .6rem; border-radius:10px; border:1px solid var(--line);
+  background:#fff; box-shadow:0 2px 8px rgba(0,0,0,.04);
+  font-weight:600; font-size:.9rem;
+}
+.btn-ghost:hover{ text-decoration:none; border-color:#e0e3ea; }
+
+/* ===== Carousel polish ===== */
+#travel-carousel{ border-radius: var(--radius); box-shadow: var(--shadow); }
+#travel-carousel .carousel-item > img{
+  aspect-ratio: 16/9; object-fit: cover; width:100%; height:auto;
+}
+#travel-carousel .carousel-caption{
+  background: linear-gradient(180deg,rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 100%);
+  border-radius: 12px; padding:.6rem .8rem; bottom: 8%;
+}
+#travel-carousel .carousel-caption h6{ margin:0; font-weight:800; color:#fff; }
+#travel-carousel .carousel-caption p{ margin:.1rem 0 0; color:#e9eef7; }
+
+/* ===== About block spacing tweak ===== */
+#about-block{ margin-top: .5rem; }
 </style>
 
-<!-- Carousel (styling handled by styles.css) -->
-<div id="travel-carousel" class="carousel slide w-100 mt-4" data-bs-ride="carousel" data-bs-interval="3200" aria-label="Travel photos">
+<!-- Carousel -->
+<div id="travel-carousel" class="carousel slide w-100 mt-4" data-bs-ride="carousel" data-bs-interval="3200">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#travel-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#travel-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -447,7 +317,7 @@ a:hover {
     <div class="carousel-item active">
       <img src="img/Ketchikan.jpg" class="d-block w-100" alt="Ketchikan, Alaska">
       <div class="carousel-caption d-none d-md-block">
-        <h6 data-anchor-id="about-me">Alaska</h6><p>Ketchikan</p>
+        <h6 data-anchor-id="highlights">Alaska</h6><p>Ketchikan</p>
       </div>
     </div>
     <div class="carousel-item">
@@ -477,116 +347,6 @@ a:hover {
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
 </div>
-
-
-</section>
-<section id="research-interests" class="level1">
-<h1>Research Interests</h1>
-<div class="card-slim"> <ul class="cv-list"> <li class="cv-item"><div class="cv-title"><a href="https://jacenai.github.io/jiachenai/research.html#statistical-methods-for-detecting-context-specific-eqtls" target="_blank" rel="noopener">Bioinformatics / Statistical Genomics</a></div> <div class="cv-loc">Modeling across -omics layers to discover biomarkers and build predictive models.</div></li>  <li class="cv-item"><div class="cv-title"><a href="https://jacenai.github.io/jiachenai/research.html#precision-desirability-optimization" target="_blank" rel="noopener">Precision Medicine</a></div> <div class="cv-loc">Multi-omics integration for mechanism discovery and treatment response prediction.</div></li> <li class="cv-item"><div class="cv-title"><a href="https://jacenai.github.io/jiachenai/research.html#dna-methylation-dynamics-and-epigenetic-regulation" target="_blank" rel="noopener">Epigenetics</a></div> <div class="cv-loc">Dynamics of DNA methylation, histone marks, ncRNA and their regulatory impact.</div></li> </ul> </div>
-</section>
-<section id="publications" class="level1">
-<h1>Publications</h1>
-<!-- ===================== PUBLICATIONS ===================== -->
-<section class="cv-card cv-card--tinted" id="publications">
-
-  <div class="pub-list">
-
-    <!-- Item -->
-<article class="pub-item">
-  <div class="thumb">
-    <img src="img/GET_plot.png" alt="Clinical Utility Index Review">
-  </div>
-  <div class="meta">
-    <div class="cv-title">
-      Clinical Utility Index in Pharmaceutical Decision-Making: A Comprehensive Review of Conceptual Advances and Optimal Design Strategies
-    </div>
-    <div class="cv-loc">Jiaying Li, Jiachen Ai, Weng Kee Wong</div>
-    <div class="cv-year">
-      <span class="cv-chip is-purple">Medical Decision Making</span>
-      <span class="cv-chip">Submitted</span>
-    </div>
-    <div class="cv-actions">
-      <a class="cv-btn" href="https://jiachenai.shinyapps.io/c-optimal_by_PSO/">Shiny App</a>
-    </div>
-  </div>
-</article>
-
-
-<!-- Item -->
-<article class="pub-item">
-  <div class="thumb">
-    <img src="img/derringercurvessimple.pdf" alt="Desirability Functions in Biosciences">
-  </div>
-  <div class="meta">
-    <div class="cv-title">
-      Desirability Functions and Applications in the Biosciences
-    </div>
-    <div class="cv-loc">Priscilla Yen, Jiachen Ai, Weng Kee Wong</div>
-    <div class="cv-year">
-      <span class="cv-chip is-purple">Statistical Methods in Medical Research</span>
-      <span class="cv-chip">Submitted</span>
-    </div>
-  </div>
-</article>
-
-
-    <!-- Item -->
-    <article class="pub-item">
-      <div class="thumb">
-        <img src="img/UGA6.png" alt="Influenza vaccination methylation">
-      </div>
-      <div class="meta">
-        <div class="cv-title">Influenza Vaccination: DNA Methylation and Immune Response Mechanisms</div>
-        <div class="cv-loc">Jiachen Ai, Harry Pickering, Elaine F. Reed, Matteo Pellegrini</div>
-        <div class="cv-year">
-          <span class="cv-chip is-purple">Genome Biology</span>
-          <span class="cv-chip">Submitted</span>
-        </div>
-        <div class="cv-actions">
-          <a class="cv-btn" href="https://jacenai.github.io/Biostatistics/08.12.25.UGA6_Methylation.html">Code</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- Item -->
-    <article class="pub-item">
-      <div class="thumb">
-        <img src="img/aging_dynamic_flowchart.png" alt="Nonlinear aging co-methylation">
-      </div>
-      <div class="meta">
-        <div class="cv-title">Nonlinear Aging Dynamics in Co-methylation Network</div>
-        <div class="cv-loc">Jiachen Ai, Yihan Fan, Yinan Zheng, Feng Gao</div>
-        <div class="cv-year">
-          <span class="cv-chip is-purple">Aging Cells</span>
-          <span class="cv-chip">Submitted</span>
-        </div>
-        <div class="cv-actions">
-          <a class="cv-btn" href="https://github.com/ThePeachLab/Aging-dynamics">Code</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- Item -->
-    <article class="pub-item">
-      <div class="thumb">
-        <img src="img/semen_quality.png" alt="Semen quality review">
-      </div>
-      <div class="meta">
-        <div class="cv-title">Lifestyle Does Affect Semen Quality: Factor Determination in a Statistical Way</div>
-        <div class="cv-loc">Jiachen Ai</div>
-        <div class="cv-year">
-          <span class="cv-chip is-blue">Lecture Notes in Medicine &amp; Life Sciences</span>
-          <span class="cv-chip">2021</span>
-        </div>
-        <div class="cv-actions">
-          <a class="cv-btn" href="https://www.clausiuspress.com/conferences/LNMLS/BEHDP%202021/Y0631.pdf">PDF</a>
-          <a class="cv-btn" href="https://www.clausiuspress.com/conference/article/artId/7114.html">HTML</a>
-        </div>
-      </div>
-    </article>
-
-  </div>
-</section>
 
 
 

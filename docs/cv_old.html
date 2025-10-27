@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./cv.html" aria-current="page"> 
+    <a class="nav-link" href="./cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
@@ -132,72 +132,339 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#skills" id="toc-skills" class="nav-link active" data-scroll-target="#skills">Skills</a></li>
+  <li><a href="#coursework" id="toc-coursework" class="nav-link" data-scroll-target="#coursework">Coursework</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 
 
-<!-- ===== Header ===== -->
-<header class="header">
-  <div class="header-actions-wrap">
-    <div>
-      <h1 class="mt-0 mb-0">Jiachen (Jacen) Ai</h1>
-    </div>
+<p><a href="assets/CV.pdf" class="btn btn-primary btn-lg mb-3" target="_blank" rel="noopener">CV (PDF)</a></p>
+<!-- ===== Education Section ===== -->
+<section class="edu-section">
+  <h2 class="anchored">Education</h2>
 
-    <div class="cv-actions">
-      <a href="assets/CV.pdf" target="_blank" rel="noopener" class="cv-btn cv-btn-primary" aria-label="Open CV PDF in a new tab">
-        📄 Open CV (PDF)
-      </a>
+  <div class="edu-grid">
+    <!-- UCLA -->
+    <article class="edu-card">
+      <div class="edu-meta">
+        <span class="edu-badge">Sep 2023 – Present</span>
+      </div>
+
+      <h3 class="edu-degree anchored">M.S., Biostatistics <span class="emoji">📊</span></h3>
+      <div class="edu-school">University of California, Los Angeles (UCLA)</div>
+
+      <ul class="edu-bullets">
+        <li><strong>GPA:</strong> 4.00/4.00</li>
+        <li><strong>Advisor:</strong> <a href="https://medschool.ucla.edu/people/matteo-pellegrini-phd" target="_blank" rel="noopener">Dr. Matteo Pellegrini</a></li>
+      </ul>
+    </article>
+
+    <!-- Southwest University -->
+    <article class="edu-card">
+      <div class="edu-meta">
+        <span class="edu-badge">Sep 2018 – Jun 2022</span>
+      </div>
+
+      <h3 class="edu-degree anchored">B.S., Biological Sciences <span class="emoji">🧬</span></h3>
+      <div class="edu-school">Southwest University</div>
+
+      <ul class="edu-bullets">
+        <li><strong>GPA:</strong> 3.84/4.00 (Rank: 2/65)</li>
+        <li><strong>Thesis:</strong> <em>Analytic Hierarchy Process for Invasive Plant Management</em></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Minimal Styles (optional, tweak as you like) ===== -->
+<style>
+  .edu-section { max-width: 980px; margin: 0 auto; padding: 0.5rem 1rem 1.5rem; }
+  .edu-section h2 { font-size: 2rem; margin: 0 0 1rem; letter-spacing: .3px; }
+
+  .edu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  @media (min-width: 780px) {
+    .edu-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  .edu-card {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .edu-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  }
+
+  .edu-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: .35rem;
+  }
+  .edu-badge {
+    display: inline-block;
+    background: #6f42c1; /* aubergine */
+    color: #fff;
+    padding: 4px 10px;
+    font-size: .85rem;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: .2px;
+  }
+  .edu-loc {
+    color: #7a7a7a;
+    font-size: .9rem;
+  }
+
+  .edu-degree {
+    margin: .15rem 0 .1rem;
+    font-size: 1.15rem;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+  .emoji { font-weight: 400; }
+
+  .edu-school {
+    color: #444;
+    margin-bottom: .45rem;
+    font-weight: 500;
+  }
+
+  .edu-bullets {
+    margin: .4rem 0 0;
+    padding-left: 1.1rem;
+  }
+  .edu-bullets li { margin: .25rem 0; }
+  .edu-bullets a { color: #0a58ca; text-decoration: none; }
+  .edu-bullets a:hover { text-decoration: underline; }
+</style>
+
+<section class="cv-grid">
+
+
+
+  <!-- Block 2: POSITIONS -->
+  <div class="cv-card">
+    <h2 class="anchored">Positions</h2>
+    <div class="cv-two">
+      <ul class="cv-list">
+        <li class="cv-entry">
+          <div class="cv-row">
+            <span class="cv-title"><strong>Research Intern</strong></span>
+            <span class="cv-year">Jul 2025 – Present</span>
+          </div>
+          <div class="cv-loc">Cedars-Sinai Medical Center</div>
+        </li>
+        <li class="cv-entry">
+          <div class="cv-row">
+            <span class="cv-title"><strong>Graduate Student Researcher</strong></span>
+            <span class="cv-year">Mar 2024 – Mar 2025</span>
+          </div>
+          <div class="cv-loc">UCLA</div>
+        </li>
+      </ul>
+      <ul class="cv-list">
+        <li class="cv-entry">
+          <div class="cv-row">
+            <span class="cv-title"><a href="https://samueli.ucla.edu/ucla-receives-4-6-million-grant-from-the-warren-alpert-foundation-to-launch-computational-biology-ai-training-program/" target="_blank"><strong>Warren Alpert Fellow</strong></a></span>
+            <span class="cv-year">Aug 2024 – Present</span>
+          </div>
+          <div class="cv-loc">UCLA</div>
+        </li>
+        <li class="cv-entry">
+          <div class="cv-row">
+            <span class="cv-title"><a href="https://www.wstbio.com/" target="_blank"><strong>Immunization Intern</strong></a></span>
+            <span class="cv-year">Mar 2021 – Jun 2021</span>
+          </div>
+          <div class="cv-loc">Western Biomedical Technology Inc.</div>
+        </li>
+      </ul>
     </div>
   </div>
-</header>
 
-<!-- ===== Top two-column block: Education | Honors ===== -->
-<div class="cv-two">
+<section>
 
-  <!-- ===== Education ===== -->
-  <section class="cv-grid">
-    <div class="cv-card">
-      <h2 class="anchored">Education</h2>
+<style>
+  .cv-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .cv-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .cv-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+  .cv-card h2 {
+    font-size: 1.4rem; font-weight: 700; margin-bottom: .8rem; color: #222;
+    border-bottom: 2px solid #6f42c1; display: inline-block; padding-bottom: .2rem;
+  }
 
-      <!-- UCLA -->
-      <article class="cv-card py-compact px-compact">
-        <div class="mb-tight"><span class="edu-badge">Sep 2023 – Present</span></div>
-        <div class="cv-entry no-border p-0 m-0">
-          <div class="cv-row">
-            <span class="cv-title"><strong>M.S., Biostatistics</strong> 📊</span>
-            <span class="cv-year">UCLA</span>
-          </div>
-          <div class="cv-loc">GPA 4.00/4.00</div>
-          <div class="cv-loc">
-            Advisor:
-            <a href="https://medschool.ucla.edu/people/matteo-pellegrini-phd" target="_blank" rel="noopener">Dr. Matteo Pellegrini</a>
-          </div>
+  .cv-two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+  @media (max-width: 800px){ .cv-two { grid-template-columns: 1fr; } }
+
+  .cv-list { list-style: none; padding: 0; margin: 0; font-size: .95rem; line-height: 1.4; }
+  .cv-entry { margin-bottom: .7rem; }
+  .cv-row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 12px; }
+  .cv-title { font-weight: 600; color: #222; }
+  .cv-year { color: #555; font-weight: 500; white-space: nowrap; }
+  .cv-loc { font-size: .9rem; color: #666; margin-left: 2px; }
+
+  .cv-card a { color: #0a58ca; text-decoration: none; }
+  .cv-card a:hover { text-decoration: underline; }
+</style>
+<!-- ===== PRESENTATIONS (3 columns) ===== -->
+<div class="cv-card cv-card-presentations" aria-label="Presentations">
+  <h2 class="anchored">Presentations</h2>
+
+  <div class="cv-three">
+    <!-- Talks -->
+    <ul class="cv-list">
+      <li class="cv-chip">Talks</li>
+
+      <li class="cv-entry">
+        <div class="cv-row">
+          <span class="cv-title"><strong>FastGxC: Context-Specific eQTLs &amp; Method Comparison</strong></span>
+          <span class="cv-year">Jun 2025</span>
         </div>
-      </article>
+        <div class="cv-loc">UCLA</div>
+      </li>
 
-      <!-- Southwest University -->
-      <article class="cv-card py-compact px-compact">
-        <div class="mb-tight"><span class="edu-badge">Sep 2018 – Jun 2022</span></div>
-        <div class="cv-entry no-border p-0 m-0">
-          <div class="cv-row">
-            <span class="cv-title"><strong>B.S., Biological Sciences</strong> 🧬</span>
-            <span class="cv-year">Southwest University</span>
-          </div>
-          <div class="cv-loc">GPA 3.84/4.00 (Rank 2/65)</div>
+      <li class="cv-entry">
+        <div class="cv-row">
+          <span class="cv-title"><strong>Influenza Vaccination Impact on DNA Methylation and Gene Regulation in UGA6 Cohort</strong></span>
+          <span class="cv-year">May 2025</span>
         </div>
-      </article>
+        <div class="cv-loc">Matteo Lab, UCLA</div>
+      </li>
+      
+      <!-- Sample item — duplicate & edit -->
+      
+      <li class="cv-entry">
+        <div class="cv-row">
+          <span class="cv-title"><strong>Lymphocyte Regeneration After Thymocyte Damage in Zebrafish</strong></span>
+          <span class="cv-year">June 2020</span>
+        </div>
+        <div class="cv-loc">Southwest University</div>
+      </li>
 
-    </div>
-  </section>
+      <!-- Add more talks here -->
+    </ul>
 
-  <!-- ===== Fellowships ===== -->
-  <section class="cv-grid">
-    <div class="cv-card">
-      <h2 class="anchored">Fellowships</h2>
+    <!-- Posters -->
+    <ul class="cv-list">
+      <li class="cv-chip">Posters</li>
 
+      <li class="cv-entry">
+        <div class="cv-row">
+          <span class="cv-title"><strong>Key Factors Linked to Depression Before Adjuvant Therapy in Breast Cancer</strong></span>
+          <span class="cv-year">Mar 2024</span>
+        </div>
+        <div class="cv-loc">UCLA</div>
+      </li>
+
+      <!-- Add more posters here -->
+    </ul>
+
+    <!-- Conferences (attendance) -->
+    <ul class="cv-list">
+      <li class="cv-chip">Conferences</li>
+
+      <li class="cv-entry">
+        <div class="cv-row">
+          <span class="cv-title"><strong>Computational Genomics Summer Institute 2024</strong></span>
+          <span class="cv-year">Aug 2024</span>
+        </div>
+        <div class="cv-loc">UCLA</div>
+      </li>
+
+      <!-- Add more conferences here -->
+    </ul>
+  </div>
+</div>
+
+<!-- ===== Styles for PRESENTATIONS ===== -->
+<style>
+  /* —— quick theme knobs —— */
+  :root {
+    --cv-accent: #6f42c1;     /* purple underline */
+    --cv-ink:    #222;        /* primary text */
+    --cv-muted:  #555;        /* secondary text */
+    --cv-line:   #eee;        /* separators */
+    --cv-chip:   #f2ecff;     /* chip background */
+    --cv-chip-ink:#4a2aa6;    /* chip text */
+  }
+
+  .cv-card { 
+    background:#fff; border:1px solid #eaeaea; border-radius:12px; 
+    padding:1rem 1.25rem; box-shadow:0 4px 12px rgba(0,0,0,.04);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .cv-card:hover { transform:translateY(-2px); box-shadow:0 6px 16px rgba(0,0,0,.08); }
+  .cv-card h2{ 
+    font-size:1.4rem; font-weight:700; color:var(--cv-ink); margin:.2rem 0 .9rem;
+    border-bottom:2px solid var(--cv-accent); display:inline-block; padding-bottom:.2rem;
+  }
+
+  /* 3 columns; responsive down to 1 */
+  .cv-three{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px 24px; }
+  @media (max-width:1000px){ .cv-three{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:720px){ .cv-three{ grid-template-columns:1fr; } }
+
+  .cv-list{ list-style:none; padding:0; margin:0; font-size:.95rem; }
+  .cv-chip{
+    display:inline-block; margin:0 0 .6rem; padding:.25rem .55rem;
+    font-size:.8rem; font-weight:700; letter-spacing:.2px;
+    color:var(--cv-chip-ink); background:var(--cv-chip); border-radius:999px;
+    border:1px solid rgba(111,66,193,.18);
+  }
+
+  .cv-entry{ margin-bottom:.65rem; padding-bottom:.65rem; border-bottom:1px solid var(--cv-line); }
+  .cv-entry:last-child{ border-bottom:none; }
+
+  /* row 1: title (left) + year (right) */
+  .cv-row{ display:grid; grid-template-columns:1fr auto; align-items:baseline; gap:12px; }
+  .cv-title{ color:var(--cv-ink); font-weight:600; }
+  .cv-year{ color:var(--cv-muted); font-weight:500; white-space:nowrap; }
+
+  /* row 2: location full width */
+  .cv-loc{ margin-top:.1rem; color:#666; font-size:.9rem; }
+
+  /* links look sharp */
+  .cv-card a{ color:#0a58ca; text-decoration:none; }
+  .cv-card a:hover{ text-decoration:underline; }
+</style>
+
+<section class="cv-grid">
+  <!-- Block 1: HONORS -->
+  <div class="cv-card">
+    <h2 class="anchored">Honors</h2>
+    <div class="cv-two">
       <ul class="cv-list">
         <li class="cv-entry">
           <div class="cv-row">
@@ -213,7 +480,8 @@ ul.task-list li input[type="checkbox"] {
           </div>
           <div class="cv-loc">UCLA</div>
         </li>
-
+      </ul>
+      <ul class="cv-list">
         <li class="cv-entry">
           <div class="cv-row">
             <span class="cv-title"><strong>APEx Funding</strong></span>
@@ -236,236 +504,254 @@ ul.task-list li input[type="checkbox"] {
           <div class="cv-loc">Southwest University</div>
         </li>
       </ul>
-
     </div>
-  </section>
-
-</div>
-
-
-
-<!-- ===== Works & Teaching side-by-side ===== -->
-<div class="cv-two">
-
-  <!-- ===== Works ===== -->
-  <section class="cv-grid">
-    <div class="cv-card">
-      <h2 class="anchored">Works</h2>
-      <ul class="cv-list">
-        <li class="cv-entry">
-          <div class="cv-row">
-            <span class="cv-title"><strong>Research Intern</strong></span>
-            <span class="cv-year">Jul 2025 – Present</span>
-          </div>
-          <div class="cv-loc">Cedars-Sinai Medical Center</div>
-        </li>
-        <li class="cv-entry">
-          <div class="cv-row">
-            <span class="cv-title"><strong>Graduate Student Researcher</strong></span>
-            <span class="cv-year">Mar 2024 – Mar 2025</span>
-          </div>
-          <div class="cv-loc">UCLA</div>
-        </li>
-
-        <li class="cv-entry">
-          <div class="cv-row">
-            <span class="cv-title"><strong>Warren Alpert Fellow</strong></span>
-            <span class="cv-year">Aug 2024 – Present</span>
-          </div>
-          <div class="cv-loc">UCLA</div>
-        </li>
-        <li class="cv-entry">
-          <div class="cv-row">
-            <span class="cv-title"><strong>Immunization Intern</strong></span>
-            <span class="cv-year">Mar 2021 – Jun 2021</span>
-          </div>
-          <div class="cv-loc">Western Biomedical Technology Inc.</div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== Teaching ===== -->
-  <section class="cv-grid">
-    <div class="cv-card">
-      <h2 class="anchored">Teaching</h2>
-      <ul class="cv-list">
-        <li class="cv-entry">
-          <div class="cv-row">
-            <span class="cv-title">
-            <strong>TA</strong>, 
-              <a href="https://catalog.registrar.ucla.edu/course/2022/mcdbio187al?siteYear=2022" target="_blank" rel="noopener">
-                MCD BIO 187AL
-              </a>
-            </span>
-            <span class="cv-year">Jun – Aug 2025</span>
-          </div>
-          <div class="cv-loc">UCLA</div>
-        </li>
-
-        <li class="cv-entry">
-          <div class="cv-row">
-            <span class="cv-title">
-            <strong>TA</strong>, 
-              <a href="https://catalog.registrar.ucla.edu/course/2022/csbiom187?siteYear=2022" target="_blank" rel="noopener">
-                C&amp;S BIO M187
-              </a>
-            </span>
-            <span class="cv-year">Mar – Jun 2025</span>
-          </div>
-          <div class="cv-loc">UCLA</div>
-        </li>
-        <li class="cv-entry">
-          <div class="cv-row">
-            <span class="cv-title"><strong>TA</strong>, MCD BIO 187AL</span>
-            <span class="cv-year">Jun – Aug 2024</span>
-          </div>
-          <div class="cv-loc">UCLA</div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-</div>
-
-
-<!-- ===== Presentations (Talks / Posters / Conferences) ===== -->
-<section class="cv-card cv-card-presentations" aria-label="Presentations">
-  <h2 class="anchored">Presentations</h2>
-
-  <!-- Talks -->
-  <div class="cv-subsection">
-    <span class="cv-chip is-purple">Talks</span>
-    <ul class="cv-list">
-      <li class="cv-entry">
-        <div class="cv-row">
-          <span class="cv-title"><strong>FastGxC: Context-Specific eQTLs Detecting and Comparison of Correction Methods</strong></span>
-          <a href="assets/FastGxC.pdf" target="_blank" class="slide-link" aria-label="View slides">📄 Slides</a>
-        </div>
-        <div class="cv-row">
-          <span class="cv-loc">UCLA</span>
-          <span class="cv-year">Jun 2025</span>
-        </div>
-      </li>
-
-      <li class="cv-entry">
-        <div class="cv-row">
-          <span class="cv-title"><strong>Influenza Vaccination Impact on DNA Methylation and Gene Regulation in UGA6 Cohort</strong></span>
-          <a href="files/Influenza_Methylation_Talk.pdf" target="_blank" class="slide-link" aria-label="View slides">📄 Slides</a>
-        </div>
-        <div class="cv-row">
-          <span class="cv-loc">Matteo Lab, UCLA</span>
-          <span class="cv-year">May 2025</span>
-        </div>
-      </li>
-
-      <li class="cv-entry">
-        <div class="cv-row">
-          <span class="cv-title"><strong>Lymphocyte Regeneration After Thymocyte Damage in Zebrafish</strong></span>
-          <a href="assets/LYMPHOCYTE_REGENERATION_AFTER_THYMOCYTE_DAMAGE_IN ZEBRAFISH.pdf" target="_blank" class="slide-link" aria-label="View slides">📄 Slides</a>
-        </div>
-        <div class="cv-row">
-          <span class="cv-loc">Southwest University</span>
-          <span class="cv-year">Jun 2020</span>
-        </div>
-      </li>
-    </ul>
   </div>
-
-  <!-- Posters -->
-  <div class="cv-subsection">
-    <span class="cv-chip is-purple">Posters</span>
-    <ul class="cv-list">
-      <li class="cv-entry">
-        <div class="cv-row">
-          <span class="cv-title"><strong>Key Factors Linked to Depression Before Adjuvant Therapy in Breast Cancer</strong></span>
-          <a href="assets/200B_poster.pdf" target="_blank" class="slide-link" aria-label="View poster">📄️ Poster</a>
-        </div>
-        <div class="cv-row">
-          <span class="cv-loc">UCLA</span>
-          <span class="cv-year">Mar 2024</span>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Conferences -->
-  <div class="cv-subsection">
-    <span class="cv-chip is-purple">Conferences</span>
-    <ul class="cv-list">
-      <li class="cv-entry">
-        <div class="cv-row">
-          <span class="cv-title"><strong>Computational Genomics Summer Institute 2024</strong></span>
-        </div>
-        <div class="cv-row">
-          <span class="cv-loc">UCLA</span>
-          <span class="cv-year">Aug 2024</span>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- ===== Skills (full width at bottom) ===== -->
-<section class="cv-grid">
+  
+  <!-- Block 5: TEACHING -->
   <div class="cv-card">
-    <h2 class="anchored">Skills</h2>
-
-    <div class="cv-two row-gap-sm">
-
-      <!-- Column A -->
-      <div>
-        <h3 class="cv-subhead anchored">Computational &amp; Statistical</h3>
-        <ul class="cv-bullets">
-          <li>Machine learning, Bayesian inference, simulation</li>
-          <li>Deep learning: TensorFlow, Keras, PyTorch</li>
-          <li>Parallel &amp; cluster computing; optimization, graph theory</li>
-        </ul>
-        <ul class="cv-tags">
-          <li class="is-purple">R</li><li>tidyverse</li><li>ggplot2</li><li>glmnet</li><li>Shiny</li>
-          <li class="is-purple">Python</li><li>NumPy</li><li>Pandas</li><li>scikit-learn</li><li>Biopython</li><li>Matplotlib</li>
-          <li class="is-purple">MATLAB</li><li class="is-purple">SAS</li><li class="is-purple">Stata</li><li class="is-purple">SQL</li><li class="is-purple">LaTeX</li>
-        </ul>
-
-        <h3 class="cv-subhead anchored">Platforms</h3>
-        <ul class="cv-bullets">
-          <li>Linux, Git/GitHub, Docker, Hoffman2 cluster</li>
-          <li>Cloud: GCP, AWS, Azure, OCI</li>
-        </ul>
-      </div>
-
-      <!-- Column B -->
-      <div>
-        <h3 class="cv-subhead anchored">Mathematics</h3>
-        <ul class="cv-bullets">
-          <li>Linear algebra, real analysis</li>
-          <li>Probability &amp; statistics, stochastic processes</li>
-          <li>Calculus &amp; differential equations, discrete math</li>
-        </ul>
-
-        <h3 class="cv-subhead anchored">Laboratory</h3>
-        <ul class="cv-bullets">
-          <li>PCR/qPCR, DNA/RNA extraction, CRISPR</li>
-          <li>RNA-seq, ChIP-seq, bisulfite-seq, scRNA-seq</li>
-          <li>Western blot, ELISA, mass spectrometry</li>
-          <li>Cell culture, transfection, flow cytometry</li>
-          <li>Confocal &amp; fluorescence microscopy</li>
-        </ul>
-      </div>
-
+    <h2 class="anchored">Teaching</h2>
+    <div class="cv-two">
+      <ul class="cv-list">
+        <li class="cv-entry">
+          <div class="cv-row"><span class="cv-title"><a href="https://catalog.registrar.ucla.edu/course/2022/mcdbio187al?siteYear=2022"><strong>TA</strong>, MCD BIO 187AL</a></span><span class="cv-year">Jun – Aug 2025</span></div>
+          <div class="cv-loc">UCLA</div>
+        </li>
+      </ul>
+      <ul class="cv-list">
+        <li class="cv-entry">
+          <div class="cv-row"><span class="cv-title"><a href="https://catalog.registrar.ucla.edu/course/2022/csbiom187?siteYear=2022"><strong>TA</strong>, C&amp;S BIO M187</a></span><span class="cv-year">Mar – Jun 2025</span></div>
+          <div class="cv-loc">UCLA</div>
+        </li>
+        <li class="cv-entry">
+          <div class="cv-row"><span class="cv-title"><strong>TA</strong>, MCD BIO 187AL</span><span class="cv-year">Jun – Aug 2024</span></div>
+          <div class="cv-loc">UCLA</div>
+        </li>
+      </ul>
     </div>
   </div>
+
 </section>
 
-<!-- Tiny spacing tweaks just for the Presentations section -->
 <style>
-  .cv-card-presentations .cv-entry { margin-bottom: .35rem; padding-bottom: .35rem; }
-  .cv-card-presentations .cv-entry .cv-row + .cv-row { margin-top: .2rem; }
+  .cv-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .cv-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .cv-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+  .cv-card h2 {
+    font-size: 1.4rem; font-weight: 700; margin-bottom: .8rem; color: #222;
+    border-bottom: 2px solid #6f42c1; display: inline-block; padding-bottom: .2rem;
+  }
+
+  .cv-two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+  @media (max-width: 800px){ .cv-two { grid-template-columns: 1fr; } }
+
+  .cv-list { list-style: none; padding: 0; margin: 0; font-size: .95rem; line-height: 1.4; }
+  .cv-entry { margin-bottom: .7rem; }
+  .cv-row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 12px; }
+  .cv-title { font-weight: 600; color: #222; }
+  .cv-year { color: #555; font-weight: 500; white-space: nowrap; }
+  .cv-loc { font-size: .9rem; color: #666; margin-left: 2px; }
+
+  .cv-card a { color: #0a58ca; text-decoration: none; }
+  .cv-card a:hover { text-decoration: underline; }
 </style>
+<section id="skills" class="level1">
+<h1>Skills</h1>
+<ul>
+<li><strong>Computational &amp; Statistical</strong>
+<ul>
+<li><em>Languages &amp; Tools</em>: <strong>R</strong> (tidyverse, ggplot2, glmnet, RShiny), <strong>Python</strong> (NumPy, Pandas, Biopython, Scikit-learn, Pybedtools, Matplotlib), <strong>MATLAB</strong>, SAS, STATA, <strong>SQL</strong>, HTML/CSS/JavaScript, LaTeX<br>
+</li>
+<li><em>Platforms</em>: <strong>Linux</strong> scripting, <strong>Git</strong>/GitHub, <strong>Hoffman2</strong> cluster, Docker, Cloud Platforms (GCP, AWS, Azure, OCI)<br>
+</li>
+<li><em>Data Analysis &amp; Modeling</em>: <strong>Machine learning</strong>, <strong>Bayesian inference</strong>, <strong>deep learning</strong> (Keras, TensorFlow, PyTorch), <strong>simulation</strong>, <strong>linear models</strong>, <strong>optimization</strong>, graph theory<br>
+</li>
+<li><em>High-Performance Computing (<strong>HPC</strong>)</em>: Workflow orchestration, parallelized analysis, cluster-based computations</li>
+</ul></li>
+<li><strong>Bioinformatics</strong>
+<ul>
+<li><em>Data Analysis</em>: <strong>GWAS</strong>, <strong>EWAS</strong>, eQTL analysis, gene enrichment analysis, polygenic risk scores, Mendelian randomization, Gene Ontology analysis, multi-omics integration, genome annotation, <strong>single-cell data analysis</strong> (scRNA-seq, scDNA-seq)<br>
+</li>
+<li><em>Tools</em>: BLAST, InterProScan, PSIPRED, AlphaFold, ChimeraX, UCSC Genome Browser, Ensembl, Galaxy, Bioconductor, BEDTools, STAR, <strong>DESeq2</strong>, <strong>Seurat</strong>, edgeR, Enrichr</li>
+</ul></li>
+<li><strong>Mathematical</strong>
+<ul>
+<li><em>Core Mathematics</em>: Linear Algebra, Real Analysis, Probability and Statistics, Stochastic Process, Calculus, Partial Differential Equations, Discrete Mathematics, Infinite Theory</li>
+</ul></li>
+<li><strong>Laboratory</strong>
+<ul>
+<li><em>Molecular Biology</em>: <strong>PCR</strong>, qPCR, DNA/RNA extraction, <strong>CRISPR/Cas9</strong>, cloning, electrophoresis, next-generation sequencing (<strong>NGS</strong>) library preparation<br>
+</li>
+<li><em>Genomics</em>: RNA-seq, ChIP-seq, <strong>single-cell RNA-seq</strong>, bisulfite sequencing<br>
+</li>
+<li><em>Proteomics</em>: <strong>Western blot</strong>, <strong>ELISA</strong>, mass spectrometry, chromatin immunoprecipitation (<strong>ChIP</strong>)<br>
+</li>
+<li><em>Cell Biology</em>: Cell culture, transfection, confocal and fluorescence microscopy, immunofluorescence, <strong>flow cytometry</strong></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="coursework" class="level1">
+<h1>Coursework</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Course</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Instructor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>STAT M254</td>
+<td>Statistical Methods in Computational Biology</td>
+<td><a href="http://jsb.ucla.edu/about-jingyi-jessica-li/">Dr.&nbsp;Jingyi Jessica Li</a></td>
+</tr>
+<tr class="even">
+<td>BIOMATH 210</td>
+<td>Optimization Methods in Biology</td>
+<td><a href="https://bioscience.ucla.edu/people/kenneth-l-lange/">Dr.&nbsp;Kenneth L Lange</a></td>
+</tr>
+<tr class="odd">
+<td>BIOMATH M281</td>
+<td>Survival Analysis</td>
+<td><a href="https://ph.ucla.edu/about/faculty-staff-directory/gang-li">Dr.&nbsp;Gang Li</a></td>
+</tr>
+<tr class="even">
+<td>BIOSTAT 202A</td>
+<td>Mathematical Statistics</td>
+<td><a href="https://ph.ucla.edu/about/faculty-staff-directory/damla-senturk">Dr.&nbsp;Damla Senturk</a></td>
+</tr>
+<tr class="odd">
+<td>BIOSTAT 200A, 200B, <a href="https://ucla-biostat-200c.github.io/2023spring/schedule/schedule.html">200C</a></td>
+<td>Methods in Biostatistics</td>
+<td><a href="https://profiles.ucla.edu/alexandra.klomhaus">Dr.&nbsp;A. Klomhaus</a>, <br> <a href="https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi">Dr.&nbsp;C. M. Crespi</a>, <br> <a href="https://ph.ucla.edu/about/faculty-staff-directory/jin-zhou">Dr.&nbsp;Jin Zhou</a></td>
+</tr>
+<tr class="even">
+<td><a href="assets/100c_content.pdf">STAT 100C</a></td>
+<td>Linear Models</td>
+<td><a href="http://www.stat.ucla.edu/~nchristo/">Dr.&nbsp;Nicolas Christou</a></td>
+</tr>
+<tr class="odd">
+<td>BIOSTAT 213</td>
+<td>Statistical Simulation</td>
+<td><a href="https://ph.ucla.edu/about/faculty-staff-directory/christina-ramirez">Dr.&nbsp;Christina Ramirez</a></td>
+</tr>
+<tr class="even">
+<td>MATH 115A, 33A</td>
+<td>Linear Algebra</td>
+<td><a href="https://pabloocal.github.io/index.html">Dr.&nbsp;Pablo S. Ocal</a></td>
+</tr>
+<tr class="odd">
+<td>MATH 131A</td>
+<td>Real Analysis</td>
+<td>Dr.&nbsp;Konstantinos Varvarezos</td>
+</tr>
+<tr class="even">
+<td>MATH 170E, 170S</td>
+<td>Probability Theory and Statistics</td>
+<td>Dr.&nbsp;Zhaoyu Zhang, Dr.&nbsp;Jona Lelmi</td>
+</tr>
+<tr class="odd">
+<td>BIOSTAT 203A, <a href="https://ucla-biostat-203b.github.io/2024winter/schedule/schedule-lec1.html">203B</a></td>
+<td>Data Management, Statistical Computing <br> Data Science by R</td>
+<td><a href="https://bioscience.ucla.edu/people/hyun-grace-kim/">Dr.&nbsp;Grace Kim</a>, <br> <a href="https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou">Dr.&nbsp;Hua Zhou</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://ucla-biostat-216.github.io/2024fall/schedule/schedule.html">BIOSTAT 216</a></td>
+<td>Mathematical Methods for Biostatistics</td>
+<td><a href="https://ph.ucla.edu/about/faculty-staff-directory/hua-zhou">Dr.&nbsp;Hua Zhou</a></td>
+</tr>
+<tr class="odd">
+<td>BIOSTAT 231</td>
+<td>Statistical Power and Sample Size Methods</td>
+<td><a href="https://ph.ucla.edu/about/faculty-staff-directory/catherine-m-crespi">Dr.&nbsp;C. M. Crespi</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://robweiss.faculty.biostat.ucla.edu/biostat236">BIOSTAT M236</a></td>
+<td>Longitudinal Data</td>
+<td><a href="https://ph.ucla.edu/about/faculty-staff-directory/robert-erin-weiss">Dr.&nbsp;Robert Weiss</a></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Infinite Theory, Calculus, and Partial Differential Equations</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Discrete Mathematics</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Python and Computational Thinking</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>DS BMED 208</td>
+<td>Recent Research in Machine Learning in Medicine</td>
+<td><a href="https://ernstlab.biolchem.ucla.edu/people/jason-ernst/">Dr.&nbsp;Jason Ernst</a></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Bioinformatics</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Biochemistry, Organic Chemistry, General Chemistry</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Genetics, Human Genetics, Genetic Engineering</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Molecular Biology, Cell Biology, Developmental Biology</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Anatomy and Physiology, Neurology</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Immunology, Microbiology</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Ecology, Zoology, Botany, Evolutionary Biology</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>PUB HLT 200A, B</td>
+<td>Epidemiology, Public Health Policy, Community &amp; Environmental Health Sciences</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
-</main> <!-- /main -->
+</section></section></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

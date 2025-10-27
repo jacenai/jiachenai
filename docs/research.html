@@ -298,18 +298,26 @@ ul.task-list li input[type="checkbox"] {
       <div class="eyebrow">Statistical Genomics</div>
       <h2 class="anchored">Statistical Methods for Detecting Context-Specific eQTLs</h2>
 
-      <p>
-        I begin with the hypothesis that genetic variants exert regulatory effects on gene expression in a context-dependent manner—specific to certain cell types, tissues, or environmental conditions—and that these context-specific eQTLs mediate genetic risk for complex diseases. Therefore, systematically identifying and characterizing such eQTLs can bridge the gap between regulatory genetic variation and functional consequences, refine our understanding of disease-relevant mechanisms, and ultimately support precision medicine tailored to individual genetic backgrounds and biological contexts.
-      </p>
-      <p>
-        Genome-wide association studies (GWAS) have identified thousands of variants associated with complex traits and diseases, but most lie in non-coding regions, leaving their functional roles unclear. Expression quantitative trait loci (eQTL) mapping provides a critical link, uncovering how genetic variants regulate transcription. The advent of single-cell RNA-sequencing (scRNA-seq) has transformed this field by measuring genome-wide expression at the resolution of individual cells, in contrast to bulk RNA-seq, which averages expression across cell populations. scRNA-seq not only enables identification of cell subtypes and their marker genes but also reveals that cellular heterogeneity is far greater than previously appreciated. This motivates my research: to leverage scRNA-seq data to test the hypothesis that many eQTLs exhibit context-specific effects, influencing expression in one tissue, cell type, or condition but not in another.
-      </p>
-      <p>
-        Working with
-        <a href="https://brunildaballiu.github.io/" target="_blank" rel="noopener">Dr. Brunilda Balliu</a>,
-        I refined <a href="https://www.biorxiv.org/content/10.1101/2021.06.17.448889v2" target="_blank" rel="noopener">FastGxC</a>, a statistical framework for efficient mapping of context-specific eQTLs. FastGxC operates in three principal steps: (1) Decomposition of gene expression into context-shared and context-specific components. (2) Regression of local single nucleotide polymorphisms (cis-SNPs) genotypes on context-shared and context-specific profiles respectively. (3) Identification of significant context-shared and context-specific eQTLs using hierarchical false discovery rate (FDR) control. I focused on refining the third step of multiple testing correction. I compared two hierarchical FDR control methods—<a href="https://www.bioinformatics.org/treeqtl/" target="_blank" rel="noopener">TreeQTL</a> and <a href="https://github.com/cbpeterson/TreeBH" target="_blank" rel="noopener">TreeBH</a>—against the empirical Bayes shrinkage framework in <a href="https://stephenslab.github.io/mashr/articles/intro_mash.html" target="_blank" rel="noopener">mashR</a>, using simulations that varied in intra-individual correlation and sample size. Results showed that with larger sample sizes, hierarchical methods (especially TreeBH) achieved improved power and competitive performance relative to mashR. These findings highlight that sample size and correlation structure should guide the choice of correction strategy. The
-        <a href="https://github.com/BalliuLab/FastGxC" target="_blank" rel="noopener">updated FastGxC pipeline</a> thus provides a flexible, computationally efficient, and statistically rigorous framework for detecting context-specific regulatory effects. By enabling more precise identification of genetic effects across tissues, cell types, and conditions, this approach advances both the methodological toolkit for eQTL mapping and the broader goal of understanding the genetic basis of human phenotypic diversity.
-      </p>
+<p>
+  Genome-wide association studies (GWAS) have uncovered many variants for complex traits, most in non-coding regions that act through gene regulation. Expression quantitative trait loci (eQTLs) link genotype to gene expression, but many effects are context specific across tissues, cell types, and environmental conditions. Standard analyses often rely on time-intensive LMM-based GWAS to model fixed and individual effects. Others treat contexts separately or assume simple sharing, which can reduce power and obscure biology, especially in repeated-measures designs that require modeling within-subject correlation. My goal is to develop methods that explicitly model context-specific and context-shared regulation in an efficient way.
+</p>
+
+<p>
+  Working with
+  <a href="https://brunildaballiu.github.io/" target="_blank" rel="noopener">Dr. Brunilda Balliu</a>
+  (UCLA Biostatistics), I refined
+  <a href="https://www.biorxiv.org/content/10.1101/2021.06.17.448889v2" target="_blank" rel="noopener">FastGxC</a>, a statistical framework for efficient mapping of context-shared and context-specific eQTLs in repeated-measures designs. FastGxC proceeds in three steps: (1) on single nucleotide polymorphism (SNP) level, decomposing expression into context-shared \(E_i^{sh}\) and context-specific components \(E_i^{sp}\) by \(E_{ic} = E_{..} + \underbrace{(E_{i.} - E_{..})}_{E^{sh}_i} + \underbrace{(E_{ic} - E_{i.})}_{E^{sp}_{ic}}\) for individual \(i\) and context \(c\); (2) regressing decomposed components on corresponding cis-gene genotypes by \(E_i^{sh}=\alpha_i^{sh}+\beta_i^{sh}G+\varepsilon_i^{sh},\ \ \varepsilon_i^{sh}\sim\mathcal{N}\left(0,\sigma_{sh}^2\right)\) and \(E_{ic}^{sp}=\alpha_{ic}^{sp}+\beta_{ic}^{sp}G+\varepsilon_{ic}^{sp},\ \ \varepsilon_{ic}^{sp}\sim\mathcal{N}\left(0,\sigma_{sp,c}^2\right)\); and (3) detecting significant eQTLs by principled multiple-testing control.
+  My contribution focused on step three. I benchmarked two hierarchical FDR procedures
+  (<a href="https://www.bioinformatics.org/treeqtl/" target="_blank" rel="noopener">TreeQTL</a> and
+  <a href="https://github.com/cbpeterson/TreeBH" target="_blank" rel="noopener">TreeBH</a>)
+  against the empirical Bayes shrinkage approach in
+  <a href="https://stephenslab.github.io/mashr/articles/intro_mash.html" target="_blank" rel="noopener">mashR</a>
+  using simulations that varied intra-individual correlation and sample size. The results showed that with larger cohorts, hierarchical FDR methods, particularly TreeBH, achieved higher power while maintaining error control comparable to mashR; at smaller sample sizes or with strong within-subject correlation, mashR remained competitive. My work provides practical guidance on choosing correction strategies based on study design and data structure.
+  The
+  <a href="https://github.com/BalliuLab/FastGxC" target="_blank" rel="noopener">updated FastGxC pipeline</a>
+  is therefore flexible, computationally efficient, and statistically rigorous, enabling more precise detection of regulatory effects across tissues, cell types, and environmental contexts.
+</p>
+
 
       <div class="link-row" aria-label="Related Links">
         <a class="btn-ghost" href="https://www.biorxiv.org/content/10.1101/2021.06.17.448889v2.full.pdf" target="_blank" rel="noopener">📄 BioRxiv: FastGxC</a>
@@ -323,9 +331,11 @@ ul.task-list li input[type="checkbox"] {
       </figure>
 
       <p style="margin-top: 1.2rem;">
-        Building on these, I have begun applying FastGxC to clinically relevant contexts, where cell-type–specific eQTLs hold meaningful implications for the treatment of complex diseases. Crohn’s disease (CD), a chronic inflammatory bowel disorder with a complex genetic architecture, shows cell-type–specific transcriptional perturbations in the ileum and colon during active disease. This suggests that cell-type specific eQTLs may play a role in CD pathogenesis. While the FastGxC framework provides a powerful tool, it currently relies on single-cell RNA-seq data, which are substantially more costly than bulk RNA-seq for large-scale studies, for detecting cell-type specific eQTLs. Motivated by the hypothesis that bulk RNA-seq contains sufficient information to infer cell-type specific eQTLs, I am working with
-        <a href="https://www.cedars-sinai.edu/health-sciences-university/research/labs/casero-lab.html" target="_blank" rel="noopener">Dr. David Casero</a> at Cedars-Sinai Medical Center on developing a pipeline to: (1) Impute cell-type proportions from bulk RNA-seq data of inflammatory bowel disease patients using scRNA-seq as a reference; (2) Estimate cell-type specific expression from bulk RNA-seq via a Bayesian deconvolution method; (3) Apply FastGxC to identify cell-type specific eQTLs. Ultimately, this work could help shift precision medicine from an aspiration to a reality, by showing that the genetic underpinnings of complex disease can be resolved at cell-type resolution using the same bulk RNA-seq data already collected in clinical practice.
-      </p>
+  Having involved in the FastGxC refinement, I am eager to apply it to advance clinical discovery. Crohn’s disease (CD), a chronic inflammatory bowel disorder with a complex genetic architecture, shows cell-type–specific transcriptional perturbations in the ileum and colon during active disease. This provides a compelling testbed that inspired me to apply FastGxC to detect cell-type specific eQTLs for inflammatory bowel disease (IBD). However, the available data is bulk RNA-seq, which lacks direct cell type–specific resolution. Building on the hypothesis that bulk RNA-seq captures expression signals from all underlying cell types, I am working with
+  <a href="https://www.cedars-sinai.edu/health-sciences-university/research/labs/casero-lab.html" target="_blank" rel="noopener">Dr. David Casero</a>
+  at Cedars-Sinai Medical Center to adapt FastGxC to an IBD cohort. I am developing a framework that: (1) imputes cell-type proportions for bulk RNA-seq using Bisque with publicly available scRNA-seq as a reference; (2) estimates cell-type specific expression profiles from bulk via bMIND (a Bayesian deconvolution model) or UNICO (a first principled model-based method); and (3) applies FastGxC to detect cell-type–shared and cell-type–specific genetic effects. Currently, I am in stage (2) and have obtained promising preliminary results. Ultimately, this work could help shift precision medicine from aspiration to reality, by enabling cell-type–resolved eQTL discovery directly from bulk datasets already collected in clinical practice.
+</p>
+
 
       <figure class="figure">
         <img src="img/IBD.png" alt="Overview diagram of the IBD research for mapping cell-type-specific eQTLs." class="figure-img">
@@ -338,18 +348,22 @@ ul.task-list li input[type="checkbox"] {
          ============================= -->
     <section id="epigenetics-dnam" class="card">
       <div class="eyebrow">Epigenetics &amp; Statistical Genomics</div>
-      <h2 class="anchored">DNA Methylation Dynamics and Epigenetic Regulation</h2>
+      <h2 class="anchored">Epigenetic Regulation and DNA Methylation Dynamics</h2>
 
       <p>
-        Epigenetic variation provides insights into cellular states and developmental histories that static genotype information cannot: DNA methylation (DNAm) and related marks are dynamic, cell-type–specific, and mitotically heritable, encoding both regulatory activity and environmental exposures. Furthermore, unlike the fixed genome sequence, these patterns are plastic, making the correction of aberrant, disease-causing epigenetic states a compelling therapeutic avenue.
-      </p>
+  Epigenetic variation provides insights into cellular states and developmental histories that static genotype information cannot: DNA methylation (DNAm) and related marks are dynamic, cell-type–specific, and mitotically heritable, encoding both regulatory activity and environmental exposures. Furthermore, unlike the fixed genome sequence, these patterns are plastic, making the correction of aberrant, disease-causing epigenetic states a compelling therapeutic avenue.
+</p>
 
-      <p>
-        Building on the hypothesis that DNAm shapes gene regulation and thereby influences biological processes, I worked with
-        <a href="https://medschool.ucla.edu/people/matteo-pellegrini-phd" target="_blank" rel="noopener">Dr. Matteo Pellegrini</a>
-        to develop statistical models that extract informative DNAm features predictive of immune response to influenza vaccination and to probe the regulatory mechanisms by which DNAm modulates gene expression. Our approach unfolded in three steps: (1) identifying CpG sites significantly associated with vaccine response; (2) linking these response-associated CpGs to putative target genes which can also predict immune response; and (3) testing two mechanistic hypotheses: (a) cis-regulatory effects, where DNAm at regulatory elements directly modulates nearby immune-response genes, and (b) TF-mediated effects, where DNAm at transcription-factor binding motifs alters TF occupancy and downstream transcription. We found that 
-        These findings highlight the potential of DNAm-based signatures to refine our understanding of vaccine responsiveness and support the development of next-generation influenza vaccines tailored to individual epigenetic profiles.
-      </p>
+<p>
+  Building on the hypothesis that DNAm shapes gene regulation and thereby influences biological processes, I worked with
+  <a href="https://medschool.ucla.edu/people/matteo-pellegrini-phd" target="_blank" rel="noopener">Dr. Matteo Pellegrini</a>
+  (UCLA Bioinformatics) to analyze data from 252 participants in the University of Georgia 6 (UGA6) cohort, including DNA methylation profiles \(\mathbf{M} = (\mathbf{m}_1, \ldots, \mathbf{m}_k)\) from targeted bisulfite sequencing, transcriptomic data \(\mathbf{E} = (\mathbf{e}_1, \ldots, \mathbf{e}_p)\) from bulk RNA-seq, and immune response measurements from hemagglutination inhibition assays with covariates \(\mathbf{X} \in \mathbb{R}^{n \times k}\) collected at day 0 and day 28 post-vaccination. Our approach unfolded in four steps: (1) identifying CpG sites significantly associated with immune responses using \(\mathbf{m}_i = \mathbf{X}\boldsymbol{\beta}_i + \boldsymbol{\epsilon},\ \boldsymbol{\epsilon} \sim \mathcal{N}_n(0, \sigma^2\mathbf{I})\) with LOOCV; (2) linking response-associated CpGs \(\widetilde{\mathbf{M}}\) to putative target genes via \(\mathbf{e}_i' = \widetilde{\mathbf{M}}\boldsymbol{b}_i + \boldsymbol{\epsilon}\), where \(\mathbf{e}_i'\) is gender-adjusted expression; (3) evaluating whether these genes \(\widetilde{\mathbf{E}} = (\mathbf{e}_j)_{j \in \mathcal{J}},\ \mathcal{J} \subseteq \{1, \ldots, p\}\) predict immune responses using \(\mathrm{cor}(\mathbf{x}, \hat{\mathbf{x}})\), with \(\hat{\mathbf{x}} = \widetilde{\mathbf{E}}\boldsymbol{\alpha}\); and (4) testing mechanistic hypotheses: (a) cis-regulatory effects, and (b) transcription-factor–mediated effects.
+</p>
+
+<p>
+  Results show that CpG sites associated with vaccine-induced immune responses are enriched in interferon signaling, cytokine-mediated antiviral defense, and the RIG-I–like receptor pathway. Integration with transcriptomics revealed that CpG-associated genes, <em>DDX60</em>, <em>GADD45B</em>, and <em>ZAP70</em>, regulate B-cell activation, T-cell differentiation, and NK-cell cytotoxicity, thereby predicting seroprotection and seroconversion. Mechanistic analyses indicated limited cis-regulatory effects but strong coordination via transcription factors including BRD4, MYC, and STAT1, which mediate epigenetic–transcriptional crosstalk during immune priming. Together, these findings highlight DNAm as a key determinant of influenza vaccine responsiveness and suggest that targeting epigenetic–transcriptional networks may inform strategies for more durable vaccine design.
+</p>
+
 
       <figure class="figure">
         <img src="img/UGA6.png" alt="Overview diagram of the UGA6 research for mapping DNA methylation dynamics." class="figure-img">
@@ -375,33 +389,45 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="PrecisionMedicine" class="card">
   <div class="eyebrow">Precision Medicine</div>
-  <h2 class="anchored">Precision Desirability Optimization</h2>
+  <h2 class="anchored">Desirability Function and Optimal Design</h2>
+  
   <p>
-    Precision medicine tailors therapy to an individual’s genetics, physiology, lifestyle, and environment. 
-    <em>Desirability functions</em> translate multiple clinical endpoints into a single, interpretable score of overall treatment success, enabling principled trade-offs across safety and efficacy.
-    Optimizing these scores can surface individualized treatment plans that maximize benefit while respecting clinical constraints.
-  </p>
+  Precision medicine tailors therapy to an individual’s genetics, physiology, lifestyle, and environment.
+  <em>Desirability functions</em> translate multiple clinical endpoints into a single, interpretable score of overall treatment success, enabling principled trade-offs across safety and efficacy.
+  Optimizing these scores can surface individualized treatment plans that maximize benefit while respecting clinical constraints.
+  Formally, with <em>p</em> controllable factors \(\mathbf{x}=(x_1,\ldots,x_p)\), bounds \(L_h \le x_h \le U_h\), and <em>m</em> endpoints mapped to individual desirabilities \(d_i(y_i)\),
+  the composite score is typically the weighted geometric mean
 
-  <p>
-    Formally, with <em>p</em> controllable factors \(x=(x_1,\ldots,x_p)\), bounds \(L_h \le x_h \le U_h\), and <em>m</em> endpoints mapped to individual desirabilities \(d_i(y_i)\), the composite score is typically the weighted geometric mean
-  </p>
-  \[
-  D(x) \;=\; \Big(\prod_{i=1}^m d_i\!\big(y_i(x)\big)^{w_i}\Big)^{1/\sum_i w_i},
-  \]
-  <p>
-    and the goal is \(x^\star=\arg\max_{x\in[L,U]} D(x)\).
-    In practice, \(D(x)\) is highly nonconvex and frequently nonsmooth: smaller-/larger-/nominal-the-better (STB/LTB/NTB) constructions introduce kinks at specification limits; a single out-of-range outcome can create zero plateaus; and correlated, noisy endpoints yield rugged “ridge–valley” landscapes that stall gradient-based solvers.
-  </p>
+\[
+D(\mathbf{x}) = \Bigg(\prod_{i=1}^m d_i\!\big(y_i(\mathbf{x})\big)^{\,w_i}\Bigg)^{1/\sum_{i=1}^m w_i},
+\]
 
-  <p>
-    Metaheuristics are well-suited to this setting because (i) they are gradient-free and cope with piecewise power laws (Derringer–Suich curves) and abrupt changes in \(D(x)\);
-    (ii) population-based exploration reduces trapping in local optima; 
-    (iii) constraints are handled simply via projection/penalties; and 
-    (iv) they remain robust under noisy or simulation-based evaluations through replication and averaging.
-    Working with 
-    <a href="https://ph.ucla.edu/about/faculty-staff-directory/weng-kee-wong" target="_blank" rel="noopener">Dr. Weng Kee Wong</a>, 
-    I develop Particle Swarm Optimization (PSO) methods tailored to desirability landscapes—incorporating bound-repair, soft-constraint penalties, and adaptive inertia—to efficiently search high-dimensional treatment spaces and deliver patient-specific, multi-endpoint–optimized regimens.
-  </p>
+  with weights \(w_i&gt;0\), and the goal is \(\mathbf{x}^\star=\arg\max_{\mathbf{x}\in[L,U]} D(\mathbf{x})\).
+  In practice, \(D(\mathbf{x})\) is highly nonconvex and frequently nonsmooth: smaller-/larger-/nominal-the-better (STB/LTB/NTB) constructions introduce kinks at specification limits; a single out-of-range outcome can create zero plateaus; and correlated, noisy endpoints yield rugged “ridge–valley” landscapes that stall gradient-based solvers.
+
+  Metaheuristics are well-suited to this setting because (i) they are gradient-free and cope with piecewise power laws and abrupt changes in \(D(\mathbf{x})\); (ii) population-based exploration reduces trapping in local optima; (iii) constraints are handled simply via projection/penalties; and (iv) they remain robust under noisy or simulation-based evaluations.
+  Working with
+  <a href="https://ph.ucla.edu/about/faculty-staff-directory/weng-kee-wong" target="_blank" rel="noopener">Dr. Weng Kee Wong</a>
+  (UCLA Biostatistics), I built desirability-based models that fuse ICU vitals into a single ICU stay score for MIMIC-IV patients, tuned their parameters using Genetic Algorithms and Particle Swarm Optimization, and compared models’ predictive performances.
+  Our clinical application shows that metaheuristic optimization provides a systematic, robust way to estimate desirability-function parameters. The resulting patient-specific risk score can support real-time triage, adaptive thresholds, and transparent trade-offs among competing clinical objectives in precision medicine.
+  A co-authored review paper has been submitted to <em>Statistical Methods in Medical Research</em>.
+</p>
+
+
+<p>
+  The Clinical Utility Index (CUI) provides a patient-centered framework for integrating multiple treatment outcomes into a single measure of therapeutic benefit and has been widely applied in pharmaceutical decision-making. However, prior work has largely focused on constructing and analyzing the index, leaving open the crucial question of how to design studies that directly optimize CUI.
+
+  Using a dose–response modeling approach, we address optimal dose selection to maximize clinical utility. While analytical solutions exist for simple models, real-world situations involve nonlinear and nonconvex relationships that require numerical optimization. To efficiently search these complex design spaces, we employ Particle Swarm Optimization (PSO), a state-of-the-art metaheuristic method that avoids restrictive gradient assumptions and generalizes to other utility-based frameworks such as the Health Utilities Index and desirability functions. I developed the first
+<a href="https://jiachenai.shinyapps.io/c-optimal_by_PSO/" target="_blank" rel="noopener">Shiny app for CUI-based optimal dose design</a>,
+implementing PSO to compute optimal doses under the Emax CUI framework. The tool enables users to input study parameters and rapidly generate optimal dose recommendations, bringing CUI-driven design into practical use for precision clinical trials.
+</p>
+
+<figure class="figure">
+        <img src="img/GET_plot.png" alt="Example output from Shiny App." class="figure-img">
+        <figcaption class="muted">Example Optimal Design Results from Shiny App.</figcaption>
+      </figure>
+
+  
 </section>
 
 

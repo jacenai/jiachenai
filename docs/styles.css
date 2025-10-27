@@ -1,6 +1,6 @@
-/* ========================================
+/* =========================================================
    0) THEME TOKENS — Slate Blue + Faded Purple
-   ======================================== */
+   ========================================================= */
 :root {
   --cv-content-width: 1100px;
   --cv-gap: 18px;
@@ -9,21 +9,21 @@
   --cv-pad-y: .9rem;
 
   /* Core palette */
-  --cv-accent: #546a90;            /* primary brand/nav (slate blue) */
-  --cv-accent-light: #8ca6d1;      /* lighter blue for hovers */
-  --cv-accent-soft: #e7ecf7;       /* very light blue background/tint */
+  --cv-accent: #546a90;           /* primary brand/nav (slate blue) */
+  --cv-accent-light: #8ca6d1;     /* lighter blue for hovers */
+  --cv-accent-soft: #e7ecf7;      /* very light blue background/tint */
 
-  --cv-purple: #7b68b6;            /* secondary accent (muted indigo/purple) */
-  --cv-purple-light: #dcd6f2;      /* soft purple for chips, tints */
-  --cv-purple-bg: #f7f5fb;         /* very light purple background */
+  --cv-purple: #7b68b6;           /* secondary accent (muted indigo/purple) */
+  --cv-purple-light: #dcd6f2;     /* soft purple for chips, tints */
+  --cv-purple-bg: #f7f5fb;        /* very light purple background */
 
-  --cv-ink: #1e2230;               /* primary text */
-  --cv-muted: #636b7a;             /* muted text */
-  --cv-line: #e3e6ed;              /* borders/dividers */
-  --cv-bg: #ffffff;                /* page background */
+  --cv-ink: #1e2230;              /* primary text */
+  --cv-muted: #636b7a;            /* muted text */
+  --cv-line: #e3e6ed;             /* borders/dividers */
+  --cv-bg: #ffffff;               /* page background */
 
-  --cv-chip-bg: #f4f6fa;           /* neutral chip background */
-  --cv-chip-ink: #424c61;          /* chip text */
+  --cv-chip-bg: #f4f6fa;          /* neutral chip background */
+  --cv-chip-ink: #424c61;         /* chip text */
 
   --cv-shadow: 0 1px 3px rgba(0,0,0,.06);
   --cv-shadow-hover: 0 2px 8px rgba(0,0,0,.08);
@@ -35,61 +35,35 @@
   --bs-link-hover-color: #234a85;
 }
 
-/* ========================================
+:root { color-scheme: light; }  /* prevents iOS auto-darkening of controls */
+
+
+/* =========================================================
    1) BASE / RESETS
-   ======================================== */
+   ========================================================= */
 html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
 html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
   background: var(--cv-bg);
   color: var(--cv-ink);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* Prevent accidental horizontal scroll on small screens */
-  width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;                 /* allow horizontal scroll if something overflows */
 }
 
-img, svg, video { max-width: 100%; height: auto; }
+img, svg, video, canvas, iframe { max-width: 100%; height: auto; }
 
 a { text-decoration: none; color: var(--bs-link-color); }
 a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color); }
 
-/* ========================================
+/* =========================================================
    2) LAYOUT CONTAINERS & GRIDS
-   ======================================== */
-
-/* Slim card for Education/Experience blocks */
-.card-slim {
-  background:#fff;
-  border:1px solid var(--cv-line);
-  border-radius: var(--cv-radius);
-  box-shadow: var(--cv-shadow);
-  padding: 1rem 1.1rem;
-}
-.card-slim + .card-slim { margin-top:.75rem; }
-
-/* Compact list with right-aligned dates */
-.cv-list { list-style:none; padding:0; margin:0; }
-.cv-item { padding:.55rem 0; border-bottom:1px solid var(--cv-line); }
-.cv-item:last-child { border-bottom:none; }
-
-.row-2 { 
-  display:grid; 
-  grid-template-columns: 1fr auto; 
-  gap:10px; 
-  align-items:baseline; 
-}
-
-.cv-title { font-weight:700; }
-.cv-year  { color: var(--cv-muted); white-space:nowrap; font-weight:600; }
-.cv-loc   { color: var(--cv-muted); font-size:.95rem; margin-top:.2rem; }
-
+   ========================================================= */
 .cv-container,
 .cv-grid,
 .cv-card-presentations {
@@ -107,13 +81,22 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
 
 /* Internal grids */
 .cv-two   { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; }
-.cv-three { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px 20px; }
+.cv-three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 20px; }
 
-@media (max-width:1000px) { .cv-three { grid-template-columns: 1fr 1fr; } }
-@media (max-width:800px)  {
-  .cv-two   { grid-template-columns: 1fr; }
-  .cv-three { grid-template-columns: 1fr; }
+/* Compact lists (with right-aligned dates) */
+.cv-list { list-style: none; padding: 0; margin: 0; font-size: .96rem; line-height: 1.5; }
+.cv-item { padding: .55rem 0; border-bottom: 1px solid var(--cv-line); }
+.cv-item:last-child { border-bottom: none; }
+
+.row-2 { 
+  display: grid; 
+  grid-template-columns: minmax(0, 1fr) auto;   /* left column can shrink */
+  gap: 10px; 
+  align-items: baseline; 
 }
+.cv-title { font-weight: 700; color: var(--cv-ink); }
+.cv-year  { color: var(--cv-muted); white-space: nowrap; font-weight: 600; }
+.cv-loc   { color: var(--cv-muted); font-size: .95rem; margin-top: .2rem; }
 
 /* Page header */
 .header {
@@ -129,21 +112,26 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
 }
 .header p { margin: 0 0 .8rem; color: var(--cv-muted); }
 
-/* Actions group (top-right) */
 .header-actions-wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 1rem;
 }
-@media (max-width:640px) {
-  .header-actions-wrap { flex-direction: column; align-items: flex-start; }
+
+/* Slim cards (Education/Experience blocks) */
+.card-slim {
+  background: #fff;
+  border: 1px solid var(--cv-line);
+  border-radius: var(--cv-radius);
+  box-shadow: var(--cv-shadow);
+  padding: 1rem 1.1rem;
 }
+.card-slim + .card-slim { margin-top: .75rem; }
 
-/* ========================================
+/* =========================================================
    3) COMPONENTS
-   ======================================== */
-
+   ========================================================= */
 /* Navbar */
 .navbar {
   --bs-navbar-brand-color: #ffffff;
@@ -156,8 +144,14 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
 }
 .navbar.bg-primary { background-color: var(--cv-accent) !important; }
 .navbar .nav-link.active { text-decoration: underline; text-underline-offset: 3px; }
+.navbar .container,
+.navbar .container-fluid {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 100%;
+}
 
-/* Card */
+/* Generic card */
 .cv-card {
   background: #fff;
   border: 1px solid var(--cv-line);
@@ -167,6 +161,7 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
   transition: box-shadow .15s ease, transform .12s ease, border-color .15s ease, background .15s ease;
 }
 .cv-card:hover { transform: translateY(-1px); box-shadow: var(--cv-shadow-hover); }
+.cv-card--tinted { background: linear-gradient(0deg, #fff 0%, #fff 65%, var(--cv-accent-soft) 100%); }
 
 /* Section titles */
 .cv-card h2 {
@@ -178,20 +173,14 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
   border-bottom: 1px solid var(--cv-line);
 }
 
-/* Lists */
-.cv-list { list-style: none; padding: 0; margin: 0; font-size: .96rem; line-height: 1.5; }
+/* Row with right-justified date (generic variant) */
+.cv-row   { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 10px; }
 .cv-entry { margin-bottom: .6rem; padding-bottom: .6rem; border-bottom: 1px solid var(--cv-line); }
 .cv-entry:last-child { border-bottom: none; }
 
-/* Row with right-justified date */
-.cv-row   { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 10px; }
-.cv-title { font-weight: 600; color: var(--cv-ink); }
-.cv-year  { color: var(--cv-muted); font-weight: 500; white-space: nowrap; }
-
-
 /* Chips */
 .cv-chip {
-  display: inline-flex;          /* inline but flex so padding stays even */
+  display: inline-flex;               /* inline pill; flex keeps padding consistent */
   align-items: center;
   margin: 0 0 .5rem;
   padding: .2rem .5rem;
@@ -203,12 +192,13 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
   border-radius: 999px;
   border: 1px solid #e9ecf1;
 
-  /* Fix for long text */
-  white-space: normal;        /* allow wrapping */
-  overflow-wrap: anywhere;    /* break words if needed */
-  word-break: break-word;     /* fallback */
-  max-width: 100%;            /* never overflow container */
-  line-height: 1.3;           /* nicer multi-line spacing */
+  /* long text safety */
+  white-space: normal;                /* allow line breaks inside pill */
+  overflow-wrap: anywhere;            /* break long phrases */
+  word-break: break-word;             /* fallback */
+  max-width: 100%;
+  min-width: 0;                       /* critical in flex contexts */
+  line-height: 1.3;
 }
 .cv-chip.is-purple { background: var(--cv-purple-light); color: #524990; border-color: #e6e0f5; }
 .cv-chip.is-blue   { background: var(--cv-accent-soft); color: #384a6b; border-color: #dbe3f2; }
@@ -223,18 +213,21 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
   border-radius: 999px;
   font-weight: 650;
   font-size: .92rem;
-  white-space: nowrap;
   border: 1px solid var(--cv-line);
   background: #fff;
   color: var(--cv-ink);
   box-shadow: 0 1px 0 rgba(0,0,0,.03);
   transition: transform .12s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease, color .15s ease;
+
+  /* prevent overflow on tiny screens */
+  white-space: normal;                /* was nowrap */
+  min-width: 0;
 }
 .cv-btn:hover { transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,.07); background: var(--cv-accent-soft); border-color: #d7ddea; }
 .cv-btn-primary { background: var(--cv-accent); color: #fff; border-color: transparent; }
 .cv-btn-primary:hover { filter: brightness(0.95); }
 
-/* Slide link (small pill on the right) */
+/* Slide link (small pill) */
 .slide-link {
   display: inline-block;
   margin-top: .25rem;
@@ -300,29 +293,27 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
   border-radius: 999px;
   font-size: .78rem;
   font-weight: 600;
+
+  /* long text safety */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-width: 0;
 }
 .cv-tags li.is-purple { background: var(--cv-purple-bg); border-color: #ebe6f7; color: #4b3f80; }
 .cv-tags li.is-blue   { background: var(--cv-accent-soft); border-color: #dbe3f2; color: #394c6e; }
 
-/* Optional tinted cards */
-.cv-card--tinted { background: linear-gradient(0deg, #fff 0%, #fff 65%, var(--cv-accent-soft) 100%); }
-
-/* ========================================
+/* =========================================================
    4) MODULES
-   ======================================== */
-
-/* ---- Publications grid ---- */
-.pub-list{
+   ========================================================= */
+/* Publications list */
+.pub-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
-@media (min-width: 700px){
-  .pub-list{ gap: 18px; }
-}
-.pub-item{
+.pub-item {
   display: grid;
-  grid-template-columns: 120px 1fr;  /* thumbnail + content */
+  grid-template-columns: 120px minmax(0, 1fr);  /* thumbnail + content; allow shrink */
   gap: 16px;
   align-items: start;
   padding: 14px;
@@ -331,10 +322,7 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
   background: #fff;
   box-shadow: var(--cv-shadow);
 }
-@media (min-width: 900px){
-  .pub-item{ grid-template-columns: 140px 1fr; }
-}
-.pub-item .thumb{
+.pub-item .thumb {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 12px;
@@ -342,57 +330,53 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
   border: 1px solid var(--cv-line);
   background: #f7f8fb;
 }
-.pub-item .thumb img{
+.pub-item .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.pub-item .meta,
+.pub-item .meta .cv-year { min-width: 0; }  /* flex children can shrink */
+.pub-item .meta .cv-title { margin-bottom: .25rem; line-height: 1.35; }
+.pub-item .meta .cv-loc   { margin-bottom: .4rem; color: var(--cv-muted); }
+.pub-item .meta .cv-year  { margin-bottom: .55rem; display: flex; flex-wrap: wrap; column-gap: .4rem; row-gap: .4rem; }
+
+/* Presentations tweaks */
+.cv-card-presentations .cv-entry { margin-bottom: .35rem; padding-bottom: .35rem; }
+.cv-card-presentations .cv-entry .cv-row + .cv-row { margin-top: .2rem; }
+
+/* Tight row helper */
+.cv-row--tight { display: flex; align-items: baseline; gap: .75rem; }
+.cv-row--tight .cv-title { font-weight: 700; line-height: 1.35; }
+.cv-row--tight .cv-actions { margin-left: auto; }
+
+/* Carousel polish */
+#travel-carousel {
+  margin-top: .75rem;
+  border-radius: var(--cv-radius);
+  box-shadow: var(--cv-shadow);
+  overflow: hidden;
+}
+#travel-carousel .carousel-item { aspect-ratio: 16 / 9; }
+#travel-carousel .carousel-item > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.pub-item .meta .cv-title{ margin-bottom: .25rem; line-height: 1.35; }
-.pub-item .meta .cv-loc{ margin-bottom: .4rem; color: var(--cv-muted); }
-.pub-item .meta .cv-year{ margin-bottom: .55rem; display: flex; gap: .4rem; flex-wrap: wrap; }
-
-/* ---- Presentations tweaks ---- */
-.cv-card-presentations .cv-entry { margin-bottom: .35rem; padding-bottom: .35rem; }
-.cv-card-presentations .cv-entry .cv-row + .cv-row { margin-top: .2rem; }
-
-/* First row: title left, icon link right (optional helper) */
-.cv-row--tight{
-  display: flex;
-  align-items: baseline;
-  gap: .75rem;
-}
-.cv-row--tight .cv-title{ font-weight: 700; line-height: 1.35; }
-.cv-row--tight .cv-actions{ margin-left: auto; }
-
-/* ---- Carousel polish ---- */
-#travel-carousel{
-  margin-top:.75rem;
-  border-radius:var(--cv-radius);
-  box-shadow:var(--cv-shadow);
-  overflow:hidden;
-}
-#travel-carousel .carousel-item{
-  aspect-ratio:16/9;  /* sets consistent frame */
-}
-#travel-carousel .carousel-item > img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-#travel-carousel .carousel-caption{
-  background: linear-gradient(180deg,rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 100%);
+#travel-carousel .carousel-caption {
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 100%);
   border-radius: 12px;
-  padding:.6rem .8rem;
+  padding: .6rem .8rem;
   bottom: 8%;
 }
-#travel-carousel .carousel-caption h6{ margin:0; font-weight:800; color:#fff; }
-#travel-carousel .carousel-caption p{ margin:.1rem 0 0; color:#e9eef7; }
+#travel-carousel .carousel-caption h6 { margin: 0; font-weight: 800; color: #fff; }
+#travel-carousel .carousel-caption p  { margin: .1rem 0 0; color: #e9eef7; }
 
-/* ========================================
+/* =========================================================
    5) UTILITIES
-   ======================================== */
+   ========================================================= */
 .px-compact { padding-left: 16px; padding-right: 16px; }
 .py-compact { padding-top: 14px; padding-bottom: 14px; }
 .mb-0 { margin-bottom: 0 !important; }
@@ -406,122 +390,30 @@ a:hover, a:focus { text-decoration: underline; color: var(--bs-link-hover-color)
 .bg-soft-blue   { background: var(--cv-accent-soft) !important; }
 .bg-soft-purple { background: var(--cv-purple-bg) !important; }
 
-/* Reduce motion */
-@media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
+/* =========================================================
+   6) RESPONSIVE
+   ========================================================= */
+@media (max-width: 1000px) { .cv-three { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 800px)  {
+  .cv-two { grid-template-columns: 1fr; }
+  .cv-three { grid-template-columns: 1fr; }
 }
-
-/* ========================================
-   6) RESPONSIVE TWEAKS
-   ======================================== */
-@media (max-width: 600px){
-  /* Collapse two-column helpers cleanly */
-  .cv-two { display: block; }
-
-  /* Softer padding on small screens */
+@media (max-width: 640px) {
+  .header-actions-wrap { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 600px) {
   .cv-card, .card-slim { padding-left: .9rem; padding-right: .9rem; }
-
-  /* Publications: smaller thumbnail column */
-  .pub-item{ grid-template-columns: 100px 1fr; gap: 12px; }
-
-  /* Carousel caption padding on tiny screens */
-  #travel-carousel .carousel-caption{ padding: .45rem .6rem; bottom: 6%; }
+  .pub-item { grid-template-columns: 100px minmax(0, 1fr); gap: 12px; }
+  #travel-carousel .carousel-caption { padding: .45rem .6rem; bottom: 6%; }
 }
 
-/* ========================================
-   7) PRINT
-   ======================================== */
+/* =========================================================
+   7) ACCESSIBILITY & PRINT
+   ========================================================= */
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
 @media print {
   .navbar { display: none !important; }
   .cv-card { box-shadow: none; border-color: #cfd3d7; }
   a { color: black; text-decoration: none; }
-}
-
-
-/* --- Mobile overflow fixes (append to end of styles.css) --- */
-
-/* 1) Let the page scroll horizontally if something still overflows */
-html, body {
-  overflow-x: auto; /* was hidden */
-}
-
-/* 2) Make CSS Grid columns shrinkable to avoid pushing width > 100vw */
-.row-2 { 
-  grid-template-columns: minmax(0, 1fr) auto;  /* allow left column to shrink */
-}
-.pub-item { 
-  grid-template-columns: 120px minmax(0, 1fr); /* same idea for publications */
-}
-@media (min-width: 900px){
-  .pub-item { grid-template-columns: 140px minmax(0, 1fr); }
-}
-
-/* 3) Wrap long strings/URLs so they don’t force overflow */
-.cv-title, .cv-loc, .cv-year, .cv-btn, .cv-chip, .cv-actions, .cv-tags li {
-  overflow-wrap: anywhere;
-  word-break: break-word;
-}
-
-/* 4) Ensure media never exceed viewport width */
-img, video, svg, canvas, iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-/* 5) If you show wide tables or code, allow local scrolling instead of page overflow */
-table, .table, pre, code, .sourceCode {
-  display: block;
-  max-width: 100%;
-  overflow-x: auto;
-}
-
-/* 6) Bootstrap navbar sometimes overflows due to container padding; normalize it */
-.navbar .container,
-.navbar .container-fluid {
-  padding-left: 16px;
-  padding-right: 16px;
-  max-width: 100%;
-}
-
-
-/* --- Final mobile overflow & chip-wrapping fixes --- */
-
-/* Let key flex containers actually shrink their contents */
-.pub-item .meta,
-.pub-item .meta .cv-year,
-.row-2 > * {
-  min-width: 0;               /* allow shrinking within flex/grid */
-}
-
-/* Chips: allow wrapping + shrinking inside flex rows */
-.cv-chip {
-  display: inline-flex;
-  align-items: center;
-  line-height: 1.3;
-  white-space: normal;        /* allow line breaks */
-  overflow-wrap: anywhere;    /* break long phrases */
-  word-break: break-word;     /* fallback */
-  max-width: 100%;
-  min-width: 0;               /* critical in flex context */
-}
-
-/* If the chip row is flex (it is), ensure wrap and no hard min */
-.pub-item .meta .cv-year {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: .4rem;
-  row-gap: .4rem;
-}
-
-/* Buttons: stop forcing one line (can overflow on small screens) */
-.cv-btn {
-  white-space: normal;        /* was: nowrap */
-  min-width: 0;
-}
-
-/* Extra belt & suspenders: long text in typical offenders */
-.cv-title, .cv-loc, .cv-year, .cv-actions, .cv-tags li {
-  overflow-wrap: anywhere;
-  word-break: break-word;
-  min-width: 0;
 }
