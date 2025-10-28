@@ -284,10 +284,7 @@ ul.task-list li input[type="checkbox"] {
       <h1>Research Interests</h1>
 
       <p>
-        I was born in 2000, just as sequencers were humming and computers were fast enough to keep up. I fell for math, statistics, and computer science early—tools that could turn biological complexity into testable questions. And yes, my last name is Ai; in a world obsessed with “AI,” it still introduces me before I do. I don't know if I have a silicon chip in my brain, but what hooked me wasn’t a gadget. It was a stubborn question: why do two people with the same disease and the same drug end up with wildly different outcomes? If we could answer that, medicine wouldn’t be one-size-fits-all—it would be personal.
-      </p>
-      <p>
-        The digital revolution means we can actually try. We can read genomes, watch gene expression, map epigenetic shifts, and stitch these signals together with models that learn. That’s the work I love: translate noisy data into clear hypotheses, test them, and push the results toward decisions that help real patients.
+       I was born in 2000, as sequencers began to hum, and computers learned to listen. I fell early for math, statistics, and computer science, which are the languages that turn biological chaos into patterns we can test. My last name is Ai; in a world obsessed with "AI", it often speaks before I do. But what drives me isn’t code, it’s curiosity: why do two people with the same disease and treatment have such different outcomes? That question anchors my pursuit of biostatistics. Advances in sequencing and computation now let us explore genomes and clinical data at unprecedented depth. My goal is to develop statistical models for high-dimensional data that uncover disease mechanisms, translate discoveries into clinical insights through rigorous trial design and efficiency testing, and ultimately advance the development of truly personalized care. Specifically, my research focuses on the following topics.
       </p>
     </section>
 
@@ -415,11 +412,7 @@ D(\mathbf{x}) = \Bigg(\prod_{i=1}^m d_i\!\big(y_i(\mathbf{x})\big)^{\,w_i}\Bigg)
 
 
 <p>
-  The Clinical Utility Index (CUI) provides a patient-centered framework for integrating multiple treatment outcomes into a single measure of therapeutic benefit and has been widely applied in pharmaceutical decision-making. However, prior work has largely focused on constructing and analyzing the index, leaving open the crucial question of how to design studies that directly optimize CUI.
-
-  Using a dose–response modeling approach, we address optimal dose selection to maximize clinical utility. While analytical solutions exist for simple models, real-world situations involve nonlinear and nonconvex relationships that require numerical optimization. To efficiently search these complex design spaces, we employ Particle Swarm Optimization (PSO), a state-of-the-art metaheuristic method that avoids restrictive gradient assumptions and generalizes to other utility-based frameworks such as the Health Utilities Index and desirability functions. I developed the first
-<a href="https://jiachenai.shinyapps.io/c-optimal_by_PSO/" target="_blank" rel="noopener">Shiny app for CUI-based optimal dose design</a>,
-implementing PSO to compute optimal doses under the Emax CUI framework. The tool enables users to input study parameters and rapidly generate optimal dose recommendations, bringing CUI-driven design into practical use for precision clinical trials.
+The Clinical Utility Index (CUI) has been widely applied in healthcare and pharmaceutical research as a unified metric for evaluating treatments by integrating therapeutic benefits and safety considerations. Related measures such as the Health Utilities Index (HUI) and desirability functions mentioned above also support multi-criteria decision-making. However, existing studies have focused mainly on defining and analyzing these indices, while strategies for designing studies that maximize the CUI have received little attention. Therefore, I continue to work with Dr. Wong, and we address that gap by developing a model-based approach to identify the optimal drug dose that maximizes patient benefit. For simple dose-response structures, this optimum can be derived analytically. Yet in realistic scenarios with more complex models, numerical optimization is required. I employ Particle Swarm Optimization, a state-of-the-art metaheuristic technique that is fast, flexible, and free from restrictive modeling assumptions. This makes it suitable for optimizing not only the CUI, but also other clinical utility measures such as HUI or desirability functions under different study goals. To promote practical use, I also provide an interactive <a href="https://jiachenai.shinyapps.io/c-optimal_by_PSO/" target="_blank" rel="noopener">Shiny app</a>  that enables researchers to efficiently generate tailored optimal dose designs for their own studies. 
 </p>
 
 <figure class="figure">
